@@ -44,7 +44,7 @@ const Header = () => {
               "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-full", 
               "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800"
             )}>
-              <Link href="/works" className={cn(
+              <Link href="/works" prefetch={true} className={cn(
                 "text-neutral-400/50", 
                 "bg-gradient-to-r from-transparent via-black/80 via-50% to-transparent border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased rounded-full"
               )}>
