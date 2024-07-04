@@ -9,6 +9,8 @@ import DotPattern from "./ui/dot-pattern";
 import RadialGradient from "./ui/radial-gradient";
 import NavBar from "./NavBar";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import LetterPullup from "./ui/letter-pullup";
 
 interface Carousel3DProps {
   works: {
@@ -23,7 +25,9 @@ interface Carousel3DProps {
 const Carousel3D = ({ works }: Carousel3DProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const outerBoxRef = useRef<HTMLDivElement>(null);
+  const carouelRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [position, setPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const elementWidth = 350; // Width of each element in px
@@ -42,6 +46,14 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
       setIsTransitioning(true);
       const newIndex = (currentIndex + direction + works.length) % works.length;
       const newPosition = currentIndex + direction;
+      
+      if (newPosition >= works.length) {
+        setPosition(0); // Wrap around to the beginning
+      } else if (newPosition < 0) {
+        setPosition(works.length - 1); // Wrap around to the end
+      } else {
+        setPosition(newPosition);
+      }
 
       gsap.to(outerBoxRef.current, {
         rotateY: newPosition * -rotationStep,
@@ -58,6 +70,20 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
   );
 
   useEffect(() => {
+    document.addEventListener('DOMContentLoaded', function () {
+      const setHeight = () => {
+        if (carouelRef?.current) {
+          carouelRef.current.style.height = `${window.innerHeight}px`;
+        }
+      };
+    
+      setHeight();
+      
+      window.addEventListener('resize', setHeight);
+    });
+  }, []);
+
+  useEffect(() => {
     const handleWheel = (event: WheelEvent) => {
       event.preventDefault();
       const direction = Math.sign(event.deltaY);
@@ -65,7 +91,7 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
     };
 
     const carousel = carouselRef.current;
-    carousel?.addEventListener("wheel", handleWheel);
+    carousel?.addEventListener("wheel", handleWheel, { passive: true });
 
     return () => {
       carousel?.removeEventListener("wheel", handleWheel);
@@ -80,11 +106,11 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
   const handlePrev = () => handleScroll(-1);
 
   return (
-    <div className={cn("h-screen flex relative flex-col justify-between px-6 font-montserrat overflow-hidden", "xl:px-10")}>
+    <div ref={carouelRef} className={cn("min-h-screen flex relative flex-col justify-between px-6 font-montserrat overflow-hidden", "xl:px-10")}>
       <NavBar />
       <section className={cn("flex flex-col items-center justify-center flex-grow")}>
         <div className="relative h-[70vh] z-50 px-8 w-full flex items-center justify-center gap-20" ref={carouselRef}>
-          <div className="w-[450px] h-[350px] relative" ref={outerBoxRef} style={{
+          <div className={cn("w-[450px] h-[350px] relative")} ref={outerBoxRef} style={{
             transform: `perspective(${perspective}px)`,
             transformStyle: "preserve-3d"
           }}>
@@ -106,10 +132,21 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
                 <Image
                   alt="image of works"
                   src={work.pictures}
-                  objectFit="cover"
                   /* layout="fill" */
+                  priority
                   className={cn("p-[2px] rounded-3xl border border-neutral-600/50 bg-neutral-900 flex items-center justify-center w-full h-full text-sm")}
                 />
+                <AnimatePresence>
+                  {position === currentIndex && (
+                    <motion.h5 className={cn("absolute text-2xl h-auto w-full py-4 text-center antialiased font-medium  top-[40%]", "xs:text-3xl", "sm:text-4xl", "md:top-[37%] md:text-6xl", "lg:text-7xl", "xl:text-9xl xl:top-[30%]", index !== currentIndex && "hidden")} style={{
+                      textShadow: "0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.3)",
+                    }}>
+                      <LetterPullup key={index} words={work.title} delay={0.05} duration={0.6} className={cn(
+                        "text-center drop-shadow-sm  md:leading-[5rem]",
+                      )} />
+                    </motion.h5>
+                  )}
+                </AnimatePresence>
               </Link>
             ))}
           </div>
