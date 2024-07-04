@@ -3,7 +3,7 @@ import Marquee from "@/components/ui/marquee";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { cn } from "@/lib/utils";
 import { FaHtml5, FaCss3, FaReact, FaFigma } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiThreedotjs } from "react-icons/si";
 
 const MarqueeStack = () => {
   return (
@@ -11,8 +11,8 @@ const MarqueeStack = () => {
       <div>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-violet-800 to-transparent h-[2px] w-3/4 blur-sm", "lg:inset-x-20", "2xl:inset-x-28")}/>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-violet-800 to-transparent h-px w-3/4", "lg:inset-x-20", "2xl:inset-x-28")} />
-        <div className={cn("absolute inset-x-24 top-0 bg-gradient-to-r from-transparent via-violet-500 to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
-        <div className={cn("absolute inset-x-24 top-0 bg-gradient-to-r from-transparent via-violet-500 to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-violet-500 to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-violet-500 to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
       </div>
     
       <div className="flex flex-col justify-center items-center w-full h-full border-b">
@@ -26,6 +26,9 @@ const MarqueeStack = () => {
               <SiNextdotjs className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
               <SiZod className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
               <SiPrisma className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiGreensock className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiThreedotjs className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiGit className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
               <FaFigma className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
               <SiBlender className={cn("text-[22px]", "lg:text-3xl", "2xl:text-5xl")} />
             </div>
