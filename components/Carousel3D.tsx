@@ -139,10 +139,10 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
                 <AnimatePresence>
                   {position === currentIndex && (
                     <motion.h5 className={cn("absolute text-xl h-auto w-full py-4 text-center antialiased font-medium  top-[40%]", "xs:text-3xl", "sm:text-4xl", "md:top-[37%] md:text-6xl", "lg:text-7xl", "xl:text-9xl xl:top-[30%]", index !== currentIndex && "hidden")} style={{
-                      textShadow: "0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.05)",
+                      textShadow: "0 0 5px rgba(27, 27, 46, 0.5), 0 0 10px rgba(27, 27, 46, 0.4), 0 0 15px rgba(27, 27, 46, 0.3)"
                     }}>
                       <LetterPullup key={index} words={work.title} delay={0.05} duration={0.6} className={cn(
-                        "text-center drop-shadow-sm  md:leading-[5rem] uppercase font-bold",
+                        "text-center drop-shadow-sm md:leading-[5rem] font-bold",
                       )} />
                     </motion.h5>
                   )}
