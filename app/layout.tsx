@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Beolika",
+  title: "Selimmersive",
   description: "Portfolio 2024",
 };
 
