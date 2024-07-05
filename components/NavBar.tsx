@@ -9,16 +9,20 @@ const NavBar = () => {
   return (
     <nav className={cn("w-full p-6", "px-10", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        {/* <Link href="/" target="_blank" rel="noopener noreferrer" className="hidden lg:block">
           <div className={cn(
             "p-[2px] rounded-xl", 
             "*:transition ease-out *:hover:duration-300 *:hover:text-white border", 
             "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800")}>
             <div className="bg-gradient-to-r p-3 from-transparent via-black/80 via-50% to-transparent border border-neutral-600/50 backdrop-blur-xl rounded-xl">
-              <div className={cn("rounded-full w-7 h-3 ml-3 bg-white border-2 border-violet-500")} />
-              <div className={cn("rounded-full w-7 h-3 bg-white border-2 border-violet-800")} />
+              <div className={cn("rounded-full w-8 h-4 ml-3.5 bg-white border-2 border-violet-500")} />
+              <div className={cn("rounded-full w-8 h-4 bg-white border-2 border-violet-800")} />
             </div>
           </div>
+        </Link> */}
+        <Link href="/" target="_blank" rel="noopener noreferrer">
+          <div className={cn("rounded-full w-8 h-4 ml-3.5 bg-white border-2 border-violet-500")} />
+          <div className={cn("rounded-full w-8 h-4 bg-white border-2 border-violet-800")} />
         </Link>
         {/* <CiMenuKebab className={cn("text-4xl", "lg:hidden")} /> */}
         <div className={cn("hidden", "lg:flex lg:items-center lg:gap-4", "2xl:gap-6")}>
