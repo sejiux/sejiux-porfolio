@@ -110,7 +110,7 @@ const WorksPage = ({ works }: WorksPageProps) => {
   const handlePrev = () => handleScroll(-1);
 
   return (
-    <div ref={carouelRef} className={cn("min-h-screen flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+    <div ref={carouelRef} className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <section className={cn("px-6 flex flex-col items-center justify-center flex-grow", "xl:px-10")}>
         <div className="relative h-[70vh] z-10 px-8 w-full flex items-center justify-center gap-20" ref={carouselRef}>

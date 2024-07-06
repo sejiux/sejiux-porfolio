@@ -17,7 +17,7 @@ const HeaderPage = () => {
   const pathname = usePathname();
 
   return (
-    <header className={cn("min-h-screen  flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+    <header className={cn("min-h-[100dvh]  flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
