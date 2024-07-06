@@ -19,19 +19,19 @@ const MarqueeStack = () => {
         <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl", "2xl:max-w-[1200px]")}>
           <Marquee pauseOnHover className="[--duration:20s]">
             <div className={cn("flex items-center gap-10 px-3", "xl:gap-20 xl:px-8")}>
-              <FaHtml5 className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <FaCss3 className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiTypescript className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <FaReact className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiNextdotjs className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiZod className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiPrisma className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiGreensock className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiFramer className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiThreedotjs className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiGit className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <FaFigma className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
-              <SiBlender className={cn("text-3xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <FaHtml5 className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <FaCss3 className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiTypescript className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <FaReact className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiNextdotjs className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiZod className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiPrisma className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiGreensock className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiFramer className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiThreedotjs className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiGit className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <FaFigma className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+              <SiBlender className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
             </div>
           </Marquee>
           <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-black")} />

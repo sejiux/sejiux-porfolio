@@ -14,7 +14,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
     <nav className={cn("w-full p-6 z-50", "px-10", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        <Link href="/">
           <div className={cn("rounded-full w-8 h-4 ml-3.5 -mt-1 bg-white border-2 border-violet-500")} />
           <div className={cn("rounded-full w-8 h-4 bg-white border-2 border-violet-800")} />
         </Link>

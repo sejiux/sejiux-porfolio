@@ -31,7 +31,7 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
             <div className="space-y-4 flex flex-col">
               {linksData.map((data, index) => (
                 <Link key={index} href={data.link} className={cn(
-                  "text-3xl font-semibold font-montserrat p-2",
+                  "text-4xl font-semibold font-montserrat p-2",
                   pathname === data.link ? "text-white" : "text-neutral-400/50"
                 )}>
                   {data.label}
