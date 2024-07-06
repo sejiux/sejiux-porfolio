@@ -11,8 +11,10 @@ import NavBar from "./NavBar";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterPullup from "./ui/letter-pullup";
+import ModalMenu from "./ModalMenu";
+import { usePathname } from 'next/navigation';
 
-interface Carousel3DProps {
+interface WorksPageProps {
   works: {
     title: string;
     category: string;
@@ -22,7 +24,9 @@ interface Carousel3DProps {
   }[];
 }
 
-const Carousel3D = ({ works }: Carousel3DProps) => {
+const WorksPage = ({ works }: WorksPageProps) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const carouselRef = useRef<HTMLDivElement>(null);
   const outerBoxRef = useRef<HTMLDivElement>(null);
   const carouelRef = useRef<HTMLDivElement>(null);
@@ -106,10 +110,10 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
   const handlePrev = () => handleScroll(-1);
 
   return (
-    <div ref={carouelRef} className={cn("min-h-screen flex relative flex-col justify-between px-6 font-montserrat overflow-hidden", "xl:px-10")}>
-      <NavBar />
-      <section className={cn("flex flex-col items-center justify-center flex-grow")}>
-        <div className="relative h-[70vh] z-50 px-8 w-full flex items-center justify-center gap-20" ref={carouselRef}>
+    <div ref={carouelRef} className={cn("min-h-screen flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+      <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <section className={cn("px-6 flex flex-col items-center justify-center flex-grow", "xl:px-10")}>
+        <div className="relative h-[70vh] z-10 px-8 w-full flex items-center justify-center gap-20" ref={carouselRef}>
           <div className={cn("w-[450px] h-[350px] relative")} ref={outerBoxRef} style={{
             transform: `perspective(${perspective}px)`,
             transformStyle: "preserve-3d"
@@ -205,8 +209,9 @@ const Carousel3D = ({ works }: Carousel3DProps) => {
         />
         <RadialGradient />
       </section>
+      <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
   );
 };
 
-export default Carousel3D;
+export default WorksPage;

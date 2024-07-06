@@ -61,7 +61,7 @@ export const worksData = [
   },
 ];
 
-export const linksData = [
+export const socialsData = [
   {
     link: "https://github.com/slmrsv", icon: FaGithub,
   },
@@ -77,4 +77,16 @@ export const linksData = [
   {
     link: "https://www.linkedin.com/in/slmrsv/", icon: FaLinkedin
   }
+];
+
+export const linksData = [
+  {
+    link: "/", label: "Home",
+  },
+  {
+    link: "/works", label: "Works",
+  },
+  {
+    link: "mailto:slmrsv.bz@gmail.com", label: "Contact",
+  },
 ];

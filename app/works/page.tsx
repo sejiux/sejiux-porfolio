@@ -1,8 +1,8 @@
-import Carousel3D from "@/components/Carousel3D";
+import WorksPage from "@/components/Works";
 import { worksData } from "@/data/works";
 
 export default function Works () {
   return (
-    <Carousel3D works={worksData} />
+    <WorksPage works={worksData} />
   );
 }

@@ -1,32 +1,31 @@
 "use client";
-import { linksData } from "@/data/works";
+import React, { Dispatch, SetStateAction } from 'react';
+import { socialsData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-/* import { CiMenuKebab } from "react-icons/ci"; */
+import { TbMenu } from "react-icons/tb";
+import { IoCloseOutline } from "react-icons/io5";
 
-
-const NavBar = () => {
+interface NavBarProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: Dispatch<SetStateAction<boolean>>
+}
+const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
-    <nav className={cn("w-full p-6", "px-10", "2xl:py-10")}>
+    <nav className={cn("w-full p-6 z-50", "px-10", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
-        {/* <Link href="/" target="_blank" rel="noopener noreferrer" className="hidden lg:block">
-          <div className={cn(
-            "p-[2px] rounded-xl", 
-            "*:transition ease-out *:hover:duration-300 *:hover:text-white border", 
-            "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800")}>
-            <div className="bg-gradient-to-r p-3 from-transparent via-black/80 via-50% to-transparent border border-neutral-600/50 backdrop-blur-xl rounded-xl">
-              <div className={cn("rounded-full w-8 h-4 ml-3.5 bg-white border-2 border-violet-500")} />
-              <div className={cn("rounded-full w-8 h-4 bg-white border-2 border-violet-800")} />
-            </div>
-          </div>
-        </Link> */}
         <Link href="/" target="_blank" rel="noopener noreferrer">
-          <div className={cn("rounded-full w-8 h-4 ml-3.5 bg-white border-2 border-violet-500")} />
+          <div className={cn("rounded-full w-8 h-4 ml-3.5 -mt-1 bg-white border-2 border-violet-500")} />
           <div className={cn("rounded-full w-8 h-4 bg-white border-2 border-violet-800")} />
         </Link>
-        {/* <CiMenuKebab className={cn("text-4xl", "lg:hidden")} /> */}
+        <button
+          className={cn("text-3xl", "lg:hidden")}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <IoCloseOutline /> : <TbMenu />}
+        </button>
         <div className={cn("hidden", "lg:flex lg:items-center lg:gap-4", "2xl:gap-6")}>
-          {linksData.map((data, index) => (
+          {socialsData.map((data, index) => (
             <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
               "p-[2px]",
               "2xl:p-[4px]", 
