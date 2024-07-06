@@ -27,6 +27,11 @@ const config: Config = {
             "background-position": "calc(100% + var(--shimmer-width)) 0",
           },
         },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
         "background-position-spin": {
           "0%": { backgroundPosition: "top center" },
           "100%": { backgroundPosition: "bottom center" },
@@ -51,6 +56,7 @@ const config: Config = {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         grid: "grid 15s linear infinite",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
       },
     },
     screens: {

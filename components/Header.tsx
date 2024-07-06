@@ -44,7 +44,7 @@ const HeaderPage = () => {
               </div>
             </div>
             <h1 className={cn("text-4xl font-medium", "xs:", "sm:", "md:", "lg:text-6xl", "xl:text-[80px]", "2xl:text-[120px]", "pointer-events-none whitespace-pre-wrap bg-gradient-to-b bg-clip-text text-center font-semibold leading-none text-transparent from-white to-violet-500/50")}>Creation of Digital Products and Immersive Art</h1>
-            <p className={cn("text-sm font-light w-full px-6", "lg:px-0 lg:max-w-xl lg:mx-auto", "xl:text-base", "2xl:text-xl 2xl:max-w-4xl")}>Hey 👋, I'm Selim Baouz, a FullStack Developer with a strong passion for UX / UI Design and Architectural Visualization.</p>
+            <p className={cn("text-sm font-light w-full px-", "lg:px-0 lg:max-w-xl lg:mx-auto", "xl:text-base", "2xl:text-xl 2xl:max-w-4xl")}>Hey 👋, I'm Selim Baouz, a FullStack Developer with a strong passion for UX / UI Design and Architectural Visualization.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-48 h-12 mx-auto",

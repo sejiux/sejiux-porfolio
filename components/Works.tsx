@@ -13,6 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import LetterPullup from "./ui/letter-pullup";
 import ModalMenu from "./ModalMenu";
 import { usePathname } from 'next/navigation';
+import { BorderBeam } from "./ui/border-beam";
 
 interface WorksPageProps {
   works: {
@@ -140,6 +141,9 @@ const WorksPage = ({ works }: WorksPageProps) => {
                   priority
                   className={cn("p-[2px] rounded-3xl border border-neutral-600/50 bg-neutral-900 flex items-center justify-center w-full h-full text-sm")}
                 />
+                {currentIndex === index && (
+                  <BorderBeam size={250} duration={5} delay={2} />
+                )}
                 <AnimatePresence>
                   {position === currentIndex && (
                     <motion.h5 className={cn("absolute text-xl h-auto w-full py-4 text-center antialiased font-medium  top-[40%]", "xs:text-3xl", "sm:text-4xl", "md:top-[37%] md:text-6xl", "lg:text-7xl", "xl:text-9xl xl:top-[30%]", index !== currentIndex && "hidden")} style={{

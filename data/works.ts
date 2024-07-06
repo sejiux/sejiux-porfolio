@@ -95,54 +95,67 @@ export const linksData = [
 export const stacksData = [
   {
     icon: FaHtml5,
-    name: "Html"
+    name: "Html",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
   },
   {
     icon: FaCss3,
-    name: "Css"
+    name: "Css",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
   {
     icon: SiTypescript,
-    name: "Typescript"
+    name: "Typescript",
+    link: "https://www.typescriptlang.org/"
   },
   {
     icon: FaReact,
-    name: "React"
+    name: "React",
+    link: "https://reactjs.org/"
   },
   {
     icon: SiNextdotjs,
-    name: "NextJs"
+    name: "NextJs",
+    link: "https://nextjs.org/"
   },
   {
     icon: SiZod,
-    name: "Zod"
+    name: "Zod",
+    link: "https://zod.dev/"
   },
   {
     icon: SiPrisma,
-    name: "Prisma"
+    name: "Prisma",
+    link: "https://www.prisma.io/"
   },
   {
     icon: SiGreensock,
-    name: "Gsap"
+    name: "Gsap",
+    link: "https://greensock.com/gsap/"
   },
   {
     icon: SiFramer,
-    name: "Framer motion"
+    name: "Framer motion",
+    link: "https://www.framer.com/motion/"
   },
   {
     icon: SiThreedotjs,
-    name: "ThreeJs"
+    name: "ThreeJs",
+    link: "https://threejs.org/"
   },
   {
     icon: SiGit,
-    name: "Git"
+    name: "Git",
+    link: "https://git-scm.com/"
   },
   {
     icon: FaFigma,
-    name: "Figma"
+    name: "Figma",
+    link: "https://www.figma.com/"
   },
   {
     icon: SiBlender,
-    name: "Blender"
+    name: "Blender",
+    link: "https://www.blender.org/"
   },
 ];

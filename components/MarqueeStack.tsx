@@ -3,6 +3,7 @@ import Marquee from "@/components/ui/marquee";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { stacksData } from "@/data/works";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const MarqueeStack = () => {
   return (
@@ -20,7 +21,9 @@ const MarqueeStack = () => {
             <div className={cn("flex items-center gap-10 px-3", "xl:gap-20 xl:px-8")}>
               {
                 stacksData.map((data, index) => (
-                  <data.icon key={index} className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer">
+                    <data.icon key={index} className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+                  </Link>
                 ))
               }
             </div>
