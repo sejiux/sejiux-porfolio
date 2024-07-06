@@ -18,7 +18,7 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="absolute lg:hidden w-full h-[100dvh] text-center bg-black bg-opacity-50 backdrop-blur-md z-30"
+          className="absolute lg:hidden w-full h-[100dvh] text-center bg-black bg-opacity-65 backdrop-blur-md z-30"
           onClick={() => setIsMenuOpen(false)}
         >
           <motion.div

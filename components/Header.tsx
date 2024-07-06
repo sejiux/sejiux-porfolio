@@ -34,7 +34,7 @@ const HeaderPage = () => {
                   <AnimatedShinyText 
                     className={cn(
                       "inline-flex items-center justify-center px-4 py-1 transition ease-out hover:duration-300 hover:text-neutral-400",
-                      "text-sm",
+                      "text-xs",
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
@@ -92,6 +92,7 @@ const HeaderPage = () => {
           <RadialGradient size={170} className="md:hidden"/>
         </div>
       </div>
+
       <MarqueeStack />
       <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </header>

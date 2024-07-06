@@ -6,7 +6,8 @@ import Societech from "../public/images/societech1.png";
 import Revamapp from "../public/images/revamapp.png";
 import Metawaste1 from "../public/images/metawaste1.png";
 
-import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaLinkedin, FaHtml5, FaCss3, FaReact, FaFigma } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiThreedotjs, SiFramer } from "react-icons/si";
 
 export const worksData = [
   {
@@ -88,5 +89,60 @@ export const linksData = [
   },
   {
     link: "mailto:slmrsv.bz@gmail.com", label: "Contact",
+  },
+];
+
+export const stacksData = [
+  {
+    icon: FaHtml5,
+    name: "Html"
+  },
+  {
+    icon: FaCss3,
+    name: "Css"
+  },
+  {
+    icon: SiTypescript,
+    name: "Typescript"
+  },
+  {
+    icon: FaReact,
+    name: "React"
+  },
+  {
+    icon: SiNextdotjs,
+    name: "NextJs"
+  },
+  {
+    icon: SiZod,
+    name: "Zod"
+  },
+  {
+    icon: SiPrisma,
+    name: "Prisma"
+  },
+  {
+    icon: SiGreensock,
+    name: "Gsap"
+  },
+  {
+    icon: SiFramer,
+    name: "Framer motion"
+  },
+  {
+    icon: SiThreedotjs,
+    name: "ThreeJs"
+  },
+  {
+    icon: SiGit,
+    name: "Git"
+  },
+  {
+    icon: FaFigma,
+    name: "Figma"
+  },
+  {
+    icon: SiBlender,
+    name: "Blender"
   },
 ];
