@@ -41,7 +41,7 @@ const MarqueeStack = () => {
           particleColor="#FFFFFF"
         />
     
-        <div className={cn("absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]", "2xl:[mask-image:radial-gradient(450px_400px_at_top,transparent_20%,white)]")} />
+        <div className={cn("absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,black)]", "2xl:[mask-image:radial-gradient(450px_400px_at_top,transparent_20%,black)]")} />
       </div>
       {/* <div>
           <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-violet-800 to-transparent h-[2px] w-3/4 blur-sm" />

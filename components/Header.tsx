@@ -71,7 +71,7 @@ const HeaderPage = () => {
           cy={1}
           cr={1}
           className={cn(
-            "[mask-image:linear-gradient(to_bottom_left,white,transparent,transparent)] -z-10 opacity-35",
+            "[mask-image:linear-gradient(to_bottom_left,black,transparent,transparent)] -z-10 opacity-35",
           )}
         />
         <DotPattern
@@ -81,15 +81,15 @@ const HeaderPage = () => {
           cy={1}
           cr={1}
           className={cn(
-            "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] -z-10 opacity-35",
+            "[mask-image:linear-gradient(to_bottom_right,black,transparent,transparent)] -z-10 opacity-35",
           )}
         />
         <div className={cn("hidden", "md:block")}>
-          <RadialGradient />
+          <RadialGradient className="-z-50"/>
         </div>
         <div>
-          <RadialGradient size={180} className="opacity-50 md:hidden" />
-          <RadialGradient size={170} className="md:hidden"/>
+          <RadialGradient size={180} className="opacity-50 md:hidden -z-50" />
+          <RadialGradient size={170} className="md:hidden -z-50"/>
         </div>
       </div>
 

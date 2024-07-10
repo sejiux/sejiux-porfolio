@@ -59,7 +59,7 @@ interface RadialProps {
 const RadialGradient = ({
   type = "circle",
   from = "rgba(120,119,198,0.3)",
-  to = "hsla(0, 0%, 0%, 0)",
+  to = "rgba(0, 0, 0, 0)",
   size = 700,
   origin = "bottom",
   className,
@@ -71,7 +71,7 @@ const RadialGradient = ({
     backgroundImage: `radial-gradient(${type} ${size}px at ${origin}, ${from}, ${to})`,
   };
 
-  return <div className={className} style={styles} />;
+  return <div className={`${className} bg-black`} style={styles} />;
 };
 
 export default RadialGradient;

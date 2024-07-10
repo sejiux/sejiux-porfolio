@@ -211,7 +211,7 @@ const WorksPage = ({ works }: WorksPageProps) => {
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] -z-10 opacity-35",
           )}
         />
-        <RadialGradient />
+        <RadialGradient className="-z-50" />
       </section>
       <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
