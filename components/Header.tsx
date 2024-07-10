@@ -88,8 +88,8 @@ const HeaderPage = () => {
           <RadialGradient />
         </div>
         <div>
-          <RadialGradient size={180} className="opacity-50 md:hidden" />
-          <RadialGradient size={170} className="md:hidden"/>
+          <RadialGradient size={180} className="opacity-50 md:hidden bg-black" />
+          <RadialGradient size={170} className="md:hidden bg-black"/>
         </div>
       </div>
 
