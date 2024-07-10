@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import React from "react";
+import ComponentWithSearchParams from "@/components/ComponentWithSearchParams";
 
 const montserrat = Montserrat({
   weight: [
@@ -33,7 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(montserrat.variable, "bg-black text-white font-montserrat relative")}>{children}</body>
+      <body className={cn(montserrat.variable, "bg-black text-white font-montserrat relative")}>
+        <ComponentWithSearchParams />
+        {children}
+      </body>
     </html>
   );
 }
