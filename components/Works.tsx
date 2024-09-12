@@ -137,8 +137,6 @@ const WorksPage = ({ works }: WorksPageProps) => {
                 <Image
                   alt="image of works"
                   src={work.pictures}
-                  /* layout="fill" */
-                  loading="lazy"
                   className={cn("p-[2px] rounded-3xl border border-neutral-600/50 bg-neutral-900 flex items-center justify-center w-full h-full text-sm")}
                 />
                 {currentIndex === index && (

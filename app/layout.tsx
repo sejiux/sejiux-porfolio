@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Selimmersive",
+  title: "sejiux",
   description: "Portfolio 2024",
 };
 

@@ -17,7 +17,7 @@ const HeaderPage = () => {
   const pathname = usePathname();
 
   return (
-    <header className={cn("min-h-[100dvh]  flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+    <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
@@ -38,18 +38,18 @@ const HeaderPage = () => {
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
-                    Art, Design & Development
+                    Design & Developpement
                   </AnimatedShinyText>
                 </Button>
               </div>
             </div>
-            <h1 className={cn("text-4xl font-medium", "xs:", "sm:", "md:", "lg:text-6xl", "xl:text-[80px]", "2xl:text-[120px]", "pointer-events-none whitespace-pre-wrap bg-gradient-to-b bg-clip-text text-center font-semibold leading-none text-transparent from-white to-violet-500/50")}>Creation of Digital Products and Immersive Art</h1>
-            <p className={cn("text-sm font-light w-full px-", "lg:px-0 lg:max-w-xl lg:mx-auto", "xl:text-base", "2xl:text-xl 2xl:max-w-4xl")}>Hey 👋, I'm Selim Baouz, a FullStack Developer with a strong passion for UX / UI Design and Architectural Visualization.</p>
+            <h1 className={cn("text-3xl font-medium", "xs:", "sm:", "md:", "lg:text-6xl", "xl:text-[80px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-gradient-to-b bg-clip-text text-center font-semibold leading-none text-transparent from-white to-violet-500/50")}>Des Solutions Web qui Répondent à vos Ambitions</h1>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:max-w-xl lg:mx-auto text-white/85", "xl:text-lg xl:leading-relaxed", "2xl:text-xl 2xl:max-w-4xl")}>Modernisez votre présence en ligne avec des sites web modernes, memorables et abordables.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
-                "w-48 h-12 mx-auto",
+                "w-52 h-12 mx-auto",
                 "md:w-40 md:h-10",
-                "xl:*:text-lg xl:w-48 xl:h-14 p-[2px]",
+                "xl:*:text-lg xl:w-60 xl:h-14 p-[2px]",
                 "*:2xl:text-2xl 2xl:w-64 2xl:h-20", 
                 "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-full", 
                 "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800"
@@ -58,7 +58,7 @@ const HeaderPage = () => {
                   "text-neutral-400/50", 
                   "bg-gradient-to-r from-transparent via-black/80 via-50% to-transparent border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-full",
                 )}>
-                Get Started
+                Voir Mon Portfolio
                 </Link>
               </div>
             </div>

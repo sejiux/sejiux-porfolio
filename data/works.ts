@@ -7,7 +7,10 @@ import Revamapp from "../public/images/revamapp.png";
 import Metawaste1 from "../public/images/metawaste1.png";
 
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiThreedotjs, SiFramer } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify } from "react-icons/si";
+import ReactEmail from "@/components/icons/ReactEmail";
+import { RiBearSmileLine } from "react-icons/ri";
+import { IoShield } from "react-icons/io5";
 
 export const worksData = [
   {
@@ -64,19 +67,19 @@ export const worksData = [
 
 export const socialsData = [
   {
-    link: "https://github.com/slmrsv", icon: FaGithub,
+    link: "https://github.com/sejiux", icon: FaGithub,
   },
   {
     link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord,
   },
   {
-    link: "https://medium.com/@slmrsv", icon: FaMedium,
+    link: "https://medium.com/@sejiux", icon: FaMedium,
   },
   {
-    link: "https://www.pinterest.fr/slmrsv/", icon: FaPinterest
+    link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest
   },
   {
-    link: "https://x.com/slmrsv", icon: FaTwitter,
+    link: "https://x.com/sejiux", icon: FaTwitter,
   }
 ];
 
@@ -88,7 +91,7 @@ export const linksData = [
     link: "/works", label: "Works",
   },
   {
-    link: "mailto:slmrsv.bz@gmail.com", label: "Contact",
+    link: "mailto:im.sejiux@gmail.com", label: "Contact",
   },
 ];
 
@@ -102,6 +105,11 @@ export const stacksData = [
     icon: FaCss3,
     name: "Css",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    icon: SiTailwindcss,
+    name: "Tailwindcss",
+    link: "https://tailwindcss.com/"
   },
   {
     icon: SiTypescript,
@@ -119,14 +127,49 @@ export const stacksData = [
     link: "https://nextjs.org/"
   },
   {
-    icon: SiZod,
-    name: "Zod",
-    link: "https://zod.dev/"
+    icon: SiShadcnui,
+    name: "ShadcnUi",
+    link: "https://ui.shadcn.com/"
   },
   {
     icon: SiPrisma,
     name: "Prisma",
     link: "https://www.prisma.io/"
+  },
+  {
+    icon: IoShield,
+    name: "NextAuth",
+    link: "https://next-auth.js.org/"
+  },
+  {
+    icon: SiResend,
+    name: "Resend",
+    link: "https://resend.com/"
+  },
+  {
+    icon: ReactEmail,
+    name: "React Email",
+    link: "https://react.email/"
+  },
+  {
+    icon: SiReactquery,
+    name: "React Query",
+    link: "https://tanstack.com/query/latest"
+  },
+  {
+    icon: SiZod,
+    name: "Zod",
+    link: "https://zod.dev/"
+  },
+  {
+    icon: SiReacthookform,
+    name: "React Hook Form",
+    link: "https://react-hook-form.com/"
+  },
+  {
+    icon: RiBearSmileLine,
+    name: "Zustand",
+    link: "https://zustand.docs.pmnd.rs/"
   },
   {
     icon: SiGreensock,
@@ -139,9 +182,9 @@ export const stacksData = [
     link: "https://www.framer.com/motion/"
   },
   {
-    icon: SiThreedotjs,
-    name: "ThreeJs",
-    link: "https://threejs.org/"
+    icon: SiShopify,
+    name: "Shopify",
+    link: "https://www.shopify.com/"
   },
   {
     icon: SiGit,
