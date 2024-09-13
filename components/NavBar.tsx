@@ -15,7 +15,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
     <nav className={cn("w-full p-6 z-50", "px-10", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
         <Link href="/">
-          <p className={cn('font-semibold text-2xl', "xl:text-3xl")}>sejiux</p>
+          <p className={cn('font-bold text-2xl')}>sejiux</p>
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}

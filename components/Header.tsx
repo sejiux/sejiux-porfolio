@@ -21,7 +21,7 @@ const HeaderPage = () => {
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
-          <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-7xl", "2xl:max-w-[1800px] 2xl:space-y-14")}>
+          <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-5xl", "2xl:max-w-[1800px] 2xl:space-y-14")}>
             <div className="z-10 flex items-center justify-center">
               <div
                 className={cn(
@@ -43,7 +43,7 @@ const HeaderPage = () => {
                 </Button>
               </div>
             </div>
-            <h1 className={cn("text-[35px] px-2", "lg:px-0 lg:text-6xl", "xl:text-[80px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-gradient-to-b bg-clip-text text-center font-semibold leading-none text-transparent from-white to-violet-500/50")}>Création World-Class de Produits Digitaux</h1>
+            <h1 className={cn("text-[35px] px-2 leading-tight font-bold", "lg:px-0 lg:text-6xl", "xl:text-[75px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-gradient-to-b bg-clip-text text-center text-transparent from-white to-violet-500/50")}>Conception World-Class de Produits Digitaux</h1>
             <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:max-w-xl lg:mx-auto text-white/85", "xl:text-lg xl:leading-relaxed", "2xl:text-xl 2xl:max-w-4xl")}>Modernisez votre présence en ligne avec des sites web modernes et memorables.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
