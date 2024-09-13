@@ -19,7 +19,7 @@ const HeaderPage = () => {
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <div className={cn("px-6", "xl:px-10")}>
+      <div className={cn("px-6", "xl:px-10", "2xl:px-14")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
           <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-7xl", "2xl:max-w-[1800px] 2xl:space-y-14")}>
             <div className="z-10 flex items-center justify-center">
