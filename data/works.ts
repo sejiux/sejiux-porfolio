@@ -7,7 +7,7 @@ import Revamapp from "../public/images/revamapp.png";
 import Metawaste1 from "../public/images/metawaste1.png";
 
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
 import ReactEmail from "@/components/icons/ReactEmail";
 import { RiBearSmileLine } from "react-icons/ri";
 import { IoShield } from "react-icons/io5";
@@ -190,6 +190,16 @@ export const stacksData = [
     icon: SiGit,
     name: "Git",
     link: "https://git-scm.com/"
+  },
+  {
+    icon: SiGithub,
+    name: "GitHub",
+    link: "https://github.com/"
+  },
+  {
+    icon: SiVercel,
+    name: "Vercel",
+    link: "https://vercel.com/"
   },
   {
     icon: FaFigma,

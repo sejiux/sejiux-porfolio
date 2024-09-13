@@ -5,9 +5,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { TbMenu } from "react-icons/tb";
 import { IoCloseOutline } from "react-icons/io5";
-import Image from 'next/image';
-import SLogo from "@/public/images/S-logo.png";
-import SejiuxLogo from "@/public/images/Sejiux-logo.png";
 
 interface NavBarProps {
   isMenuOpen: boolean;
@@ -18,8 +15,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
     <nav className={cn("w-full p-6 z-50", "px-10", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
         <Link href="/">
-          <Image src={SLogo} alt="" width="35" height="35" className='lg:hidden' />
-          <Image src={SejiuxLogo} alt="" width="90" height="90" className='hidden lg:block' />
+          <p className={cn('font-semibold text-2xl', "xl:text-3xl")}>sejiux</p>
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}
