@@ -88,9 +88,6 @@ export const linksData = [
     link: "/", label: "Home",
   },
   {
-    link: "/works", label: "Works",
-  },
-  {
     link: "mailto:im.sejiux@gmail.com", label: "Contact",
   },
 ];

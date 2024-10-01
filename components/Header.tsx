@@ -19,7 +19,7 @@ const HeaderPage = () => {
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <div className={cn("px-6", "xl:px-10", "2xl:px-14")}>
+      <div className={cn("px-6", "xl:px-10", "2xl:px-14 -mt-20")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
           <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-6xl", "2xl:max-w-[1800px] 2xl:space-y-14")}>
             <div className="z-10 flex items-center justify-center">
@@ -38,13 +38,13 @@ const HeaderPage = () => {
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
-                    <FaShopify className="text-[#40B01E] text-2xl" /> Unlock Your Brand's Potential
+                    <FaShopify className="text-green-500 text-2xl" /> Unlock Your Brand's Potential
                   </AnimatedShinyText>
                 </Button>
               </div>
             </div>
             <h1 className={cn("text-[35px] px-2 leading-tight font-bold", "lg:px-0 lg:text-6xl", "xl:text-[75px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-white bg-clip-text text-center")}>A Memorable Ecommerce tailored to your Brand</h1>
-            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:max-w-xl lg:mx-auto text-white/85", "xl:text-lg xl:leading-relaxed", "2xl:text-xl 2xl:max-w-4xl")}>Take your brand to the next level with a memorable and unique ecommerce experience</p>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Take your brand to the next level with a tailor-made headless store</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-52 h-12 mx-auto",
