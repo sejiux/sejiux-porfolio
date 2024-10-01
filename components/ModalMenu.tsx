@@ -31,7 +31,7 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
             <div className="space-y-4 flex flex-col">
               {linksData.map((data, index) => (
                 <Link key={index} href={data.link} className={cn(
-                  "text-4xl font-semibold font-montserrat p-2",
+                  "text-5xl font-bold font-montserrat p-2",
                   pathname === data.link ? "text-white" : "text-neutral-400/50"
                 )}>
                   {data.label}
@@ -51,8 +51,9 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
                   "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800"
                 )}>
                   <data.icon className={cn(
-                    "text-neutral-400/50", 
-                    "bg-gradient-to-r p-1 from-transparent via-black/80 via-50% to-transparent border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-2xl antialiased rounded-full"
+                    "text-white", 
+                    "bg-gradient-to-t from-transparent via-black via-50% to-green-500 p-1 hover:text-green-500 border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-2xl antialiased rounded-full",
+                    "hover:bg-gradient-b hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"
                   )} />
                 </Link>
               ))}

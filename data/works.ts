@@ -7,7 +7,7 @@ import Revamapp from "../public/images/revamapp.png";
 import Metawaste1 from "../public/images/metawaste1.png";
 
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
+import { SiRemix, SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
 import ReactEmail from "@/components/icons/ReactEmail";
 import { RiBearSmileLine } from "react-icons/ri";
 import { IoShield } from "react-icons/io5";
@@ -125,6 +125,11 @@ export const stacksData = [
     icon: SiNextdotjs,
     name: "NextJs",
     link: "https://nextjs.org/"
+  },
+  {
+    icon: SiRemix,
+    name: "Remix",
+    link: "https://remix.run/"
   },
   {
     icon: SiShadcnui,
