@@ -6,7 +6,7 @@ import Link from "next/link";
 import { TbMenuOrder } from "react-icons/tb";
 
 import Image from 'next/image';
-import Logo from "@/public/images/Logo.png";
+import Logo from "@/public/images/Logo_transparent.png";
 import { GiNinjaStar } from "react-icons/gi";
 
 interface NavBarProps {
@@ -37,7 +37,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
             )}>
               <data.icon className={cn(
                 "text-white", 
-                "xl:text-2xl",
+                "xl:text-xl",
                 "2xl:text-3xl",
                 "bg-gradient-to-t from-transparent via-black via-50% to-green-500 p-1 hover:text-green-500 border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased rounded-full",
                 "hover:bg-gradient-b hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"

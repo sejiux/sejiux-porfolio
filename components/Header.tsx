@@ -10,7 +10,8 @@ import DotPattern from "./ui/dot-pattern";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
-import { FaShopify } from "react-icons/fa6";
+import Logo from "@/public/images/Logo_transparent.png";
+import Image from "next/image";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,12 +34,12 @@ const HeaderPage = () => {
                 >
                   <AnimatedShinyText 
                     className={cn(
-                      "inline-flex items-center justify-center px-4 py-1 transition ease-out hover:duration-300 hover:text-neutral-400 gap-4",
+                      "inline-flex items-center justify-center px-4 py-1 transition ease-out hover:duration-300 hover:text-neutral-400 gap-3",
                       "text-sm",
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
-                    <FaShopify className="text-green-500 text-2xl" /> Unlock Your Brand's Potential
+                    <Image src={Logo} alt="Logo of SejiuX" width={30} height={30} /> Unlock Your Brand's Potential
                   </AnimatedShinyText>
                 </Button>
               </div>
