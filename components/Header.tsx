@@ -26,7 +26,7 @@ const HeaderPage = () => {
             <div className="z-10 flex items-center justify-center">
               <div
                 className={cn(
-                  "group rounded-full border text-base text-white transition-all ease-in hover:cursor-pointer border-white/5 bg-[#111219] hover:bg-neutral-800",
+                  "group rounded-full border text-base text-white transition-all ease-in hover:cursor-pointer border-white/5 bg-[#111219] hover:bg-neutral-800 h-10",
                 )}
               >
                 <Button
@@ -34,7 +34,7 @@ const HeaderPage = () => {
                 >
                   <AnimatedShinyText 
                     className={cn(
-                      "inline-flex items-center justify-center px-4 py-1 transition ease-out hover:duration-300 hover:text-neutral-400 gap-3",
+                      "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 gap-3",
                       "text-sm",
                       "md:text-sm",
                       "2xl:text-lg"

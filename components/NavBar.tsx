@@ -18,8 +18,8 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
     <nav className={cn("w-full p-6 z-50", "px-8", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
         <Link href="/" className='flex gap-4 items-center'>
-          <Image src={Logo} alt="Logo of SejiuX" width={50} height={50} />
-          <p className={cn('font-black font-montserrat text-2xl hidden lg:block')}>SejiuX</p>
+          <Image src={Logo} alt="Logo of SejiuX" width={45} height={45} />
+          <p className={cn('font-black font-montserrat text-2xl hidden lg:block')}>Sejiux</p>
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}
@@ -38,7 +38,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
               <data.icon className={cn(
                 "text-white", 
                 "xl:text-xl",
-                "2xl:text-3xl",
+                "2xl:text-2xl",
                 "bg-gradient-to-t from-transparent via-black via-50% to-green-500 p-1 hover:text-green-500 border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased rounded-full",
                 "hover:bg-gradient-b hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"
               )} />
