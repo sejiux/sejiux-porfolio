@@ -23,7 +23,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "sejiux",
-  description: "Portfolio 2024",
+  description: "I create tailor-made headless online stores, combining unique design and performance, to offer your brand a fluid, memorable user experience tailored to your needs. Take your ecommerce to the next level!",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(montserrat.variable, "bg-black text-white font-montserrat relative")}>
+      <body className={cn(montserrat.variable, "font-montserrat relative")}>
         <Providers>
           {children}
         </Providers>
