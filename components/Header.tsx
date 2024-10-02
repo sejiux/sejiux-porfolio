@@ -10,8 +10,6 @@ import DotPattern from "./ui/dot-pattern";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
-import Logo from "@/public/images/Logo_transparent.png";
-import Image from "next/image";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
