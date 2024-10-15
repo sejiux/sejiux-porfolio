@@ -6,7 +6,7 @@ import Link from "next/link";
 import { TbMenuOrder } from "react-icons/tb";
 
 import Image from 'next/image';
-import Logo from "@/public/images/Logo_transparent.png";
+import Logo from "@/public/images/sejiuxTransparency.png";
 import { GiNinjaStar } from "react-icons/gi";
 
 interface NavBarProps {
@@ -19,7 +19,6 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
       <div className={cn("flex justify-between items-center")}>
         <Link href="/" className='flex gap-4 items-center'>
           <Image src={Logo} alt="Logo of SejiuX" width={45} height={45} />
-          <p className={cn('font-black font-montserrat text-2xl hidden lg:block')}>Sejiux</p>
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}

@@ -28,10 +28,10 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
             className="pt-6 relative w-full h-full rounded-lg shadow-lg flex flex-col justify-center items-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="space-y-4 flex flex-col">
+            <div className="space-y-2 flex flex-col">
               {linksData.map((data, index) => (
                 <Link key={index} href={data.link} className={cn(
-                  "text-5xl font-bold font-montserrat p-2",
+                  "text-4xl font-bold font-montserrat p-2",
                   pathname === data.link ? "text-white" : "text-neutral-400/50"
                 )}>
                   {data.label}

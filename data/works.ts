@@ -124,11 +124,6 @@ export const stacksData = [
     link: "https://nextjs.org/"
   },
   {
-    icon: SiRemix,
-    name: "Remix",
-    link: "https://remix.run/"
-  },
-  {
     icon: SiShadcnui,
     name: "ShadcnUi",
     link: "https://ui.shadcn.com/"
