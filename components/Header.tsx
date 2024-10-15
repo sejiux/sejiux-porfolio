@@ -10,6 +10,7 @@ import DotPattern from "./ui/dot-pattern";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
+import { SiShopify } from "react-icons/si";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,10 @@ const HeaderPage = () => {
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
-                    Unlock Your Brand's Potential
+                    <div className="flex gap-3 items-center">
+                      <SiShopify className="text-green-500/80 text-xl" />
+                      Unlock Your Brand's Potential
+                    </div>
                   </AnimatedShinyText>
                 </Button>
               </div>
