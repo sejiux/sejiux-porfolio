@@ -10,7 +10,7 @@ import DotPattern from "./ui/dot-pattern";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
-import { SiShopify } from "react-icons/si";
+import Image from "next/image";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,15 +39,15 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <SiShopify className="text-green-500/80 text-xl" />
-                      Unlock Your Brand's Potential
+                      <Image src="/images/Logo_transparent.png" alt="Logo Sejiux" width={1080} height={1080} className="size-7 text-green-500/80 text-xl opacity-70" />
+                      Boostez votre impact
                     </div>
                   </AnimatedShinyText>
                 </Button>
               </div>
             </div>
-            <h1 className={cn("text-[30px] px-2 leading-tight font-bold", "lg:px-0 lg:text-6xl", "xl:text-[75px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-white bg-clip-text text-center")}>A Memorable Ecommerce Tailored to your Brand</h1>
-            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Take your brand to the next level with a tailor-made headless store</p>
+            <h1 className={cn("text-[30px] px-2 leading-tight font-bold", "lg:px-0 lg:text-6xl", "xl:text-[75px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-white bg-clip-text text-center")}>Un Ecommerce Mémorable Adapté à votre Marque</h1>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Faites passer votre marque au niveau supérieur avec une Boutique Shopify Headless</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-52 h-12 mx-auto",
@@ -62,7 +62,7 @@ const HeaderPage = () => {
                   "bg-gradient-to-b from-transparent via-black via-50% to-green-500 border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-full",
                   "hover:bg-gradient-t hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"
                 )}>
-                Get in touch
+                Entrez en contact
                 </Link>
               </div>
             </div>

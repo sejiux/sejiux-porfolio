@@ -85,7 +85,7 @@ export const socialsData = [
 
 export const linksData = [
   {
-    link: "/", label: "Home",
+    link: "/", label: "Accueil",
   },
   {
     link: "mailto:im.sejiux@gmail.com", label: "Contact",
