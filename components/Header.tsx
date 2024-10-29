@@ -10,6 +10,8 @@ import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
 import GridPattern from "./ui/grid-pattern";
 import { Spotlight } from "./ui/Spotlight";
+import Image from 'next/image';
+import Logo from "@/public/images/sejiuxTransparency.png";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,8 +44,9 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
+                      <Image src={Logo} alt="Logo of SejiuX" width={30} height={30} />
                       <p className={cn("text-[16px] flex gap-1")}>
-                        <span className="font-bold">Shopify</span> Partner
+                        Passez au niveau supérieur
                       </p>
                     </div>
                   </AnimatedShinyText>
@@ -57,8 +60,8 @@ const HeaderPage = () => {
               "2xl:text-[100px]",
               "pointer-events-none whitespace-pre-wrap",
               "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-            )}>Boutique Headless Mémorable <br className="hidden lg:block" /> pour votre Marque</h1>
-            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Nous sommes prêts à commencer, tout ce que vous avez à faire est de le demander.</p>
+            )}>Boutique Headless Mémorable<br className="hidden lg:block" /> pour votre Marque</h1>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Nous sommes prêts à commencer, tout ce que vous avez à faire est de demander.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-52 h-12 mx-auto",

@@ -11,5 +11,5 @@
 
 .mask {
   mask-image: radial-gradient(circle, rgba(1, 8, 4, 1) 20%, rgba(1, 8, 4, 0) 70%);
-  -webkit-mask-image: radial-gradient(circle, rgba(1, 8, 4, 0.5) 15%, rgba(1, 8, 4, 1) 45%);
+  -webkit-mask-image: radial-gradient(circle, rgba(1, 8, 4, 0.7) 15%, rgba(1, 8, 4, 1) 70%);
 }
