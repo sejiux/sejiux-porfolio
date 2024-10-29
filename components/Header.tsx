@@ -8,10 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
-import Image from 'next/image';
-import Logo from "@/public/images/sejiuxTransparency.png";
 import GridPattern from "./ui/grid-pattern";
-import { Spotlight } from "./ui/Spotlight";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +16,6 @@ const HeaderPage = () => {
 
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
-      <Spotlight className="absolute top-60 left-1/4 transform -translate-x-1/2 scale-75 fill-primary/50" fill="primary" />
-      <Spotlight className="absolute top-44 left-36 transform translate-x-1/4 scale-25 fill-primary/50" fill="primary" />
-      <Spotlight className="absolute top-20 left-[35%] transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
       <GridPattern />
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14 -mt-20")}>
@@ -44,9 +38,8 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <Image src={Logo} alt="Logo of SejiuX" width={30} height={30} />
                       <p className={cn("text-[16px] flex gap-1")}>
-                        Débloquez votre potentiel
+                        <span className="font-bold">Shopify</span> Partner
                       </p>
                     </div>
                   </AnimatedShinyText>
@@ -56,12 +49,12 @@ const HeaderPage = () => {
             <h1 className={cn(
               "text-[32px] px-2 leading-tight font-bold",
               "lg:px-0 lg:text-6xl",
-              "xl:text-7xl xl:leading-[1.2]",
+              "xl:text-6xl xl:leading-[1.2]",
               "2xl:text-[100px]",
               "pointer-events-none whitespace-pre-wrap",
               "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-            )}>Une Expérience Ecommerce <br className="hidden lg:block" />Mémorable pour votre Marque</h1>
-            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Faites passer votre marque au niveau supérieur avec une Boutique Shopify Headless</p>
+            )}>Boutique Headless Mémorable <br className="hidden lg:block" /> pour votre Marque</h1>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Nous sommes prêts à commencer, tout ce que vous avez à faire est de le demander.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-52 h-12 mx-auto",

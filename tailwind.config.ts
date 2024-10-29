@@ -23,6 +23,14 @@ const config: Config = {
         montserrat: ["var(--font-ms)"],
       },
       keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
         spotlight: {
           "0%": {
             opacity: "0",
@@ -64,6 +72,7 @@ const config: Config = {
         },
       },
       animation: {
+        aurora: "aurora 60s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 8s infinite",
         backgroundPositionSpin:
