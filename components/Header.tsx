@@ -9,6 +9,7 @@ import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
 import GridPattern from "./ui/grid-pattern";
+import { Spotlight } from "./ui/Spotlight";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,9 @@ const HeaderPage = () => {
 
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+      <Spotlight className="absolute -top-10 left-40 lg:left-1/4 transform -translate-x-1/2 scale-150 fill-primary/50" fill="primary" />
+      <Spotlight className="absolute top-0 left-10 lg:left-36 transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
+      <Spotlight className="absolute top-10 -left-20 lg:left-[35%] transform translate-x-1/4 scale-150 fill-primary/50" fill="primary" />
       <GridPattern />
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14 -mt-20")}>
