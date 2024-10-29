@@ -10,8 +10,6 @@ import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
 import GridPattern from "./ui/grid-pattern";
 import { Spotlight } from "./ui/Spotlight";
-import Image from 'next/image';
-import Logo from "@/public/images/sejiuxTransparency.png";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,9 +42,8 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <Image src={Logo} alt="Logo of SejiuX" width={30} height={30} />
                       <p className={cn("text-[16px] flex gap-1")}>
-                        Passez au niveau supérieur
+                        Votre vision, sans limites
                       </p>
                     </div>
                   </AnimatedShinyText>
@@ -60,7 +57,7 @@ const HeaderPage = () => {
               "2xl:text-[100px]",
               "pointer-events-none whitespace-pre-wrap",
               "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-            )}>Boutique Headless Mémorable<br className="hidden lg:block" /> pour votre Marque</h1>
+            )}>Boutiques Headless Mémorables<br className="hidden lg:block" /> pour les Marques</h1>
             <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Nous sommes prêts à commencer, tout ce que vous avez à faire est de demander.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
@@ -68,12 +65,12 @@ const HeaderPage = () => {
                 "md:w-40 md:h-10",
                 "xl:*:text-lg xl:w-60 xl:h-14 p-[2px]",
                 "*:2xl:text-2xl 2xl:w-64 2xl:h-20", 
-                "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-full", 
+                "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-2xl", 
                 "transition-all ease-in border-white/50 bg-transparent"
               )}>
                 <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
                   "text-white", 
-                  "bg-gradient-to-b from-transparent via-black via-50% to-primary border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-full",
+                  "bg-gradient-to-b from-transparent via-black via-50% to-primary border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-2xl",
                   "hover:bg-gradient-t hover:from-primary hover:via-50% hover:via-black hover:to-transparent"
                 )}>
                 Entrez en contact

@@ -47,12 +47,12 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
               {socialsData.map((data, index) => (
                 <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
                   "p-[2px]",
-                  "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-full", 
+                  "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
                   "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800"
                 )}>
                   <data.icon className={cn(
                     "text-white", 
-                    "bg-gradient-to-t from-transparent via-black via-50% to-primary p-1 hover:text-primary border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-xl antialiased rounded-full",
+                    "bg-gradient-to-t from-transparent via-black via-50% to-primary p-1 hover:text-primary border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-4xl antialiased rounded-lg",
                     "2xl:text-2xl",
                     "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent",
                   )} />
