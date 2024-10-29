@@ -15,10 +15,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#7CEA4C",
+        background: "#010804"
+      },
       fontFamily: {
         montserrat: ["var(--font-ms)"],
       },
       keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: "0",
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
         shimmer: {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",
@@ -50,6 +64,7 @@ const config: Config = {
         },
       },
       animation: {
+        spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 8s infinite",
         backgroundPositionSpin:
           "background-position-spin 3000ms infinite alternate",

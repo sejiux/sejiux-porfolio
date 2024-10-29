@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: white;
-  background: black;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.mask {
+  mask-image: radial-gradient(circle, rgba(1, 8, 4, 1) 20%, rgba(1, 8, 4, 0) 70%);
+  -webkit-mask-image: radial-gradient(circle, rgba(1, 8, 4, 0.5) 20%, rgba(1, 8, 4, 1) 50%);
 }

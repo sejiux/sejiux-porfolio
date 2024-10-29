@@ -38,8 +38,8 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
                 "text-white", 
                 "xl:text-xl",
                 "2xl:text-2xl",
-                "bg-gradient-to-t from-transparent via-black via-50% to-green-500 p-1 hover:text-green-500 border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased rounded-full",
-                "hover:bg-gradient-b hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"
+                "bg-gradient-to-t from-transparent via-black via-50% to-primary p-1 hover:text-primary border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased rounded-full",
+                "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent"
               )} />
             </Link>
           ))}

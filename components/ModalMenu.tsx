@@ -18,7 +18,7 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="absolute lg:hidden w-full h-[100dvh] text-center bg-black bg-opacity-65 backdrop-blur-md z-30"
+          className="absolute lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-30"
           onClick={() => setIsMenuOpen(false)}
         >
           <motion.div
@@ -52,9 +52,9 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
                 )}>
                   <data.icon className={cn(
                     "text-white", 
-                    "bg-gradient-to-t from-transparent via-black via-50% to-green-500 p-1 hover:text-green-500 border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-xl antialiased rounded-full",
+                    "bg-gradient-to-t from-transparent via-black via-50% to-primary p-1 hover:text-primary border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-xl antialiased rounded-full",
                     "2xl:text-2xl",
-                    "hover:bg-gradient-b hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent",
+                    "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent",
                   )} />
                 </Link>
               ))}

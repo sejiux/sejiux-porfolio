@@ -71,7 +71,7 @@ const RadialGradient = ({
     backgroundImage: `radial-gradient(${type} ${size}px at ${origin}, ${from}, ${to})`,
   };
 
-  return <div className={`${className} bg-black`} style={styles} />;
+  return <div className={`${className} bg-background`} style={styles} />;
 };
 
 export default RadialGradient;

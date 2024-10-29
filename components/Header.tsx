@@ -5,12 +5,13 @@ import { cn } from "@/lib/utils";
 import NavBar from "./NavBar";
 import MarqueeStack from "./MarqueeStack";
 import Link from "next/link";
-// eslint-disable-next-line import/no-named-as-default
-import DotPattern from "./ui/dot-pattern";
 import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
-import Image from "next/image";
+import Image from 'next/image';
+import Logo from "@/public/images/sejiuxTransparency.png";
+import GridPattern from "./ui/grid-pattern";
+import { Spotlight } from "./ui/Spotlight";
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +19,14 @@ const HeaderPage = () => {
 
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
+      <Spotlight className="absolute top-60 left-1/4 transform -translate-x-1/2 scale-75 fill-primary/50" fill="primary" />
+      <Spotlight className="absolute top-44 left-36 transform translate-x-1/4 scale-25 fill-primary/50" fill="primary" />
+      <Spotlight className="absolute top-20 left-[35%] transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
+      <GridPattern />
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14 -mt-20")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
-          <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-6xl", "2xl:max-w-[1800px] 2xl:space-y-14")}>
+          <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14")}>
             <div className="z-10 flex items-center justify-center">
               <div
                 className={cn(
@@ -39,14 +44,23 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <Image src="/images/Logo_transparent.png" alt="Logo Sejiux" width={1080} height={1080} className="size-7 text-green-500/80 text-xl opacity-70" />
-                      Boostez votre impact
+                      <Image src={Logo} alt="Logo of SejiuX" width={30} height={30} />
+                      <p className={cn("text-[16px] flex gap-1")}>
+                        Débloquez votre potentiel
+                      </p>
                     </div>
                   </AnimatedShinyText>
                 </Button>
               </div>
             </div>
-            <h1 className={cn("text-[30px] px-2 leading-tight font-bold", "lg:px-0 lg:text-6xl", "xl:text-[75px] xl:leading-[1.12]", "2xl:text-[100px]", "pointer-events-none whitespace-pre-wrap bg-white bg-clip-text text-center")}>Un Ecommerce Mémorable Adapté à votre Marque</h1>
+            <h1 className={cn(
+              "text-[32px] px-2 leading-tight font-bold",
+              "lg:px-0 lg:text-6xl",
+              "xl:text-7xl xl:leading-[1.2]",
+              "2xl:text-[100px]",
+              "pointer-events-none whitespace-pre-wrap",
+              "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
+            )}>Une Expérience Ecommerce <br className="hidden lg:block" />Mémorable pour votre Marque</h1>
             <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Faites passer votre marque au niveau supérieur avec une Boutique Shopify Headless</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
@@ -59,8 +73,8 @@ const HeaderPage = () => {
               )}>
                 <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
                   "text-white", 
-                  "bg-gradient-to-b from-transparent via-black via-50% to-green-500 border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-full",
-                  "hover:bg-gradient-t hover:from-green-500 hover:via-50% hover:via-black hover:to-transparent"
+                  "bg-gradient-to-b from-transparent via-black via-50% to-primary border border-neutral-600/50 backdrop-blur-xl flex items-center justify-center w-full h-full text-base antialiased rounded-full",
+                  "hover:bg-gradient-t hover:from-primary hover:via-50% hover:via-black hover:to-transparent"
                 )}>
                 Entrez en contact
                 </Link>
@@ -68,7 +82,7 @@ const HeaderPage = () => {
             </div>
           </div>
         </div>
-        <DotPattern
+        {/* <DotPattern
           width={20}
           height={20}
           cx={1}
@@ -87,7 +101,7 @@ const HeaderPage = () => {
           className={cn(
             "[mask-image:linear-gradient(to_bottom_right,black,transparent,transparent)] -z-10 opacity-35",
           )}
-        />
+        /> */}
         {/* <div className={cn("hidden", "md:block")}>
           <RadialGradient className="-z-50"/>
         </div>

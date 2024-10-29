@@ -11,8 +11,8 @@ const MarqueeStack = () => {
       <div>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm", "lg:inset-x-20", "2xl:inset-x-28")}/>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4", "lg:inset-x-20", "2xl:inset-x-28")} />
-        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
-        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
       </div>
     
       <div className="flex flex-col justify-center items-center w-full h-full border-b">
@@ -28,8 +28,8 @@ const MarqueeStack = () => {
               }
             </div>
           </Marquee>
-          <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-black")} />
-          <div className={cn("pointer-events-none absolute inset-y-0 right-0 w-2/4 bg-gradient-to-l from-black")} />
+          <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-background")} />
+          <div className={cn("pointer-events-none absolute inset-y-0 right-0 w-2/4 bg-gradient-to-l from-background")} />
         </div>
                 
         <SparklesCore
@@ -41,13 +41,13 @@ const MarqueeStack = () => {
           particleColor="#FFFFFF"
         />
     
-        <div className={cn("absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,black)]", "2xl:[mask-image:radial-gradient(450px_400px_at_top,transparent_20%,black)]")} />
+        <div className={cn("absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,background)]", "2xl:[mask-image:radial-gradient(450px_400px_at_top,transparent_20%,background)]")} />
       </div>
       {/* <div>
           <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4" />
-          <div className="absolute lg:inset-x-64 xl:inset-x-[450px] bottom-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-[5px] w-1/4 blur-sm" />
-          <div className="absolute lg:inset-x-64 xl:inset-x-[450px] bottom-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-1/4" />
+          <div className="absolute lg:inset-x-64 xl:inset-x-[450px] bottom-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute lg:inset-x-64 xl:inset-x-[450px] bottom-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4" />
         </div> */}
     </div>
   );
