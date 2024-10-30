@@ -43,18 +43,19 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -70, opacity: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
-              className="absolute bottom-0 w-full flex justify-evenly items-end z-50 p-6">
+              className="absolute bottom-0 w-full flex justify-evenly items-end z-50 p-8">
               {socialsData.map((data, index) => (
                 <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
                   "p-[2px]",
                   "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
-                  "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800"
+                  "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800",
+                  "size-10 bg-gradient-to-t from-transparent via-black via-50% to-primary p-2 hover:text-primary border border-white/5 backdrop-blur-xl",
+                  "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent",
+                  "2xl:text-2xl",
                 )}>
                   <data.icon className={cn(
                     "text-white", 
-                    "bg-gradient-to-t from-transparent via-black via-50% to-primary p-1 hover:text-primary border border-white/5 backdrop-blur-xl flex items-center justify-center w-full h-full text-4xl antialiased rounded-lg",
-                    "2xl:text-2xl",
-                    "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent",
+                    "flex items-center justify-center w-full h-full text-xl antialiased",
                   )} />
                 </Link>
               ))}
