@@ -9,7 +9,7 @@ import { useState } from "react";
 import { usePathname } from 'next/navigation';
 import ModalMenu from "./ModalMenu";
 import GridPattern from "./ui/grid-pattern";
-import { Spotlight } from "./ui/Spotlight";
+/* import { Spotlight } from "./ui/Spotlight"; */
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +17,9 @@ const HeaderPage = () => {
 
   return (
     <header className={cn("min-h-[100dvh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
-      <Spotlight className="absolute -top-10 left-40 lg:left-1/4 transform -translate-x-1/2 scale-150 fill-primary/50" fill="primary" />
+      {/* <Spotlight className="absolute -top-10 left-40 lg:left-1/4 transform -translate-x-1/2 scale-150 fill-primary/50" fill="primary" />
       <Spotlight className="absolute top-0 left-10 lg:left-36 transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
-      <Spotlight className="absolute top-10 -left-20 lg:left-[35%] transform translate-x-1/4 scale-150 fill-primary/50" fill="primary" />
+      <Spotlight className="absolute top-10 -left-20 lg:left-[35%] transform translate-x-1/4 scale-150 fill-primary/50" fill="primary" /> */}
       <GridPattern />
       <NavBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14 -mt-20")}>
@@ -58,7 +58,7 @@ const HeaderPage = () => {
               "pointer-events-none whitespace-pre-wrap",
               "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
             )}>Boutiques Headless Mémorables<br className="hidden lg:block" /> pour les Marques</h1>
-            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Nous sommes prêts à commencer, tout ce que vous avez à faire est de demander.</p>
+            <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-white/85 lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je suis prêts à commencer, tout ce que vous avez à faire est de demander.</p>
             <div className="cursor-pointer z-10 h-full text-center font-medium">
               <div className={cn(
                 "w-52 h-12 mx-auto",

@@ -14,7 +14,7 @@ const MarqueeStack = () => {
         <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
       </div> */}
     
-      <div className="flex flex-col justify-center items-center w-full h-full border-b">
+      <div className="flex flex-col justify-center items-center w-full h-full">
         <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl", "2xl:max-w-[1200px]")}>
           <Marquee pauseOnHover className="[--duration:20s]">
             <div className={cn("flex items-center gap-10 px-3", "xl:gap-20 xl:px-8")}>
