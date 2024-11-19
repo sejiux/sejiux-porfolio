@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(montserrat.variable, "font-montserrat relative text-white bg-background")}>
+      <body className={cn(montserrat.variable, "font-montserrat relative text-white")}>
         <Providers>
           {children}
         </Providers>

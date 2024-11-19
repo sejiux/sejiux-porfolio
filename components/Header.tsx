@@ -11,18 +11,20 @@ import { SiShopify } from "react-icons/si";
 const HeaderPage = () => {
 
   return (
-    <header className={cn("min-h-[100dvh] flex relative flex-col justify-center gap-32 font-montserrat overflow-hidden")}>
+    <header className={cn("min-h-[100svh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
       {/* <Spotlight className="absolute -top-10 left-40 lg:left-1/4 transform -translate-x-1/2 scale-150 fill-primary/50" fill="primary" />
       <Spotlight className="absolute top-0 left-10 lg:left-36 transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
       <Spotlight className="absolute top-10 -left-20 lg:left-[35%] transform translate-x-1/4 scale-150 fill-primary/50" fill="primary" /> */}
       <GridPattern />
-      <div className={cn("px-6", "xl:px-10", "2xl:px-14 mt-20")}>
+      {/* <Image src={SejiuxLogo} alt="Logo" width={1080} height={1080} className="mx-auto w-28 h-28 mt-10"/> */}
+      <div></div>
+      <div className={cn("px-6", "xl:px-10", "2xl:px-14")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
           <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14")}>
             <div className="z-10 flex items-center justify-center">
               <div
                 className={cn(
-                  "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-14",
+                  "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
                 )}
               >
                 <Button
@@ -36,7 +38,7 @@ const HeaderPage = () => {
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <div className="border rounded-full border-neutral-700 p-1.5">
+                      <div className="border rounded-full border-neutral-700 p-1">
                         <SiShopify className="text-xl text-secondary" />
                       </div>
                       <p className={cn("text-[16px] flex gap-1")}>
@@ -60,7 +62,7 @@ const HeaderPage = () => {
             </div>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 
-              "w-80 h-12 mx-auto",
+              "w-56 h-12 mx-auto",
               "md:w-40 md:h-10",
               "xl:w-60 xl:h-14 p-[1px]",
               "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
@@ -74,7 +76,7 @@ const HeaderPage = () => {
           </div>
         </div>
       </div>
-      <div className="-space-y-4">
+      <div className="-space-y-6 mb-10">
         <MarqueeStack />
         <MarqueeStack reverse />
       </div>
