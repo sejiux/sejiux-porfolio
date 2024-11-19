@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { TbMenuOrder } from "react-icons/tb";
 
-import Image from 'next/image';
-import Logo from "@/public/images/sejiux-logo.png";
+/* import Image from 'next/image';
+import Logo from "@/public/images/sejiux-logo.png"; */
 import { GiNinjaStar } from "react-icons/gi";
 
 interface NavBarProps {
@@ -18,7 +18,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
     <nav className={cn("w-full p-6 z-50", "px-8", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
         <Link href="/" className='flex gap-4 items-center'>
-          <Image src={Logo} alt="Logo of SejiuX" width={80} height={80} />
+          {/* <Image src={Logo} alt="Logo of SejiuX" width={80} height={80} /> */}
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}
