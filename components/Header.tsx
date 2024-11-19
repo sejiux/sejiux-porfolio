@@ -57,8 +57,8 @@ const HeaderPage = () => {
                 "2xl:text-[100px]",
                 "pointer-events-none whitespace-pre-wrap",
                 "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-              )}>Boutiques Ecommerce<br className="hidden lg:block" /> Mémorables pour les Marques</h1>
-              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>je transforme votre vision en une expérience e-commerce mémorable qui marquera les esprits et captivera vos clients.</p>
+              )}>Une Expérience Ecommerce<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
+              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je crée des expériences e-commerce mémorables pour les marques avec Shopify Headless, conçues pour booster vos conversions, optimiser votre SEO et maximiser les performances.</p>
             </div>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 
