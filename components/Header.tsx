@@ -57,8 +57,8 @@ const HeaderPage = () => {
                 "2xl:text-[100px]",
                 "pointer-events-none whitespace-pre-wrap",
                 "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-              )}>Une Expérience Ecommerce<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je crée des boutiques engageantes pour les marques avec Shopify Headless, conçues pour booster les conversions, optimiser le SEO et maximiser les performances.</p>
+              )}>Une Boutique Mémorable<br className="hidden lg:block" /> pour votre Marque</h1>
+              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je crée votre boutique sur-mesure avec Shopify Headless, conçues pour booster vos conversions, optimiser votre SEO et maximiser vos performances.</p>
             </div>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 
@@ -76,7 +76,7 @@ const HeaderPage = () => {
           </div>
         </div>
       </div>
-      <div className="-space-y-5 mb-10">
+      <div className="-space-y-5 mb-4">
         <MarqueeStack />
         <MarqueeStack reverse />
       </div>
