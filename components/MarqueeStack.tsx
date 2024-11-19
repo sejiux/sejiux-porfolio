@@ -4,7 +4,7 @@ import { stacksData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const MarqueeStack = () => {
+const MarqueeStack = ({reverse}: {reverse?: boolean}) => {
   return (
     <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-32", "xl:h-24", "2xl:h-32")}>
       {/* <div>
@@ -16,12 +16,12 @@ const MarqueeStack = () => {
     
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl", "2xl:max-w-[1200px]")}>
-          <Marquee pauseOnHover className="[--duration:20s]">
-            <div className={cn("flex items-center gap-10 px-3", "xl:gap-20 xl:px-8")}>
+          <Marquee pauseOnHover className="[--duration:20s]" reverse={reverse}>
+            <div className={cn("flex items-center gap-6 px-2", "xl:gap-12 xl:px-4")}>
               {
                 stacksData.map((data, index) => (
-                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer">
-                    <data.icon key={index} className={cn("text-2xl", "lg:text-3xl", "2xl:text-5xl")} />
+                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className="border-[0.1px] border-neutral-600 rounded-[10px] p-3">
+                    <data.icon key={index} className={cn("text-xl text-white/70", "lg:text-[28px]", "2xl:text-5xl")} />
                   </Link>
                 ))
               }

@@ -18,7 +18,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
     <nav className={cn("w-full p-6 z-50", "px-8", "2xl:py-10")}>
       <div className={cn("flex justify-between items-center")}>
         <Link href="/" className='flex gap-4 items-center'>
-          <Image src={Logo} alt="Logo of SejiuX" width={45} height={45} />
+          <Image src={Logo} alt="Logo of SejiuX" width={50} height={50} />
         </Link>
         <button
           className={cn("text-3xl", "lg:hidden")}
