@@ -14,7 +14,7 @@ interface NavBarProps {
 const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
     <nav className={cn("w-full flex justify-center items-center px-10 pt-6")}>
-      <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] py-2 px-4", "lg:w-auto lg:hidden")}>
+      <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] py-3 px-4", "lg:w-auto lg:hidden")}>
         <Link href="/" className='flex gap-4 items-center'>
           <Image src={Logo} alt="Logo of SejiuX" width={1080} height={1080} className='size-8'/>
         </Link>

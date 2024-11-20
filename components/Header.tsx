@@ -74,7 +74,7 @@ const HeaderPage = () => {
           </Link>
         </div>
       </div>
-      <div className="-space-y-5 mb-1">
+      <div className="-space-y-5 mb-4">
         <MarqueeStack />
         <MarqueeStack reverse />
       </div>
