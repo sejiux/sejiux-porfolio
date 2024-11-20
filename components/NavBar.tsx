@@ -2,9 +2,10 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { TbMenuOrder } from "react-icons/tb";
+import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
-import { GiNinjaStar } from "react-icons/gi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import Logo from "@/public/images/sejiux-logo.png";
 
 interface NavBarProps {
   isMenuOpen: boolean;
@@ -12,17 +13,17 @@ interface NavBarProps {
 }
 const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
-    <nav className={cn("w-full flex justify-center items-center p-10")}>
+    <nav className={cn("w-full flex justify-center items-center px-10 pt-6")}>
       <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] py-2 px-4", "lg:w-auto lg:hidden")}>
         <Link href="/" className='flex gap-4 items-center'>
-          <Image src="/images/sejiux-logo.png" alt="Logo of SejiuX" width={1080} height={1080} className='size-10'/>
+          <Image src={Logo} alt="Logo of SejiuX" width={1080} height={1080} className='size-8'/>
         </Link>
         <p className='font-medium text-xl'>Sejiux Studio</p>
         <button
-          className={cn("text-3xl z-50", "lg:hidden")}
+          className={cn("text-2xl z-50", "lg:hidden")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <GiNinjaStar /> : <TbMenuOrder />}
+          {isMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt3 />}
         </button>
         {/* <div className={cn("hidden", "lg:flex lg:items-center lg:gap-4", "2xl:gap-6")}>
           {socialsData.map((data, index) => (

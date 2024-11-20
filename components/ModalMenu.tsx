@@ -51,7 +51,7 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
                   "transition-all ease-in",
                   "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
                   "2xl:text-2xl",
-                  "hover:bg-gradient-to-b hover:from-primary hover:to-secondary"
+                  "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
                 )}>
                   <data.icon className={cn(
                     "text-white", 
