@@ -20,7 +20,7 @@ const MarqueeStack = ({reverse}: {reverse?: boolean}) => {
             <div className={cn("flex items-center gap-6 px-2", "xl:gap-12 xl:px-4")}>
               {
                 stacksData.map((data, index) => (
-                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className="border-[0.1px] border-neutral-600 rounded-[10px] p-3">
+                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn("border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",)}>
                     <data.icon key={index} className={cn("text-xl text-white/70", "lg:text-[28px]", "2xl:text-5xl")} />
                   </Link>
                 ))

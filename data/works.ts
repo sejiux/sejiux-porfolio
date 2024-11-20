@@ -8,7 +8,6 @@ import Metawaste1 from "../public/images/metawaste1.png";
 
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
-import ReactEmail from "@/components/icons/ReactEmail";
 import { RiBearSmileLine } from "react-icons/ri";
 import { IoShield } from "react-icons/io5";
 
@@ -142,11 +141,6 @@ export const stacksData = [
     icon: SiResend,
     name: "Resend",
     link: "https://resend.com/"
-  },
-  {
-    icon: ReactEmail,
-    name: "React Email",
-    link: "https://react.email/"
   },
   {
     icon: SiReactquery,

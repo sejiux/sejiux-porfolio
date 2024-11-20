@@ -24,25 +24,26 @@ const HeaderPage = () => {
             <div className="z-10 flex items-center justify-center">
               <div
                 className={cn(
-                  "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
+                  "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-14",
                 )}
               >
                 <Button
                   borderRadius="1.75rem"
+                  className="bg-gradient-to-b from-background to-[#151518]"
                 >
                   <AnimatedShinyText 
                     className={cn(
-                      "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400",
+                      "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                       "text-sm",
                       "md:text-sm",
                       "2xl:text-lg"
                     )}>
                     <div className="flex gap-3 items-center">
-                      <div className="border rounded-full border-neutral-700 p-1">
-                        <SiShopify className="text-xl text-secondary" />
+                      <div className="rounded-full border-b border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] p-2">
+                        <SiShopify className={cn("text-lg text-secondary")} />
                       </div>
-                      <p className={cn("text-[16px] flex gap-1")}>
-                        Partenaire Shopify
+                      <p className={cn("text-sm flex gap-1", "lg:text-base")}>
+                        Partenaire Shopify Dev
                       </p>
                     </div>
                   </AnimatedShinyText>
@@ -51,14 +52,14 @@ const HeaderPage = () => {
             </div>
             <div className={cn("space-y-6 pb-4")}>
               <h1 className={cn(
-                "text-[28px] px-2 leading-tight font-bold",
+                "text-[28px] px-2 leading-tight font-semibold",
                 "lg:px-0 lg:text-6xl",
                 "xl:text-6xl xl:leading-[1.2]",
                 "2xl:text-[100px]",
                 "pointer-events-none whitespace-pre-wrap",
-                "bg-gradient-to-b from-white/70 via-white via-50% to-white/70 bg-clip-text text-transparent text-center"
-              )}>Une Boutique Mémorable<br className="hidden lg:block" /> pour votre Marque</h1>
-              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je crée votre boutique sur-mesure avec Shopify Headless, conçues pour booster vos conversions, optimiser votre SEO et maximiser vos performances.</p>
+                "text-white text-center"
+              )}>Une Boutique Shopify Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
+              <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je vais développer une boutique sur-mesure qui boostera vos performances, optimisera votre SEO et maximisera vos conversions.</p>
             </div>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 
@@ -71,12 +72,12 @@ const HeaderPage = () => {
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
               "hover:bg-primary hover:shadow-custom-primary",
             )}>
-                Entrez en contact
+                Travaillons Ensemble
             </Link>
           </div>
         </div>
       </div>
-      <div className="-space-y-5 mb-4">
+      <div className="-space-y-5 mb-2">
         <MarqueeStack />
         <MarqueeStack reverse />
       </div>
