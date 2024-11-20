@@ -48,10 +48,10 @@ const ModalMenu = ({isMenuOpen, setIsMenuOpen, pathname}: ModalMenuProps) => {
                 <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
                   "p-[2px]",
                   "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
-                  "transition-all ease-in border-white/5 bg-neutral-900 hover:bg-neutral-800",
-                  "size-10 bg-gradient-to-t from-transparent via-black via-50% to-primary p-2 hover:text-primary border border-white/5 backdrop-blur-xl",
-                  "hover:bg-gradient-b hover:from-primary hover:via-50% hover:via-black hover:to-transparent",
+                  "transition-all ease-in",
+                  "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
                   "2xl:text-2xl",
+                  "hover:bg-gradient-to-b hover:from-primary hover:to-secondary"
                 )}>
                   <data.icon className={cn(
                     "text-white", 

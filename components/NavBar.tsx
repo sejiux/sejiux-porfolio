@@ -1,12 +1,9 @@
 "use client";
 import React, { Dispatch, SetStateAction } from 'react';
-import { socialsData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { TbMenuOrder } from "react-icons/tb";
-
-/* import Image from 'next/image';
-import Logo from "@/public/images/sejiux-logo.png"; */
+import Image from 'next/image';
 import { GiNinjaStar } from "react-icons/gi";
 
 interface NavBarProps {
@@ -15,18 +12,19 @@ interface NavBarProps {
 }
 const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   return (
-    <nav className={cn("w-full p-6 z-50", "px-8", "2xl:py-10")}>
-      <div className={cn("flex justify-between items-center")}>
+    <nav className={cn("w-full flex justify-center items-center p-10")}>
+      <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] py-2 px-4", "lg:w-auto lg:hidden")}>
         <Link href="/" className='flex gap-4 items-center'>
-          {/* <Image src={Logo} alt="Logo of SejiuX" width={80} height={80} /> */}
+          <Image src="/images/sejiux-logo.png" alt="Logo of SejiuX" width={1080} height={1080} className='size-10'/>
         </Link>
+        <p className='font-medium text-xl'>Sejiux Studio</p>
         <button
-          className={cn("text-3xl", "lg:hidden")}
+          className={cn("text-3xl z-50", "lg:hidden")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <GiNinjaStar /> : <TbMenuOrder />}
         </button>
-        <div className={cn("hidden", "lg:flex lg:items-center lg:gap-4", "2xl:gap-6")}>
+        {/* <div className={cn("hidden", "lg:flex lg:items-center lg:gap-4", "2xl:gap-6")}>
           {socialsData.map((data, index) => (
             <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
               "p-[2px]",
@@ -43,7 +41,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
               )} />
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -6,18 +6,19 @@ import MarqueeStack from "./MarqueeStack";
 import Link from "next/link";
 import GridPattern from "./ui/grid-pattern";
 import { SiShopify } from "react-icons/si";
-/* import { Spotlight } from "./ui/Spotlight"; */
+import NavBar from "./NavBar";
+import { useState } from "react";
+import ModalMenu from "./ModalMenu";
+import { usePathname } from "next/navigation";
 
 const HeaderPage = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className={cn("min-h-[100svh] flex relative flex-col justify-between font-montserrat overflow-hidden")}>
-      {/* <Spotlight className="absolute -top-10 left-40 lg:left-1/4 transform -translate-x-1/2 scale-150 fill-primary/50" fill="primary" />
-      <Spotlight className="absolute top-0 left-10 lg:left-36 transform translate-x-1/4 scale-75 fill-primary/50" fill="primary" />
-      <Spotlight className="absolute top-10 -left-20 lg:left-[35%] transform translate-x-1/4 scale-150 fill-primary/50" fill="primary" /> */}
       <GridPattern />
-      {/* <Image src={SejiuxLogo} alt="Logo" width={1080} height={1080} className="mx-auto w-28 h-28 mt-10"/> */}
-      <div></div>
+      <NavBar isMenuOpen={isOpenModal} setIsMenuOpen={setIsOpenModal} />
       <div className={cn("px-6", "xl:px-10", "2xl:px-14")}>
         <div className={cn("flex flex-col justify-center items-center text-center flex-grow")}>
           <div className={cn("text-center space-y-10", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14")}>
@@ -50,7 +51,7 @@ const HeaderPage = () => {
                 </Button>
               </div>
             </div>
-            <div className={cn("space-y-6 pb-4")}>
+            <div className={cn("space-y-4 pb-2")}>
               <h1 className={cn(
                 "text-[28px] px-2 leading-tight font-semibold",
                 "lg:px-0 lg:text-6xl",
@@ -81,6 +82,12 @@ const HeaderPage = () => {
         <MarqueeStack />
         <MarqueeStack reverse />
       </div>
+      {isOpenModal && (
+        <ModalMenu
+          isMenuOpen={isOpenModal}
+          setIsMenuOpen={setIsOpenModal}
+          pathname={pathname} />
+      )}
     </header>
   );
 };
