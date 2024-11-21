@@ -11,7 +11,7 @@ import NavBar from "./NavBar";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterPullup from "./ui/letter-pullup";
-import ModalMenu from "./ModalMenu";
+import {MotionDivProps} from "./ModalMenu";
 import { usePathname } from 'next/navigation';
 import { BorderBeam } from "./ui/border-beam";
 
@@ -144,13 +144,15 @@ const WorksPage = ({ works }: WorksPageProps) => {
                 )}
                 <AnimatePresence>
                   {position === currentIndex && (
-                    <motion.h5 className={cn("absolute text-xl h-auto w-full py-4 text-center antialiased font-medium  top-[40%]", "xs:text-3xl", "sm:text-4xl", "md:top-[37%] md:text-6xl", "lg:text-7xl", "xl:text-9xl xl:top-[30%]", index !== currentIndex && "hidden")} style={{
+                    <div className={cn("absolute text-xl h-auto w-full py-4 text-center antialiased font-medium  top-[40%]", "xs:text-3xl", "sm:text-4xl", "md:top-[37%] md:text-6xl", "lg:text-7xl", "xl:text-9xl xl:top-[30%]", index !== currentIndex && "hidden")} style={{
                       textShadow: "0 0 5px rgba(27, 27, 46, 0.5), 0 0 10px rgba(27, 27, 46, 0.4), 0 0 15px rgba(27, 27, 46, 0.3)"
                     }}>
-                      <LetterPullup key={index} words={work.title} delay={0.05} duration={0.6} className={cn(
-                        "text-center drop-shadow-sm md:leading-[5rem] font-bold",
-                      )} />
-                    </motion.h5>
+                      <motion.h5>
+                        <LetterPullup key={index} words={work.title} delay={0.05} duration={0.6} className={cn(
+                          "text-center drop-shadow-sm md:leading-[5rem] font-bold",
+                        )} />
+                      </motion.h5>
+                    </div>
                   )}
                 </AnimatePresence>
               </Link>
@@ -211,7 +213,7 @@ const WorksPage = ({ works }: WorksPageProps) => {
         />
         <RadialGradient className="-z-50" />
       </section>
-      <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <MotionDivProps pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
   );
 };

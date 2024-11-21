@@ -8,15 +8,17 @@ import GridPattern from "./ui/grid-pattern";
 import { SiShopify } from "react-icons/si";
 import NavBar from "./NavBar";
 import { useState } from "react";
-import ModalMenu from "./ModalMenu";
+import { MotionDivProps } from "./ModalMenu";
 import { usePathname } from "next/navigation";
+
+export const experimental_ppr = true;
 
 const HeaderPage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const pathname = usePathname();
 
   return (
-    <header className={cn("font-montserrat overflow-hidden min-h-[100svh] flex relative flex-col justify-between")}>
+    <header className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between")}>
       <GridPattern />
       <NavBar isMenuOpen={isOpenModal} setIsMenuOpen={setIsOpenModal} />
       <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
@@ -37,7 +39,7 @@ const HeaderPage = () => {
                   "md:text-sm",
                   "2xl:text-lg"
                 )}>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center px-2">
                   <div className="rounded-full border-b border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] p-1.5">
                     <SiShopify className={cn("text-lg text-primary")} />
                   </div>
@@ -57,7 +59,7 @@ const HeaderPage = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
         )}>Une Boutique Shopify Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je vais développer une boutique sur-mesure qui boostera vos performances, optimisera votre SEO et maximisera vos conversions.</p>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et dites bonjour aux boutiques telles que vous les avez toujours voulues.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
             "text-white", 
@@ -79,7 +81,7 @@ const HeaderPage = () => {
         <MarqueeStack reverse />
       </div>
       {isOpenModal && (
-        <ModalMenu
+        <MotionDivProps
           isMenuOpen={isOpenModal}
           setIsMenuOpen={setIsOpenModal}
           pathname={pathname} />
