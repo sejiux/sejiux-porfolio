@@ -6,6 +6,40 @@
   .text-balance {
     text-wrap: balance;
   }
+  .rotate-25 {
+    transform: translateX(-50%) rotate(25deg);
+  }
+  .-rotate-25 {
+    transform: translateX(-50%) rotate(-25deg);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px) translateX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flicker {
+  0% { opacity: 0.7; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.7; }
+}
+
+.particle {
+  animation: fall 10s linear infinite;
+}
+
+.animate-flicker {
+  animation: flicker 3s infinite alternate;
 }
 
 html {

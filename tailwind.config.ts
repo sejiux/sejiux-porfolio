@@ -15,6 +15,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'spotlight-wide': 'radial-gradient(ellipse at 50% 0%, rgba(149, 191, 71, 0.5) 0%, rgba(94, 142, 62, 0.2) 40%, transparent 70%)',
+      },
       boxShadow: {
         'custom-primary': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(149, 191, 71, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(149, 191, 71, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(149, 191, 71, 0.5) 0px 8px 40px -2.5px, rgba(149, 191, 71, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(149, 191, 71, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(149, 191, 71, 0.5) 0px -8px 40px -2.5px',
         'custom-secondary': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(94, 142, 62, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px 8px 40px -2.5px, rgba(94, 142, 62, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px -8px 40px -2.5px',
