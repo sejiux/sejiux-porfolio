@@ -37,7 +37,7 @@ const HeaderPage = () => {
                   "md:text-sm",
                   "2xl:text-lg"
                 )}>
-                <div className="flex gap-3 items-center px-2">
+                <div className="flex gap-3 items-center lg:px-2">
                   <div className="rounded-full border-b border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] p-1.5">
                     <SiShopify className={cn("text-lg text-primary")} />
                   </div>

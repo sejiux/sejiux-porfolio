@@ -24,14 +24,14 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
           className="absolute lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-30"
           onClick={handleCloseMenu}
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <div
+            className="pt-6 relative w-full h-full rounded-lg shadow-lg flex flex-col justify-center items-center"
+            onClick={handleStopPropagation}
           >
-            <div
-              className="pt-6 relative w-full h-full rounded-lg shadow-lg flex flex-col justify-center items-center"
-              onClick={handleStopPropagation}
+            <motion.div
+              initial={{ opacity: 0, y: -70 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
             >
               <div className="space-y-2 flex flex-col">
                 {linksData.map((data, index) => (
@@ -48,35 +48,37 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
                   </Link>
                 ))}
               </div>
-              <div className="absolute bottom-0 w-full flex justify-evenly items-end z-50 p-8">
+              <div className="absolute bottom-0 left-0 w-full z-50 p-8">
                 <motion.div
                   initial={{ x: -70, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -70, opacity: 0 }}
                   transition={{ delay: 0.5, duration: 0.2 }}
                 >
-                  {socialsData.map((data, index) => (
-                    <Link
-                      key={index}
-                      href={data.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={cn(
-                        "p-[2px]",
-                        "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
-                        "transition-all ease-in",
-                        "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
-                        "2xl:text-2xl",
-                        "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
-                      )}
-                    >
-                      <data.icon className="text-white flex items-center justify-center w-full h-full text-xl antialiased" />
-                    </Link>
-                  ))}
+                  <div className="flex justify-evenly items-end">
+                    {socialsData.map((data, index) => (
+                      <Link
+                        key={index}
+                        href={data.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn(
+                          "p-[2px]",
+                          "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
+                          "transition-all ease-in",
+                          "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
+                          "2xl:text-2xl",
+                          "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
+                        )}
+                      >
+                        <data.icon className="text-white flex items-center justify-center w-full h-full text-xl antialiased" />
+                      </Link>
+                    ))}
+                  </div>
                 </motion.div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       )}
     </>
