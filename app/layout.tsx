@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { Providers } from "@/components/Providers";
 
 const montserrat = Montserrat({
   weight: [
@@ -33,11 +32,9 @@ export default function RootLayout({
   
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={cn(montserrat.variable, "font-montserrat relative text-white")}>
-        <Providers>
-          {children}
-        </Providers>
+        {children}
       </body>
     </html>
   );

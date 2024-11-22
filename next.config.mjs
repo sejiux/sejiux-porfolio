@@ -1,14 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      // Activer le React Compiler
-      reactCompiler: true,
-      // Ou en mode opt-in
-      reactCompiler: {
-        compilationMode: 'annotation'
-      },
-      ppr: 'incremental'
-    }
-  };
+  experimental: {
+    // Activer le React Compiler
+    reactCompiler: true,
+  }
+};
 
 export default nextConfig;

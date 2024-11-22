@@ -5,13 +5,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { GrPrevious, GrNext } from "react-icons/gr";
 // eslint-disable-next-line import/no-named-as-default
-import DotPattern from "./ui/dot-pattern";
 import RadialGradient from "./ui/radial-gradient";
 import NavBar from "./NavBar";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterPullup from "./ui/letter-pullup";
-import {MotionDivProps} from "./ModalMenu";
+import {ModalMenu} from "./ModalMenu";
 import { usePathname } from 'next/navigation';
 import { BorderBeam } from "./ui/border-beam";
 
@@ -191,29 +190,9 @@ const WorksPage = ({ works }: WorksPageProps) => {
             </div>
           </div>
         </div>
-        <DotPattern
-          width={20}
-          height={20}
-          cx={1}
-          cy={1}
-          cr={1}
-          className={cn(
-            "[mask-image:linear-gradient(to_bottom_left,white,transparent,transparent)] -z-10 opacity-35",
-          )}
-        />
-        <DotPattern
-          width={20}
-          height={20}
-          cx={1}
-          cy={1}
-          cr={1}
-          className={cn(
-            "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] -z-10 opacity-35",
-          )}
-        />
         <RadialGradient className="-z-50" />
       </section>
-      <MotionDivProps pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
   );
 };

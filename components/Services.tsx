@@ -3,8 +3,6 @@ import React from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 
-export const experimental_ppr = true;
-
 const Services = () => {
   return (
     <section className={cn("flex flex-col justify-center pb-44")}>
@@ -42,8 +40,8 @@ const Services = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
-        )}>L’avènement d’une nouvelle <br className="hidden lg:block" /> ère pour votre Boutique</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment je redéfinis l’e-commerce avec Shopify Headless en apportant des solutions uniques et une forte valeur ajoutée pour votre marque.</p>
+        )}>L’avènement d’une nouvelle<br className="hidden lg:block" /> ère pour votre Boutique</h1>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment je redéfinis l’e-commerce en offrant des solutions uniques et une valeur ajoutée à votre marque.</p>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@
   },
   "extends": [
     "next", 
+    "next/typescript",
     "prettier",
     "plugin:import/typescript",
     "plugin:import/errors",
