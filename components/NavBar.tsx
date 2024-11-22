@@ -18,7 +18,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
         <Link href="/" className='flex gap-4 items-center'>
           <Image src={Logo} alt="Logo of SejiuX" width={1080} height={1080} className='w-8 h-7'/>
         </Link>
-        <p className='font-semibold text-2xl'>sejiux</p>
+        <p className='font-black text-white/90 text-2xl'>sejiux</p>
         <button
           className={cn("text-2xl z-50", "lg:hidden")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}

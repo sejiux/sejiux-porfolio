@@ -1,11 +1,7 @@
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 import type { Config } from "tailwindcss";
 
-const svgToDataUri = require("mini-svg-data-uri");
- 
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
+import svgToDataUri from "mini-svg-data-uri";
 
 const config: Config = {
   content: [
@@ -15,11 +11,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      mixBlendMode: {
+        'plus-lighter': 'plus-lighter',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'spotlight-wide': 'radial-gradient(ellipse at 50% 0%, rgba(149, 191, 71, 0.5) 0%, rgba(94, 142, 62, 0.2) 40%, transparent 70%)',
       },
       boxShadow: {
+        'custom-background-secondary': 'rgba(255, 255, 255, 0.32) 4px 4px 18px 0px inset, rgba(2, 17, 8, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(2, 17, 8, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(2, 17, 8, 0.5) 0px 8px 40px -2.5px, rgba(2, 17, 8, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(2, 17, 8, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(2, 17, 8, 0.5) 0px -8px 40px -2.5px',
+        'custom-background': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(21, 21, 24, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(21, 21, 24, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(21, 21, 24, 0.5) 0px 8px 40px -2.5px, rgba(21, 21, 24, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(21, 21, 24, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(21, 21, 24, 0.5) 0px -8px 40px -2.5px',
         'custom-primary': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(149, 191, 71, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(149, 191, 71, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(149, 191, 71, 0.5) 0px 8px 40px -2.5px, rgba(149, 191, 71, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(149, 191, 71, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(149, 191, 71, 0.5) 0px -8px 40px -2.5px',
         'custom-secondary': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(94, 142, 62, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px 8px 40px -2.5px, rgba(94, 142, 62, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px -8px 40px -2.5px',
         'custom-world': 'rgba(255, 255, 255, 0.28) 4px 4px 18px 0px inset, rgba(94, 142, 62, 0.5) 0px 0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px 1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px 8px 40px -2.5px, rgba(94, 142, 62, 0.5) 0px -0.48175px 2.40875px -0.833333px, rgba(94, 142, 62, 0.5) 0px -1.83083px 9.15413px -1.66667px, rgba(94, 142, 62, 0.5) 0px -8px 40px -2.5px',
@@ -27,7 +28,9 @@ const config: Config = {
       colors: {
         primary: "#95BF47",
         secondary: "#5e8e3e",
-        background: "#010804"
+        background: "#010804",
+        backgroundSecondary: "#021108",
+        subtitle: "#767881"
       },
       fontFamily: {
         montserrat: ["var(--font-ms)"],
@@ -95,19 +98,23 @@ const config: Config = {
   },
   plugins: [
     addVariablesForColors,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           "bg-grid": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           "bg-grid-small": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           "bg-dot": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
@@ -120,10 +127,10 @@ const config: Config = {
   ],
 };
 export default config;
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
  

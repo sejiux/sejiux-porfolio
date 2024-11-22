@@ -52,16 +52,16 @@ const HeaderPage = () => {
         <h1 className={cn(
           "text-[28px] px-2 leading-tight font-semibold",
           "lg:px-0 lg:text-6xl",
-          "xl:text-6xl xl:leading-[1.2]",
+          "xl:text-6xl xl:leading-[1.3]",
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
         )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-white/65 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
             "text-white", 
-            "w-64 h-12 mx-auto",
+            "w-[80%] h-12 mx-auto",
             "md:w-40 md:h-10",
             "xl:w-60 xl:h-14 p-[1px]",
             "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
