@@ -181,6 +181,91 @@ export const ToolsData = [
   },
 ];
 
+export const BenefitsData = [
+  {
+    symbole: "+", 
+    percentage: "30%",
+    title: "Taux de Conversion", 
+  },
+  {
+    symbole: "+", 
+    percentage: "50%",
+    title: "Performances Optimisées", 
+  },
+  {
+    symbole: "+", 
+    percentage: "40%",
+    title: "Engagement Client", 
+  },
+  {
+    symbole: "+", 
+    percentage: "80%",
+    title: "Identité renforcée", 
+  },
+];
+
+export const PricesFixeData = [
+  {
+    title: "Mono Produit", 
+    content: "Shopify me permet de créer des boutiques en ligne performantes et personnalisées.", 
+    options: [
+      {
+        icon: "",
+        title: "Copywriting"
+      },
+      {
+        icon: "",
+        title: "Design"
+      },
+      {
+        icon: "",
+        title: "Développement"
+      },
+      {
+        icon: "",
+        title: "Seo"
+      },
+      {
+        icon: "",
+        title: "2 mois support"
+      },
+      {
+        icon: "",
+        title: "Délivré en 1 mois"
+      }
+    ],
+    price: "4950€",
+    link: "https://www.shopify.com/",
+    icon: SiShopify, 
+  },
+  {
+    title: "Multi Produit", 
+    content: "Figma est mon outil de design collaboratif pour créer des interfaces modernes et sur-mesure.",
+    options: [
+      {
+        icon: "",
+        title: ""
+      }
+    ], 
+    price: "7950€",
+    link: "https://www.figma.com/",
+    icon: FaFigma, 
+  },
+  {
+    title: "Maintenance", 
+    content: "Next.js me permet de créer des sites rapides et optimisés avec un rendu côté serveur.", 
+    options: [
+      {
+        icon: "",
+        title: ""
+      }
+    ],
+    price: "250€/m",
+    link: "https://nextjs.org/",
+    icon: SiNextdotjs, 
+  },
+];
+
 export const socialsData = [
   {
     link: "https://github.com/sejiux", icon: FaGithub,

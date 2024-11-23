@@ -4,10 +4,21 @@ import { cn } from '@/lib/utils';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import CardTools from './card/CardTools';
+import GridPattern from './ui/grid-pattern';
+import Particles from './Particles';
+import Spotlights from './Spotlights';
 
 const Tools = () => {
   return (
-    <section className={cn("flex flex-col justify-center")}>
+    <section className={cn("-z-10 relative flex flex-col justify-center")}>
+      <div className='flex flex-col items-center justify-center'>
+        <div className='bg-background h-4 lg:h-10 z-50 -mt-1 w-full' />
+        <Spotlights />
+        <Particles />
+      </div>
+      <div className={cn("pt-20")}>
+        <GridPattern />
+      </div>
       <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
         <div className="z-10 flex items-center justify-center">
           <div

@@ -5,7 +5,7 @@ const Spotlights = () => {
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 250 163"
       fill="none"
-      className="absolute -top-14 w-[1000px] h-auto"
+      className="absolute top-0 w-96 lg:w-[1000px] h-auto"
     >
       <g filter="url(#a)">
         <path 

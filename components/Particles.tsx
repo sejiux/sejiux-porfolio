@@ -22,7 +22,7 @@ const Particles = () => {
   }, []);
       
   return (
-    <div className={cn("particles-container absolute -top-20 left-1/2 w-14 h-[400px] transform -translate-x-1/2")} />
+    <div className={cn("particles-container absolute -top-0 left-1/2 w-14 h-[400px] transform -translate-x-1/2 bg-gradient-to-b")} />
   );
 };
 

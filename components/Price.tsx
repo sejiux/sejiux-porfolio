@@ -4,13 +4,15 @@ import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import { ServicesData } from '@/data/works';
 import CardServices from './card/CardServices';
-import HorizonSection from './HorizonSection';
+import Particles from './Particles';
+import GridPattern from './ui/grid-pattern';
 
-const Services = () => {
+const Price = () => {
   return (
-    <section className={cn("flex flex-col justify-center pt-20", "lg:pt-0")}>
-      <div className={cn('relative pb-24 hidden', "lg:pb-28 lg:block")}>
-        <HorizonSection />
+    <section className={cn("relative flex flex-col justify-center pt-20 border-t border-neutral-600/30", "lg:pt-0")}>
+      <Particles />
+      <div className={cn("pt-20")}>
+        <GridPattern />
       </div>
       <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
         <div className="z-10 flex items-center justify-center">
@@ -32,7 +34,7 @@ const Services = () => {
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
-                  Rejoignez la révolution
+                  Tarification
                   </p>
                 </div>
               </AnimatedShinyText>
@@ -46,8 +48,8 @@ const Services = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
-        )}>L’Avènement d’une Nouvelle<br className="hidden lg:block" /> Ère pour votre Ecommerce</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
+        )}>Des options de tarification <br className="hidden lg:block" /> transparentes</h1>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez nos plans tarifaires compétitifs conçus pour répondre aux différents besoins et budgets des entreprises.</p>
         <div className={cn("relative py-14 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3")}>
           {/* <div className='absolute blur-xl -z-10 w-full mx-auto flex justify-center'>
             <div className='bg-gradient size-[1000px] border rounded-full'/>
@@ -66,4 +68,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Price;

@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils';
 import { FC } from 'react';
 import { IconType } from 'react-icons/lib/iconBase';
-import GridPattern from '../ui/grid-pattern';
 
 interface CardToolsProps {
     title: string;
@@ -15,9 +14,8 @@ const CardTools: FC<CardToolsProps> = ({
   icon: Icon
 }) => {
   return (
-    <div className={cn("w-full relative rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 border border-neutral-600/30", "lg:p-6")}>
-      <GridPattern />
-      <div className={cn("w-full pb-4 flex gap-6 items-center")}>
+    <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 border border-neutral-600/30", "lg:p-6")}>
+      <div className={cn("w-full flex gap-6 items-center")}>
         <div className={cn("size-14 flex justify-center items-center border-t border-neutral-600/30 bg-gradient-to-b from-[#151518]/10 via-background via-50% to-[#151518]/50 rounded-[10px] cursor-pointer",
           "hover:bg-primary *:hover:text-white",
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
