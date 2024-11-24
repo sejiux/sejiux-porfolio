@@ -14,10 +14,10 @@ const CardTools: FC<CardToolsProps> = ({
   icon: Icon
 }) => {
   return (
-    <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 border border-neutral-600/30", "lg:p-6")}>
+    <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 bg-gradient-to-bl from-transparent via-transparent via-50% to-white/[0.05] border border-neutral-600/30", "lg:p-8")}>
       <div className={cn("w-full flex gap-6 items-center")}>
-        <div className={cn("size-14 flex justify-center items-center border-t border-neutral-600/30 bg-gradient-to-b from-[#151518]/10 via-background via-50% to-[#151518]/50 rounded-[10px] cursor-pointer",
-          "hover:bg-primary *:hover:text-white",
+        <div className={cn("size-12 flex justify-center items-center border-b border-white/80 bg-gradient-to-b from-primary to-secondary rounded-[10px] cursor-pointer",
+          "hover:bg-primary hover:shadow-custom-primary *:hover:text-white",
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
           "transition-all ease-in ",
           "lg:size-15"
@@ -26,9 +26,7 @@ const CardTools: FC<CardToolsProps> = ({
         </div>
         <h3 className={cn("text-xl font-semibold", "lg:text-[22px]")}>{title}</h3>
       </div>
-      <div className={cn("space-y-3")}>
-        <p className={cn("text-subtitle font-normal pb-4", "lg:text-lg")}>{content}</p>
-      </div>
+      <p className={cn("text-subtitle font-normal pt-3", "lg:text-lg")}>{content}</p>
     </div>
   );
 };

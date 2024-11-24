@@ -8,9 +8,9 @@ import ContraSvg from './ContraSvg';
 
 const About = () => {
   return (
-    <section className={cn("px-6 flex flex-col justify-center pb-44 space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-start lg:justify-between")}>
+    <section className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
       <Image src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("rounded-3xl border-2 border-neutral-600/30")} />
-      <div className={cn("space-y-6", "xl:px-14", "2xl:max-w-[1800px] 2xl:space-y-14")}>
+      <div className={cn("space-y-6", "xl:px-14 xl:space-y-8", "2xl:max-w-[1800px]")}>
         <h1 className={cn(
           "text-[28px] px-2 leading-normal font-semibold ",
           "text-white",
@@ -28,7 +28,7 @@ const About = () => {
           ))}
         </div>
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base lg:px-0 text-subtitle lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>
-        Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé Sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Mon expérience m’a enseigné la rigueur et l’excellence, que je mets au service de boutiques e-commerce performantes et captivantes. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
+        Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé Sejiux Studio pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
           <Link href="https://contra.com/sejiux_gm3hme5l" prefetch={true} className={cn(
             "text-white flex gap-2 items-center", 

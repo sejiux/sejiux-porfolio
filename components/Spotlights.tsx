@@ -5,7 +5,7 @@ const Spotlights = () => {
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 250 163"
       fill="none"
-      className="absolute top-0 w-96 lg:w-[1000px] h-auto"
+      className="absolute -top-2 w-96 lg:w-[1000px] h-auto blur-sm"
     >
       <g filter="url(#a)">
         <path 
@@ -28,8 +28,8 @@ const Spotlights = () => {
           y2="140" 
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#fff" stopOpacity=".14"/>
-          <stop offset="1" stopColor="#010804" stopOpacity="0"/>
+          <stop stopColor="#95BF47" stopOpacity=".14"/>
+          <stop offset="1" stopColor="#95BF47" stopOpacity="0"/>
         </linearGradient>
         <linearGradient 
           id="d" 
@@ -39,8 +39,8 @@ const Spotlights = () => {
           y2="153" 
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#fff" stopOpacity=".14"/>
-          <stop offset="1" stopColor="#010804" stopOpacity="0"/>
+          <stop stopColor="#95BF47" stopOpacity=".25"/>
+          <stop offset="1" stopColor="#95BF47" stopOpacity="0"/>
         </linearGradient>
         <filter 
           id="a" 

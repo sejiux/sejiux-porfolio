@@ -13,17 +13,13 @@ export default function Home() {
       <div className="space-y-10 lg:space-y-52">
         <HeaderPage />
         <Services />
-        <Processus />
         <Benefit />
-      </div>
-      <div className="space-y-10 lg:space-y-52">
-        {/* <Price /> */}
         <Tools />
+        <Processus />
+        {/* <Price /> */}
         <About />
+        <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>
-      <div className="space-y-10 lg:space-y-52">
-      </div>
-      <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
     </Suspense>
   );
 }

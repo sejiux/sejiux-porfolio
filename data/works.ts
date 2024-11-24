@@ -83,7 +83,7 @@ export const ServicesData = [
   },
   {
     title: "SEO Optimisé", 
-    content: "Une stratégie SEO avancée qui améliore votre visibilité en ligne, garantissant des classements des classements de choix pour attirer un trafic organique ciblé.", 
+    content: "Une stratégie SEO avancée qui améliore votre visibilité en ligne, garantissant des classements de choix pour attirer un trafic organique ciblé.", 
     icon: TfiBarChart, 
   },
   {

@@ -8,7 +8,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const Benefit = () => {
   return (
-    <section className={cn("px-6 w-full flex flex-col-reverse pb-20 space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:justify-between lg:justify-items-end lg:items-start")}>
+    <section className={cn("px-6 w-full flex flex-col-reverse space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:justify-between lg:justify-items-end lg:gap-10 lg:items-start")}>
       <div className={cn('w-full flex flex-col gap-4 pt-20 pb-10', 'lg:py-0 lg:grid lg:grid-cols-2')}>
         {BenefitsData.map((data, index) => (
           <CardBenefit
@@ -54,7 +54,7 @@ const Benefit = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
         )}>Le Futur du Commerce en Ligne</h1>
-        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Redéfinissez l'expérience d'achat en ligne avec des avantages qui propulsent votre boutique.</p>
+        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Transformez l'expérience d'achat en ligne de votre marque avec des avantages qui propulsent votre boutique.</p>
         <div className={cn("flex items-center flex-wrap gap-4")}>
           {[
             {title: "Une personnalisation sans limites"},
