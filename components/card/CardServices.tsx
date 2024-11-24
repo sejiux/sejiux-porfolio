@@ -13,7 +13,7 @@ const CardServices: FC<CardServicesProps> = ({
   icon: Icon
 }) => {
   return (
-    <div className={cn("w-full rounded-3xl flex flex-col justify-center items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-bl from-transparent via-transparent via-70% to-white/[0.05]", "lg:px-4 lg:py-5")}>
+    <div className={cn("w-full rounded-3xl flex flex-col justify-center items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518]", "lg:px-4 lg:py-5")}>
       <div className={cn("p-6", "lg:p-10")}>
         <div className={cn("size-14 flex justify-center items-center border-b border-white/80 bg-gradient-to-b from-primary to-secondary rounded-[10px] cursor-pointer",
           "hover:bg-primary hover:shadow-custom-primary *:hover:text-white",
@@ -21,7 +21,7 @@ const CardServices: FC<CardServicesProps> = ({
           "transition-all ease-in ",
           "lg:size-15"
         )}>
-          <Icon className={cn("text-3xl mx-auto text-white", "2xl:text-5xl")} />
+          <Icon className={cn("text-2xl mx-auto text-white", "2xl:text-5xl")} />
         </div>
       </div>
       <div className={cn("space-y-3")}>

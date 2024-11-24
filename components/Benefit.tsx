@@ -60,7 +60,7 @@ const Benefit = () => {
             {title: "Une personnalisation sans limites"},
             {title: "Un accompagnement dédié"},
             {title: "Des tarifs flexibles"},
-            {title: "Des mises à jour régulières"},
+            {title: "Des solutions évolutives"},
           ].map((data, index) => (
             <div key={index} className={cn('flex items-center mx-auto gap-2', "lg:mx-0")}>
               <FaCheckCircle className='text-primary text-xl' />

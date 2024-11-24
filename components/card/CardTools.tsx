@@ -14,7 +14,7 @@ const CardTools: FC<CardToolsProps> = ({
   icon: Icon
 }) => {
   return (
-    <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 bg-gradient-to-bl from-transparent via-transparent via-50% to-white/[0.05] border border-neutral-600/30", "lg:p-8")}>
+    <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30", "lg:p-8")}>
       <div className={cn("w-full flex gap-6 items-center")}>
         <div className={cn("size-12 flex justify-center items-center border-b border-white/80 bg-gradient-to-b from-primary to-secondary rounded-[10px] cursor-pointer",
           "hover:bg-primary hover:shadow-custom-primary *:hover:text-white",
@@ -22,7 +22,7 @@ const CardTools: FC<CardToolsProps> = ({
           "transition-all ease-in ",
           "lg:size-15"
         )}>
-          <Icon className={cn("text-3xl text-white", "2xl:text-5xl")} />
+          <Icon className={cn("text-2xl text-white", "2xl:text-5xl")} />
         </div>
         <h3 className={cn("text-xl font-semibold", "lg:text-[22px]")}>{title}</h3>
       </div>
