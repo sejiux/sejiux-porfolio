@@ -1,20 +1,16 @@
+"use client";
 import { cn } from '@/lib/utils';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
-import { ServicesData } from '@/data/works';
-import CardServices from './card/CardServices';
-import Particles from './Particles';
-import GridPattern from './ui/grid-pattern';
+import { PricesFixeData } from '@/data/works';
+import CardPrice from './card/CardPrice';
 
 const Price = () => {
+  const [modeSelected, setModeSelected] = useState(0);
   return (
-    <section className={cn("relative flex flex-col justify-center pt-20 border-t border-neutral-600/30", "lg:pt-0")}>
-      <Particles />
-      <div className={cn("pt-20")}>
-        <GridPattern />
-      </div>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
+    <section className={cn("relative flex flex-col justify-center")}>
+      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(
@@ -48,20 +44,47 @@ const Price = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
-        )}>Des options de tarification <br className="hidden lg:block" /> transparentes</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez nos plans tarifaires compétitifs conçus pour répondre aux différents besoins et budgets des entreprises.</p>
-        <div className={cn("relative py-14 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3")}>
-          {/* <div className='absolute blur-xl -z-10 w-full mx-auto flex justify-center'>
-            <div className='bg-gradient size-[1000px] border rounded-full'/>
-          </div> */}
-          {ServicesData.map((data, index) => (
-            <CardServices
-              key={index}
-              title={data.title}
-              content={data.content}
-              icon={data.icon}
-            />
-          ))}
+        )}>Des tarifs clairs et accessibles <br className="hidden lg:block" /> pour un Impact Mesurable</h1>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
+        <div className={cn("space-y-1 pt-8")}>
+          <div className='mx-auto w-max rounded-full flex items-center bg-[#151518] p-2'>
+            {[
+              {
+                id: 0,
+                title: "Standard"
+              },
+              {
+                id: 1,
+                title: "Mensuel"
+              },
+            ].map((data, index) => (
+              <div key={index} className={cn("py-3 px-6 rounded-full cursor-pointer", modeSelected === data.id && "bg-neutral-600/30")} onClick={() => setModeSelected(data.id)}>
+                <p className={cn("text-lg", modeSelected === data.id ? "text-white" : "text-subtitle/80")}>{data.title}</p>
+              </div>
+            ))}
+          </div>
+          <div className={cn("relative py-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2")}>
+            {PricesFixeData(modeSelected).map((data, index) => (
+              <CardPrice
+                key={index}
+                title={data.title}
+                price={data.price}
+                content={data.content}
+                link={data.link}
+                options={data.options}
+                modeSelected={modeSelected}
+                infoPrice={data.infoPrice}
+              />
+            ))}
+            <div className="col-span-2 max-w-xl w-full mx-auto">
+              <CardPrice
+                title="Maintenance"
+                price="250"
+                content="Bénéficiez d'un support technique et de mises à jour régulières pour une expérience utilisateur optimale."
+                link="mailto:im.sejiux@gmail.com"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

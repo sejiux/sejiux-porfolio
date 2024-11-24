@@ -26,7 +26,7 @@ const CardTools: FC<CardToolsProps> = ({
         </div>
         <h3 className={cn("text-xl font-semibold", "lg:text-[22px]")}>{title}</h3>
       </div>
-      <p className={cn("text-subtitle font-normal pt-3", "lg:text-lg")}>{content}</p>
+      <p className={cn("text-subtitle/80 font-normal pt-3", "lg:text-lg")}>{content}</p>
     </div>
   );
 };

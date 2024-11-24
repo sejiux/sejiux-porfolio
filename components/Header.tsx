@@ -57,9 +57,9 @@ const HeaderPage = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
         )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
+          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
             "md:w-40 md:h-10",

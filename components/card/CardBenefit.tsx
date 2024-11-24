@@ -17,7 +17,7 @@ const CardBenefit: FC<CardBenefitProps> = ({
       <div className={cn("w-full flex gap-6 justify-center items-center")}>
         <h6 className={cn("text-[58px] font-bold")}><span className={cn("text-primary")}>{symbole}</span>{percentage}</h6>
       </div>
-      <h3 className={cn("text-lg text-subtitle")}>{title}</h3>
+      <h3 className={cn("text-lg text-subtitle/80")}>{title}</h3>
     </div>
   );
 };

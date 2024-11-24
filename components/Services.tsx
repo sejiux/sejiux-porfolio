@@ -47,7 +47,7 @@ const Services = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center"
         )}>L’Avènement d’une Nouvelle<br className="hidden lg:block" /> Ère pour votre Ecommerce</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
         <div className={cn("relative pt-14 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3")}>
           {/* <div className='absolute blur-xl -z-10 w-full mx-auto flex justify-center'>
             <div className='bg-gradient size-[1000px] border rounded-full'/>

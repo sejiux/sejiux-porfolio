@@ -30,7 +30,9 @@ const config: Config = {
         secondary: "#5e8e3e",
         background: "#010804",
         backgroundSecondary: "#021108",
-        subtitle: "#767881"
+        subtitle: "#aeb0b6",
+        subtitleCard: "#767881",
+        subtitlePrice: "#797b85"
       },
       fontFamily: {
         montserrat: ["var(--font-ms)"],

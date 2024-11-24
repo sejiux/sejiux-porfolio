@@ -1,11 +1,12 @@
 import HeaderPage from "@/components/Header";
 import About from "@/components/About";
-/* import Price from "@/components/Price"; */
+import Price from "@/components/Price";
 import Processus from "@/components/Processus";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
 import { Suspense } from "react";
 import Benefit from "@/components/Benefit";
+import CardCTA from "@/components/card/CardCTA";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
         <Benefit />
         <Tools />
         <Processus />
-        {/* <Price /> */}
+        <CardCTA />
+        <Price />
         <About />
         <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>

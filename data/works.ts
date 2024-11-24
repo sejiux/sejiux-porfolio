@@ -124,12 +124,12 @@ export const ProcessusData = [
   },
   {
     title: "Développement", 
-    content: "Une fois le design validé, je transforme le design en code fluide et optimisé.", 
+    content: "Une fois le design validé, je transforme le design en code au pixel près.", 
     step: "4",
     icon: RiCodeSSlashLine, 
   },
   {
-    title: "Déploiement et Hébergement", 
+    title: "Déploiement", 
     content: "Votre projet est déployé, hébergée et transférée sur votre compte.", 
     step: "5",
     icon: HiOutlineCloudUpload, 
@@ -204,66 +204,90 @@ export const BenefitsData = [
   },
 ];
 
-export const PricesFixeData = [
+export const PricesFixeData = (modeSelected?: number) => [
   {
-    title: "Mono Produit", 
-    content: "Shopify me permet de créer des boutiques en ligne performantes et personnalisées.", 
+    title: "Mono-Produit", 
+    price: modeSelected ? "495" : "4950",
+    infoPrice: "Pendant 10 mois sans frais", 
+    content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
+    link: "mailto:im.sejiux@gmail.com",
     options: [
       {
-        icon: "",
-        title: "Copywriting"
+        title: "Copywriting Persuasif"
       },
       {
-        icon: "",
-        title: "Design"
+        title: "Design Sur-Mesure"
       },
       {
-        icon: "",
-        title: "Développement"
+        title: "Développement Responsive"
       },
       {
-        icon: "",
-        title: "Seo"
+        title: modeSelected ? "Licence d'utilisation" : "Propriétés totale"
       },
       {
-        icon: "",
-        title: "2 mois support"
+        title: "Protection contre la duplication"
       },
       {
-        icon: "",
-        title: "Délivré en 1 mois"
-      }
+        title: "1 Mois de Support Inclus"
+      },
+      {
+        title: "Optimisation SEO"
+      },
+      {
+        title: "Délivré en 1 Mois"
+      },
+      {
+        title: "Blog avec le CMS Strapi"
+      },
     ],
-    price: "4950€",
-    link: "https://www.shopify.com/",
-    icon: SiShopify, 
   },
   {
-    title: "Multi Produit", 
-    content: "Figma est mon outil de design collaboratif pour créer des interfaces modernes et sur-mesure.",
+    title: "Multi-Produit", 
+    price:  modeSelected ? "795" : "7950",
+    infoPrice: "Pendant 10 mois sans frais",
+    content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
+    link: "mailto:im.sejiux@gmail.com",
     options: [
       {
-        icon: "",
-        title: ""
-      }
+        title: "Pack Complet Monoproduit"
+      },
+      {
+        title: "Intégration des Collections"
+      },
+      {
+        title: "Gestion de Catalogue Avancée"
+      },
+      {
+        title: "Système de Catégorisation"
+      },
+      {
+        title: "Fonctionnalités de Cross-Selling"
+      },
+      {
+        title: "Filtres et Recherche Produits"
+      },
+      {
+        title: "2 Mois de Support Inclus"
+      },
+      {
+        title: "Optimisation SEO Avancée"
+      },
+      {
+        title: "Délivré en 2 Mois"
+      },
     ], 
-    price: "7950€",
-    link: "https://www.figma.com/",
-    icon: FaFigma, 
   },
-  {
+  /* {
     title: "Maintenance", 
+    price: "250€/m",
     content: "Next.js me permet de créer des sites rapides et optimisés avec un rendu côté serveur.", 
+    link: "https://nextjs.org/",
     options: [
       {
-        icon: "",
         title: ""
       }
     ],
-    price: "250€/m",
-    link: "https://nextjs.org/",
-    icon: SiNextdotjs, 
-  },
+  }, */
 ];
 
 export const socialsData = [

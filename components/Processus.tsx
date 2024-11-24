@@ -44,7 +44,7 @@ const Processus = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
         )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h1>
-        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
+        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
             "text-white", 
