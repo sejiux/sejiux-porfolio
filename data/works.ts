@@ -1,10 +1,3 @@
-import ImmoTouch from "../public/images/immotouch.png";
-import Kabriol from "../public/images/kabriol.png";
-import Keeskee from "../public/images/keeskee2.png";
-import Themify1 from "../public/images/themify1.png";
-import Societech from "../public/images/societech1.png";
-import Revamapp from "../public/images/revamapp.png";
-import Metawaste1 from "../public/images/metawaste1.png";
 import { FaCode, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
@@ -16,60 +9,6 @@ import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
-import SejiuxLogo from "@/public/images/sejiux.png";
-
-export const worksData = [
-  {
-    title: "Themify", 
-    category: "Product", 
-    date: "2023", 
-    pictures: Themify1, 
-    href: "https://github.com/slmrsv/Themify",
-    color: "rgba(120,119,198,0.3)"
-  },
-  {
-    title: "ImmoTouch", 
-    category: "Web application", 
-    date: "2023", 
-    pictures: ImmoTouch, 
-    href: "https://www.immotouch.fr/",
-  },
-  {
-    title: "Keeskee", 
-    category: "Web application", 
-    date: "2023", 
-    pictures: Keeskee, 
-    href: "https://www.keeskee.com/"
-  },
-  {
-    title: "Revam'App", 
-    category: "Web application", 
-    date: "2022", 
-    pictures: Revamapp, 
-    href: "https://www.nge.fr/innovation/"
-  },
-  {
-    title: "Societech", 
-    category: "Landing page", 
-    date: "2022", 
-    pictures: Societech, 
-    href: "https://societech.fr/"
-  },
-  {
-    title: "Kabriol", 
-    category: "Web application", 
-    date: "2022", 
-    pictures: Kabriol, 
-    href: "https://www.webkabriol.fr/"
-  },
-  {
-    title: "Metawaste", 
-    category: "Back office", 
-    date: "2022", 
-    pictures: Metawaste1, 
-    href: "https://metawaste.com/fr/"
-  },
-];
 
 export const ServicesData = [
   {
@@ -211,28 +150,23 @@ export const WhyData = [
     lists: [
       {
         icon: IoClose,
-        content: "Design prédéfini, commun et duplicable",
-        image: "",
+        content: "Thème prédéfini, commun et duplicable",
       },
       {
         icon: IoClose,
         content: "Pages lentes et peu optimisées",
-        image: "",
       },
       {
         icon: IoClose,
         content: "Assistance et mises à jour restreintes",
-        image: "",
       },
       {
         icon: IoClose,
         content: "Optimisations SEO de base",
-        image: "",
       },
       {
         icon: IoClose,
         content: "Mise en place rapide et coût initial réduit",
-        image: "",
       },
     ], 
   },
@@ -241,28 +175,23 @@ export const WhyData = [
     lists: [
       {
         icon: FaPaintBrush,
-        content: "Design sur-mesure, unique et exclusif",
-        image: SejiuxLogo,
+        content: "Thème sur-mesure, unique et exclusif",
       },
       {
         icon: FaRocket,
         content: "Pages ultra-rapides et hautement optimisées",
-        image: SejiuxLogo,
       },
       {
         icon: FaHeadphonesAlt,
         content: "Assistance et mises à jour complètes",
-        image: SejiuxLogo,
       },
       {
         icon: FaSearch,
         content: "Optimisations SEO avancées et performantes",
-        image: SejiuxLogo,
       },
       {
         icon: FaMoneyBillAlt,
         content: "Coût initial plus élevé mais valeur ajoutée",
-        image: SejiuxLogo,
       },
     ], 
   },
@@ -271,7 +200,7 @@ export const WhyData = [
 export const PricesFixeData = (modeSelected?: number) => [
   {
     title: "Mono-Produit", 
-    price: modeSelected ? "400" : "4950",
+    price: modeSelected ? "495" : "4950",
     infoPrice: "Pendant 10 mois sans frais", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
     link: "mailto:im.sejiux@gmail.com",
@@ -307,7 +236,7 @@ export const PricesFixeData = (modeSelected?: number) => [
   },
   {
     title: "Multi-Produit", 
-    price:  modeSelected ? "700" : "7950",
+    price:  modeSelected ? "795" : "7950",
     infoPrice: "Pendant 10 mois sans frais",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
     link: "mailto:im.sejiux@gmail.com",
@@ -341,17 +270,6 @@ export const PricesFixeData = (modeSelected?: number) => [
       },
     ], 
   },
-  /* {
-    title: "Maintenance", 
-    price: "250€/m",
-    content: "Next.js me permet de créer des sites rapides et optimisés avec un rendu côté serveur.", 
-    link: "https://nextjs.org/",
-    options: [
-      {
-        title: ""
-      }
-    ],
-  }, */
 ];
 
 export const socialsData = [

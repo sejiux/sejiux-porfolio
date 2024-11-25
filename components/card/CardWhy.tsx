@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import Image, { StaticImageData } from 'next/image';
 import { FC } from 'react';
 import { IconType } from 'react-icons/lib/iconBase';
 
@@ -7,7 +6,6 @@ interface CardWhyProps {
     lists: {
         icon: IconType;
         content: string;
-        image: StaticImageData | string;
     }[];
     title: string;
 }
@@ -32,11 +30,7 @@ const CardWhy: FC<CardWhyProps> = ({
             title === "Sejiux" ? "bg-gradient-to-r from-secondary/50 via-transparent via-70% to-transparent" : "bg-gradient-to-r from-[#151518]/70 via-transparent via-70% to-transparent" : "bg-transparent"
         )}>
           <div> 
-            {list.image ? (
-              <Image src={list.image} alt="logo sejiux" width={1080} height={1080} className='w-7 h-6' />
-            ) : (
-              <list.icon className={cn('text-2xl font-medium', title === "Autres Agences" ? "text-subtitlePrice" : "text-white")} />
-            )}
+            <list.icon className={cn('text-xl font-medium', title === "Autres Agences" ? "text-subtitlePrice" : "text-white")} />
           </div>
           <p className={cn("font-medium text-left", "lg:text-lg", title === "Autres Agences" ? "text-subtitlePrice" : "text-white")}>{list.content}</p>
         </div>

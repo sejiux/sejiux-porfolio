@@ -8,6 +8,7 @@ import { Suspense } from "react";
 import Benefit from "@/components/Benefit";
 import CardCTA from "@/components/card/CardCTA";
 import WhyMe from "@/components/WhyMe";
+import CaseStudy from "@/components/CaseStudy";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Benefit />
         <Tools />
         <Processus />
+        <CaseStudy />
         <CardCTA />
         <Price />
         <WhyMe />
