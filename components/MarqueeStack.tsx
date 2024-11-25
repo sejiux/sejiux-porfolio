@@ -3,8 +3,23 @@ import Marquee from "@/components/ui/marquee";
 import { stacksData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { FC, useEffect, useState } from "react";
 
-const MarqueeStack = ({reverse}: {reverse?: boolean}) => {
+interface MarqueeStackProps {
+  reverse?: boolean;
+  title?: boolean;
+}
+const MarqueeStack: FC<MarqueeStackProps> = ({
+  reverse,
+  title
+}) => {
+  const [shiftedData, setShiftedData] = useState(stacksData);
+
+  useEffect(() => {
+    const shuffled = [...stacksData].sort(() => Math.random() - 0.5);
+    setShiftedData(shuffled);
+  }, []); 
+
   return (
     <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-32", "xl:h-24", "2xl:h-32")}>
       {/* <div>
@@ -16,15 +31,19 @@ const MarqueeStack = ({reverse}: {reverse?: boolean}) => {
     
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl", "2xl:max-w-[1200px]")}>
-          <Marquee pauseOnHover className="[--duration:20s]" reverse={reverse}>
-            <div className={cn("flex items-center gap-6 px-2", "xl:gap-12 xl:px-4")}>
+          <Marquee pauseOnHover className={cn("[--duration:20s]", title && "[--duration:60s]")} reverse={reverse}>
+            <div className={cn("flex items-center gap-6 px-2", "lg:gap-12 lg:px-4", 
+              title && "gap-3 px-0 lg:gap-4 lg:px-2"
+            )}>
               {
-                stacksData.map((data, index) => (
+                shiftedData.map((data, index) => (
                   <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
                     "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
-                    "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
+                    "hover:bg-gradient-to-b hover:from-secondary hover:to-primary",
+                    title && "flex gap-3 items-center px-6"
                   )}>
-                    <data.icon key={index} className={cn("text-xl text-white/70", "lg:text-[28px]", "2xl:text-5xl")} />
+                    <data.icon key={index} className={cn("text-xl text-white/70", "lg:text-[28px]", title && "lg:text-2xl")} />
+                    {title && <p className="font-medium py-2 text-lg">{data.name}</p>}
                   </Link>
                 ))
               }

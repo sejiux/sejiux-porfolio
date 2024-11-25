@@ -1,4 +1,4 @@
-import { FaCode, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
+import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine } from "react-icons/ri";
@@ -9,6 +9,9 @@ import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
+import HomeHellopurly from "@/public/images/hellopurly-home.png";
+import ProductHellopurly from "@/public/images/hellopurly-product.png";
+import MobileHelloPurly from "@/public/images/hellopurly-mobile.png";
 
 export const ServicesData = [
   {
@@ -45,7 +48,7 @@ export const ServicesData = [
 
 export const ProcessusData = [
   {
-    title: "Prise de contact", 
+    title: "Contact", 
     content: "Nous échangeons pour définir vos besoins, votre vision et vos objectifs.", 
     step: "1",
     icon: MdOutlineChatBubbleOutline, 
@@ -75,49 +78,10 @@ export const ProcessusData = [
     icon: HiOutlineCloudUpload, 
   },
   {
-    title: "Livraison clé en main", 
+    title: "Livraison", 
     content: "Votre boutique est prête à accueillir vos clients et générer des ventes.", 
     step: "6",
     icon: GiKey, 
-  },
-];
-
-export const ToolsData = [
-  {
-    title: "Shopify", 
-    content: "Shopify me permet de créer des boutiques en ligne performantes et personnalisées.", 
-    link: "https://www.shopify.com/",
-    icon: SiShopify, 
-  },
-  {
-    title: "Figma", 
-    content: "Figma est mon outil de design collaboratif pour créer des interfaces modernes et sur-mesure.", 
-    link: "https://www.figma.com/",
-    icon: FaFigma, 
-  },
-  {
-    title: "NextJs", 
-    content: "Next.js me permet de créer des sites rapides et optimisés avec un rendu côté serveur.", 
-    link: "https://nextjs.org/",
-    icon: SiNextdotjs, 
-  },
-  {
-    title: "Tailwindcss", 
-    content: "TailwindCSS me permet de concevoir des interfaces réactives et personnalisées rapidement.", 
-    link: "https://tailwindcss.com/",
-    icon: SiTailwindcss, 
-  },
-  {
-    title: "GitHub", 
-    content: "GitHub me permet de gérer le code source et le versioning des projets en toute simplicité.", 
-    link: "https://github.com/",
-    icon: FaGithub, 
-  },
-  {
-    title: "Vercel", 
-    content: "Vercel est la plateforme que j’utilise pour déployer des applications Next.js avec des performances optimales.", 
-    link: "https://vercel.com/",
-    icon: SiVercel, 
   },
 ];
 
@@ -194,6 +158,21 @@ export const WhyData = [
         content: "Coût initial plus élevé mais valeur ajoutée",
       },
     ], 
+  },
+];
+
+export const CaseStudyData = [
+  {
+    image: MobileHelloPurly, 
+    alt: "First Image of Hellopurly",
+  },
+  {
+    image: HomeHellopurly, 
+    alt: "Third Image of Hellopurly",  
+  },
+  {
+    image: ProductHellopurly, 
+    alt: "Four Image of Hellopurly",
   },
 ];
 
@@ -409,5 +388,10 @@ export const stacksData = [
     icon: SiBlender,
     name: "Blender",
     link: "https://www.blender.org/"
+  },
+  {
+    icon: FaJira,
+    name: "Jira",
+    link: "https://www.atlassian.com/software/jira"
   },
 ];

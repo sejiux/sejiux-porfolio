@@ -13,11 +13,11 @@ import CaseStudy from "@/components/CaseStudy";
 export default function Home() {
   return (
     <Suspense>
-      <div className="space-y-14 lg:space-y-52">
+      <div className="space-y-14 lg:space-y-44">
         <HeaderPage />
         <Services />
-        <Benefit />
         <Tools />
+        <Benefit />
         <Processus />
         <CaseStudy />
         <CardCTA />

@@ -46,7 +46,7 @@ const WhyMe = () => {
         {/* absolute left-1/2 transform -translate-x-1/2 */}
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez pourquoi ma méthode surpasse les offres des agences conventionnelles.</p>
         <div className={cn("relative py-14 w-full flex flex-col gap-8", "lg:gap-4 lg:grid lg:grid-cols-2 lg:justify-between")}>
-          <div className='hidden lg:block absolute left-1/2 transform -translate-x-1/2 z-50 top-14 border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
+          <div className='hidden lg:block absolute left-1/2 transform -translate-x-1/2 z-50 top-[65px] border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
           {WhyData.map((data, index) => (
             <CardWhy
               key={index}
