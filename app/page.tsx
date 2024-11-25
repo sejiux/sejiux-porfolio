@@ -7,6 +7,7 @@ import Tools from "@/components/Tools";
 import { Suspense } from "react";
 import Benefit from "@/components/Benefit";
 import CardCTA from "@/components/card/CardCTA";
+import WhyMe from "@/components/WhyMe";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Processus />
         <CardCTA />
         <Price />
+        <WhyMe />
         <About />
         <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>

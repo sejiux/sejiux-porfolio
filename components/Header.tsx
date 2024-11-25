@@ -55,7 +55,7 @@ const HeaderPage = () => {
           "xl:text-6xl xl:leading-[1.3]",
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
-          "text-white text-center"
+          "text-white text-center",
         )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>

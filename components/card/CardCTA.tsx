@@ -11,7 +11,7 @@ const CardCTA = () => {
           <GridPattern gradient />
           <div className={cn("space-y-14")}>
             <h3 className={cn('mx-auto max-w-4xl text-left text-xl font-semibold leading-normal', "lg:leading-[1.4]", "xl:leading-[1.4] lg:text-4xl lg:text-center")}>
-            Chaque boutique est le fruit d'une réflexion et d'une exécution sur-mesure, pour des résultats bien au-delà des boutiques e-commerce classiques.
+            Chaque boutique est le fruit d'une réflexion et d'une exécution sur-mesure, pour des résultats bien au-delà des boutiques ecommerce classiques.
             </h3>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 

@@ -5,17 +5,18 @@ import Themify1 from "../public/images/themify1.png";
 import Societech from "../public/images/societech1.png";
 import Revamapp from "../public/images/revamapp.png";
 import Metawaste1 from "../public/images/metawaste1.png";
-import { FaCode, FaLock, FaShopify } from "react-icons/fa6";
-import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt } from "react-icons/fa";
+import { FaCode, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
+import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine } from "react-icons/ri";
 import { AiOutlineAppstore, AiOutlineSketch } from "react-icons/ai";
-import { IoShield } from "react-icons/io5";
+import { IoClose, IoShield } from "react-icons/io5";
 import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
+import SejiuxLogo from "@/public/images/sejiux.png";
 
 export const worksData = [
   {
@@ -204,10 +205,73 @@ export const BenefitsData = [
   },
 ];
 
+export const WhyData = [
+  {
+    title: "Autres Agences",
+    lists: [
+      {
+        icon: IoClose,
+        content: "Design prédéfini, commun et duplicable",
+        image: "",
+      },
+      {
+        icon: IoClose,
+        content: "Pages lentes et peu optimisées",
+        image: "",
+      },
+      {
+        icon: IoClose,
+        content: "Assistance et mises à jour restreintes",
+        image: "",
+      },
+      {
+        icon: IoClose,
+        content: "Optimisations SEO de base",
+        image: "",
+      },
+      {
+        icon: IoClose,
+        content: "Mise en place rapide et coût initial réduit",
+        image: "",
+      },
+    ], 
+  },
+  {
+    title: "Sejiux",
+    lists: [
+      {
+        icon: FaPaintBrush,
+        content: "Design sur-mesure, unique et exclusif",
+        image: SejiuxLogo,
+      },
+      {
+        icon: FaRocket,
+        content: "Pages ultra-rapides et hautement optimisées",
+        image: SejiuxLogo,
+      },
+      {
+        icon: FaHeadphonesAlt,
+        content: "Assistance et mises à jour complètes",
+        image: SejiuxLogo,
+      },
+      {
+        icon: FaSearch,
+        content: "Optimisations SEO avancées et performantes",
+        image: SejiuxLogo,
+      },
+      {
+        icon: FaMoneyBillAlt,
+        content: "Coût initial plus élevé mais valeur ajoutée",
+        image: SejiuxLogo,
+      },
+    ], 
+  },
+];
+
 export const PricesFixeData = (modeSelected?: number) => [
   {
     title: "Mono-Produit", 
-    price: modeSelected ? "495" : "4950",
+    price: modeSelected ? "400" : "4950",
     infoPrice: "Pendant 10 mois sans frais", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
     link: "mailto:im.sejiux@gmail.com",
@@ -243,7 +307,7 @@ export const PricesFixeData = (modeSelected?: number) => [
   },
   {
     title: "Multi-Produit", 
-    price:  modeSelected ? "795" : "7950",
+    price:  modeSelected ? "700" : "7950",
     infoPrice: "Pendant 10 mois sans frais",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
     link: "mailto:im.sejiux@gmail.com",

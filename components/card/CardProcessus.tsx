@@ -25,7 +25,7 @@ const CardProcessus: FC<CardProcessusProps> = ({
             "transition-all ease-in ",
             "lg:size-15"
           )}>
-            <Icon className={cn("text-2xl text-primary", "2xl:text-5xl")} />
+            <Icon className={cn("text-2xl text-primary")} />
           </div>
           <div className={cn("text-sm py-2 px-6 bg-gradient-to-b from-primary to-secondary border-b border-white/30 rounded-full", "lg:text-base")}>
             <p className='font-semibold'>Étape {step}</p>

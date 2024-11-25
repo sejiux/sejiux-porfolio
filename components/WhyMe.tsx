@@ -1,18 +1,14 @@
-import { cn } from '@/lib/utils';
+import { WhyData } from '@/data/works';
 import React from 'react';
+import { cn } from '@/lib/utils';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
-import { ServicesData } from '@/data/works';
-import CardServices from './card/CardServices';
-import HorizonSection from './HorizonSection';
+import CardWhy from './card/CardWhy';
 
-const Services = () => {
+const WhyMe = () => {
   return (
-    <section className={cn("flex flex-col justify-center pt-20", "lg:pt-0")}>
-      <div className={cn('relative pb-24 hidden', "lg:pb-28 lg:block")}>
-        <HorizonSection />
-      </div>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
+    <section className={cn("-z-10 relative flex flex-col justify-center")}>
+      <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-0 xl:max-w-7xl")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(
@@ -32,7 +28,7 @@ const Services = () => {
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
-                  Rejoignez la révolution
+                  Pourquoi Sejiux ?
                   </p>
                 </div>
               </AnimatedShinyText>
@@ -46,18 +42,16 @@ const Services = () => {
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>L’Avènement d’une Nouvelle<br className="hidden lg:block" /> Ère pour votre Ecommerce</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
-        <div className={cn("relative pt-14 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3")}>
-          {/* <div className='absolute blur-xl -z-10 w-full mx-auto flex justify-center'>
-            <div className='bg-gradient size-[1000px] border rounded-full'/>
-          </div> */}
-          {ServicesData.map((data, index) => (
-            <CardServices
+        )}>Au-Delà De Vos Attentes,<br className="hidden lg:block" /> Plus Loin Que Les Agences</h1>
+        {/* absolute left-1/2 transform -translate-x-1/2 */}
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez pourquoi ma méthode surpasse les offres des agences conventionnelles.</p>
+        <div className={cn("relative py-14 w-full flex flex-col gap-8", "lg:gap-4 lg:grid lg:grid-cols-2 lg:justify-between")}>
+          <div className='hidden lg:block absolute left-1/2 transform -translate-x-1/2 z-50 top-14 border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
+          {WhyData.map((data, index) => (
+            <CardWhy
               key={index}
+              lists={data.lists}
               title={data.title}
-              content={data.content}
-              icon={data.icon}
             />
           ))}
         </div>
@@ -66,4 +60,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default WhyMe;

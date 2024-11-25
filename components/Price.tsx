@@ -43,8 +43,8 @@ const Price = () => {
           "xl:text-5xl xl:leading-[1.4]",
           "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
-          "text-white text-center"
-        )}>Des tarifs clairs et accessibles <br className="hidden lg:block" /> pour un Impact Mesurable</h1>
+          "text-white text-center",
+        )}>Des Tarifs Clairs et Accessibles<br className="hidden lg:block" /> pour un Impact Mesurable</h1>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
         <div className={cn("space-y-1 pt-8")}>
           <div className='mx-auto w-max rounded-full flex items-center bg-[#151518] p-2'>

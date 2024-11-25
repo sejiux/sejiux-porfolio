@@ -13,9 +13,9 @@ const CardServices: FC<CardServicesProps> = ({
   icon: Icon
 }) => {
   return (
-    <div className={cn("w-full rounded-3xl flex flex-col justify-center items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-bl from-neutral-600/30 via-transparent via-50% to-[#151518]", "lg:px-4 lg:py-5")}>
+    <div className={cn("w-full rounded-3xl flex flex-col justify-center items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-bl from-transparent via-transparent via-50% to-[#151518]", "lg:px-4 lg:py-5")}>
       <div className={cn("p-6", "lg:p-10")}>
-        <div className={cn("size-14 flex justify-center items-center border-b border-primary bg-gradient-to-bl from-neutral-600/30 to-[#151518] rounded-[10px] cursor-pointer",
+        <div className={cn("size-14 flex justify-center items-center border-b border-primary bg-gradient-to-bl from-background to-[#151518] rounded-[10px] cursor-pointer",
           "hover:bg-primary hover:shadow-custom-primary *:hover:text-white",
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
           "transition-all ease-in ",
