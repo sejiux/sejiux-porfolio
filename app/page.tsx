@@ -21,8 +21,8 @@ export default function Home() {
         <Processus />
         <CaseStudy />
         <CardCTA />
-        <Price />
         <WhyMe />
+        <Price />
         <About />
         <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>

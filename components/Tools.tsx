@@ -41,7 +41,7 @@ const Tools = () => {
           "lg:px-0 lg:text-6xl lg:text-left",
           "xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
-        )}><span className='text-primary'>23</span> Outils au Service  <br className="hidden lg:block" />de l'Excellence</h1>
+        )}><span className='text-primary'>23</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h1>
         <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(

@@ -14,8 +14,8 @@ const About = () => {
         <div className={cn("space-y-4", "lg:space-y-6")}>
           <h1 className={cn(
             "text-xl leading-normal font-medium",
-            "text-subtitleCard",
-            "lg:px-0 lg:text-6xl",
+            "text-white/80",
+            "lg:px-0 lg:text-4xl",
             "xl:text-3xl xl:leading-[1.4]",
             "2xl:text-[100px]",
             "pointer-events-none whitespace-pre-wrap",
