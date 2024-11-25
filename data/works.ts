@@ -88,22 +88,22 @@ export const ProcessusData = [
 export const BenefitsData = [
   {
     symbole: "+", 
-    percentage: "30%",
+    percentage: "30",
     title: "Taux de Conversion", 
   },
   {
     symbole: "+", 
-    percentage: "50%",
+    percentage: "50",
     title: "Performances Optimisées", 
   },
   {
     symbole: "+", 
-    percentage: "40%",
+    percentage: "40",
     title: "Engagement Client", 
   },
   {
     symbole: "+", 
-    percentage: "80%",
+    percentage: "80",
     title: "Identité renforcée", 
   },
 ];

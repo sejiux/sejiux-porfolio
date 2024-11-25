@@ -19,7 +19,7 @@ const CaseStudy = () => {
 
   return (
     <section className={cn("relative flex flex-col justify-center")}>
-      <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-0 xl:max-w-7xl")}>
+      <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-0 xl:max-w-7xl")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(

@@ -12,7 +12,7 @@ const Services = () => {
       <div className={cn('relative pb-24 hidden', "lg:pb-28 lg:block")}>
         <HorizonSection />
       </div>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
+      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(

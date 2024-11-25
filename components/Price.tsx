@@ -10,7 +10,7 @@ const Price = () => {
   const [modeSelected, setModeSelected] = useState(0);
   return (
     <section className={cn("relative flex flex-col justify-center")}>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto lg:space-y-10", "xl:px-10 xl:max-w-full")}>
+      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(

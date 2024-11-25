@@ -29,11 +29,11 @@ const CardProcessus: FC<CardProcessusProps> = ({
           </div>
           <h3 className={cn("text-xl font-semibold", "lg:text-[22px]")}>{title}</h3>
         </div>
-        <div className={cn("text-2xl py-2 px-6 bg-primary bg-clip-text text-transparent", "lg:text-4xl")}>
-          <p className='font-black'>{step}</p>
+        <div className={cn("text-4xl py-2 px-6 bg-primary bg-clip-text text-transparent", "lg:text-4xl")}>
+          <p className='font-bold'>{step}</p>
         </div>
       </div>
-      <p className={cn("text-subtitle/80 font-normal pt-3", "lg:text-lg")}>{content}</p>
+      <p className={cn("text-subtitle/80 font-normal", "lg:text-lg")}>{content}</p>
     </div>
   );
 };

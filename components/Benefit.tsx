@@ -19,7 +19,7 @@ const Benefit = () => {
           />
         ))}
       </div>
-      <div className={cn("w-full space-y-6", "xl:max-w-xl", "2xl:space-y-14")}>
+      <div className={cn("w-full space-y-6", "lg:max-w-xl")}>
         <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
           <div
             className={cn(

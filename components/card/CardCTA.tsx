@@ -10,8 +10,8 @@ const CardCTA = () => {
         <div className={cn("rounded-3xl relative px-10 py-14 border border-neutral-600/30", "lg:px-28 lg:py-32")}>
           <GridPattern gradient />
           <div className={cn("space-y-14")}>
-            <h3 className={cn('mx-auto max-w-4xl text-left text-xl font-semibold leading-normal', "lg:leading-[1.4]", "xl:leading-[1.4] lg:text-4xl lg:text-center")}>
-            Chaque boutique est le fruit d'une réflexion et d'une exécution sur-mesure, pour des résultats bien au-delà des boutiques ecommerce classiques.
+            <h3 className={cn('mx-auto max-w-4xl text-center text-xl font-semibold leading-normal', "lg:leading-[1.4]", "xl:leading-[1.4] lg:text-4xl lg:text-center")}>
+            Chaque boutique est le fruit d'une réflexion et d'une exécution sur mesure, pour des résultats bien au-delà des boutiques ecommerce classiques.
             </h3>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 

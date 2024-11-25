@@ -28,8 +28,8 @@ const CardPrice: FC<CardPriceProps> = ({
 }) => {
   return (
     <div className={cn("w-full rounded-3xl flex flex-col justify-start items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-t from-transparent via-transparent via-70% to-[#151518]", "lg:px-8 lg:py-10")}>
-      <div className={cn("space-y-6", "lg:space-y-8", title === "Maintenance" ? "text-left lg:text-center" : "text-left")}>
-        <div className={cn("z-10 flex items-center pb-2", title === "Maintenance" ? "justify-start lg:justify-center" : "justify-start")}>
+      <div className={cn("space-y-4", "lg:space-y-6", title === "Maintenance" ? "text-left lg:text-center" : "text-left")}>
+        <div className={cn("z-10 flex items-center", title === "Maintenance" ? "justify-start lg:justify-center" : "justify-start")}>
           <div
             className={cn(
               "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
@@ -55,7 +55,7 @@ const CardPrice: FC<CardPriceProps> = ({
             </Button>
           </div>
         </div>
-        <div className={cn("space-y-1")}>
+        <div>
           {modeSelected === 1 || title === "Maintenance" ? (
             <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>/mois €</span></h3>
           ) : (
@@ -63,7 +63,7 @@ const CardPrice: FC<CardPriceProps> = ({
           )}
           {modeSelected === 1 && <p className={cn("text-subtitle/80 font-normal pb-2")}>{infoPrice}</p>}
         </div>
-        <p className={cn("text-subtitle/80 font-normal")}>{content}</p>
+        <p className={cn("text-subtitle/80 font-normal pb-4")}>{content}</p>
         <Link href={link} prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
           "text-white w-full", 
           "h-12 mx-auto",

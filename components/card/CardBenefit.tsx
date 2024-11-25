@@ -14,10 +14,12 @@ const CardBenefit: FC<CardBenefitProps> = ({
 }) => {
   return (
     <div className={cn("w-full backdrop-blur-sm rounded-3xl flex flex-col justify-center items-center text-center gap-2 p-6 border border-neutral-600/30", "lg:px-6 py-12")}>
-      <div className={cn("w-full flex gap-6 justify-center items-center")}>
-        <h6 className={cn("text-[58px] font-bold")}><span className={cn("text-primary")}>{symbole}</span>{percentage}</h6>
+      <div>
+        <div className={cn("w-full flex gap-6 justify-center items-center")}>
+          <h6 className={cn("text-[58px] font-bold")}><span className={cn("text-primary")}>{symbole}</span>{percentage}<span className='text-[26px]'>%</span></h6>
+        </div>
+        <h3 className={cn("text-lg text-subtitle/80")}>{title}</h3>
       </div>
-      <h3 className={cn("text-lg text-subtitle/80")}>{title}</h3>
     </div>
   );
 };

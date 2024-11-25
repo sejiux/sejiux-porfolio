@@ -9,7 +9,7 @@ import { ProcessusData } from '@/data/works';
 const Processus = () => {
   return (
     <section className={cn("px-6 flex flex-col justify-center space-y-20 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-start lg:justify-between")}>
-      <div className={cn("px-6 space-y-6", "lg:space-y-10 lg:sticky lg:top-24", "xl:px-0", "2xl:max-w-[1800px] 2xl:space-y-14")}>
+      <div className={cn("px-6 space-y-6", "lg:sticky lg:top-24", "xl:px-0", "2xl:max-w-[1800px] 2xl:space-y-14")}>
         <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
           <div
             className={cn(
@@ -37,7 +37,7 @@ const Processus = () => {
           </div>
         </div>
         <h1 className={cn(
-          "text-[28px] px-2 leading-tight font-semibold ",
+          "text-[28px] px-2 leading-tight font-semibold",
           "text-white text-center",
           "lg:px-0 lg:text-6xl lg:text-left",
           "xl:text-5xl xl:leading-[1.4]",

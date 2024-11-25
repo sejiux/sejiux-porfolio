@@ -8,7 +8,7 @@ import MarqueeStack from './MarqueeStack';
 const Tools = () => {
   return (
     <section className={cn("flex flex-col justify-center pt-20 space-y-20 max-w-7xl mx-auto", "lg:pt-0 lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
-      <div className={cn("px-6 space-y-6", "lg:space-y-10", "xl:px-0")}>
+      <div className={cn("px-6 space-y-6", "lg:px-0")}>
         <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
           <div
             className={cn(
