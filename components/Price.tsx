@@ -63,7 +63,7 @@ const Price = () => {
               </div>
             ))}
           </div>
-          <div className={cn("relative py-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2")}>
+          <div className={cn("relative py-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:py-0 lg:pt-14")}>
             {PricesFixeData(modeSelected).map((data, index) => (
               <CardPrice
                 key={index}

@@ -33,7 +33,7 @@ const CardWhy: FC<CardWhyProps> = ({
         )}>
           <div> 
             {list.image ? (
-              <Image src={list.image} alt="" width={1080} height={1080} className='w-7 h-6' />
+              <Image src={list.image} alt="logo sejiux" width={1080} height={1080} className='w-7 h-6' />
             ) : (
               <list.icon className={cn('text-2xl font-medium', title === "Autres Agences" ? "text-subtitlePrice" : "text-white")} />
             )}
