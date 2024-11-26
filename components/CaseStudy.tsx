@@ -9,11 +9,9 @@ import ProfileClientHelloPurly from "@/public/images/profile-hellopurly.jpg";
 import { CaseStudyData } from '@/data/works';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
-import { useRouter } from 'next/navigation';
 
 const CaseStudy = () => {
   const [bigImageIndex, setBigImageIndex] = useState(0);
-  const router = useRouter();
 
   const handleImageClick = (index: number) => {
     setBigImageIndex(index);
@@ -81,14 +79,13 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div onClick={() => router.push("https://hellopurly.fr")} className='relative size-full group cursor-pointer'>
-            <div className={cn("overflow-hidden rounded-3xl size-full relative h-full pb-[60%]",
+          <div className='relative size-full'>
+            <div className={cn("overflow-hidden rounded-3xl size-full relative",
             )}>
-              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 group-hover:bg-background *:group-hover:text-white")}>
+              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 hover:bg-background *:hover:text-white")}>
                 <FaArrowRight className="text-background text-2xl -rotate-45" />
               </Link>
               <Image src={CaseStudyData[bigImageIndex].image.src} alt="Main Image of HelloPurly" width={1080} height={1080} className={cn("rounded-3xl size-full",
-                "absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               )} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-20% to-background/90" />
             </div>

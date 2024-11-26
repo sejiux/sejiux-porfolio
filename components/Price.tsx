@@ -81,7 +81,7 @@ const Price = () => {
                 title="Maintenance"
                 price="250"
                 content="Bénéficiez d'un support technique et de mises à jour régulières pour une expérience utilisateur optimale."
-                link="mailto:im.sejiux@gmail.com"
+                link="https://buy.stripe.com/00gdRS2LC0KmgKI7sA"
               />
             </div>
           </div>

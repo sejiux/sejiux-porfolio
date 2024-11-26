@@ -297,7 +297,7 @@ export const PricesFixeData = (modeSelected?: number) => [
     price: modeSelected ? "495" : "4950",
     infoPrice: "Pendant 10 mois sans frais", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
-    link: "mailto:im.sejiux@gmail.com",
+    link: modeSelected ? "https://buy.stripe.com/9AQ29a1Hydx88ec8wB" : "https://buy.stripe.com/7sIg002LC78K520fZ2",
     options: [
       {
         title: "Copywriting Persuasif"
@@ -333,7 +333,7 @@ export const PricesFixeData = (modeSelected?: number) => [
     price:  modeSelected ? "795" : "7950",
     infoPrice: "Pendant 10 mois sans frais",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
-    link: "mailto:im.sejiux@gmail.com",
+    link: modeSelected ? "https://buy.stripe.com/5kA3de0Du0Km664cMT" : "https://buy.stripe.com/8wM5lmgCsfFg1PO5kq",
     options: [
       {
         title: "Pack Complet Monoproduit"
