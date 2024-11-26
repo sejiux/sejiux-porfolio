@@ -3,6 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   weight: [
@@ -34,6 +36,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={cn(montserrat.variable, "font-montserrat relative text-white")}>
+        <SpeedInsights />
+        <Analytics />
         {children}
       </body>
     </html>
