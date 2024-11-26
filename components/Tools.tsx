@@ -8,7 +8,7 @@ import { stacksData } from '@/data/works';
 
 const Tools = () => {
   return (
-    <section className={cn("flex flex-col justify-center pt-20 space-y-20 max-w-7xl mx-auto", "lg:pt-0 lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
+    <section className={cn("flex flex-col justify-center max-w-7xl mx-auto", "lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
       <div className={cn("px-6 space-y-6", "lg:px-0")}>
         <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
           <div
@@ -61,7 +61,7 @@ const Tools = () => {
           </Link>
         </div>
       </div>
-      <div className={cn('flex flex-col gap-4 py-10', 'lg:py-0 lg:justify-end')}>
+      <div className={cn('flex flex-col gap-4 pt-16', 'lg:py-0 lg:justify-end')}>
         <div className={cn("lg:-space-y-3 relative overflow-hidden")}>
           <MarqueeStack title />
           <MarqueeStack reverse title />

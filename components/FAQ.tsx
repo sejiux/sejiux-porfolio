@@ -10,9 +10,9 @@ import CardFAQ from './card/CardFAQ';
 const FAQ = () => {
   const [isOpen, setIsOpen] = useState(FAQsData.map(() => false));
   return (
-    <section className={cn("px-6 pt-14 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "lg:px-0 lg:pt-0 lg:space-y-0 lg:grid lg:grid-cols-[1fr,3fr] lg:gap-10 lg:items-start lg:justify-between")}>
+    <section className={cn("px-6 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-[1fr,3fr] lg:gap-10 lg:items-start lg:justify-between")}>
       <div className={cn("space-y-6", "lg:sticky lg:top-24", "xl:px-0")}>
-        <div className={cn("space-y-4 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10 lg:space-y-8")}>
+        <div className={cn("space-y-6 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10 lg:space-y-8")}>
           <div className={cn("z-10 flex items-center justify-center")}>
             <div
               className={cn(

@@ -8,8 +8,8 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const Benefit = () => {
   return (
-    <section className={cn("px-6 w-full flex flex-col-reverse space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:justify-between lg:justify-items-end lg:gap-10 lg:items-start")}>
-      <div className={cn('w-full flex flex-col gap-4 pt-20 pb-10', 'lg:py-0 lg:grid lg:grid-cols-2')}>
+    <section className={cn("px-6 w-full flex flex-col-reverse max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:justify-between lg:justify-items-end lg:gap-10 lg:items-start")}>
+      <div className={cn('w-full flex flex-col gap-4 pt-16', 'lg:py-0 lg:grid lg:grid-cols-2')}>
         {BenefitsData.map((data, index) => (
           <CardBenefit
             key={index}

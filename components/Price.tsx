@@ -46,7 +46,7 @@ const Price = () => {
           "text-white text-center",
         )}>Des Tarifs Clairs et Accessibles<br className="hidden lg:block" /> pour un Impact Mesurable</h1>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-14 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
-        <div className={cn("space-y-1")}>
+        <div className={cn("pt-10", "lg:pt-0")}>
           <div className='mx-auto w-max rounded-full flex items-center bg-[#151518] p-2'>
             {[
               {
@@ -63,7 +63,7 @@ const Price = () => {
               </div>
             ))}
           </div>
-          <div className={cn("relative py-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:py-0 lg:pt-14")}>
+          <div className={cn("relative pt-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2")}>
             {PricesFixeData(modeSelected).map((data, index) => (
               <CardPrice
                 key={index}

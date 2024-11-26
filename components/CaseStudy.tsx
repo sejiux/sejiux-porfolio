@@ -54,8 +54,8 @@ const CaseStudy = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
         )}>Un Résultat Concret et une <br className="hidden lg:block" />Histoire Qui Peut Être La Vôtre</h1>
-        <p className={cn("text-base font-light w-full px-4 pb-14", "lg:text-base lg:px-0 lg:pb-4 lg:mx-auto text-subtitle/80 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez comment Abel, après avoir investi 1000 € dans une agence reconnue pour un résultat décevant, a vu sa boutique totalement transformée.</p>
-        <div className={cn("relative pt-14 w-full flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:justify-between lg:items-center")}>
+        <p className={cn("text-base font-light w-full px-4 pb-10", "lg:text-base lg:px-0 lg:pb-4 lg:mx-auto text-subtitle/80 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez comment Abel, après avoir investi 1000 € dans une agence reconnue pour un résultat décevant, a vu sa boutique totalement transformée.</p>
+        <div className={cn("relative w-full flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:justify-between lg:items-center")}>
           <div className={cn("space-y-4 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10")}>
             <div className={cn("w-[80%]", "lg:w-[60%]")}>
               <Image src={LogoHelloPurly} alt="logo HelloPurly" width={1080} height={1080} />

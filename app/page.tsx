@@ -10,11 +10,12 @@ import WhyMe from "@/components/WhyMe";
 import CaseStudy from "@/components/CaseStudy";
 import FAQ from "@/components/FAQ";
 import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <Suspense>
-      <div className="space-y-14 lg:space-y-44">
+      <div className="space-y-24 lg:space-y-44">
         <HeaderPage />
         <Services />
         <Tools />
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Blog />
         <FAQ />
+        <Footer />
         <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>
     </Suspense>

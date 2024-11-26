@@ -8,7 +8,7 @@ import { ProcessusData } from '@/data/works';
 
 const Processus = () => {
   return (
-    <section className={cn("px-6 flex flex-col justify-center space-y-20 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-start lg:justify-between")}>
+    <section className={cn("px-6 flex flex-col justify-center max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-start lg:justify-between")}>
       <div className={cn("px-6 space-y-6", "lg:sticky lg:top-24", "xl:px-0", "2xl:max-w-[1800px] 2xl:space-y-14")}>
         <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
           <div
@@ -62,7 +62,7 @@ const Processus = () => {
           </Link>
         </div>
       </div>
-      <div className={cn('flex flex-col gap-4 py-10', 'lg:py-0 lg:justify-end')}>
+      <div className={cn('flex flex-col gap-4 pt-20', 'lg:py-0 lg:justify-end')}>
         {ProcessusData.map((data, index) => (
           <CardProcessus
             key={index}

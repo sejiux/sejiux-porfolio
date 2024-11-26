@@ -14,7 +14,7 @@ const Blog = () => {
   };
 
   return (
-    <section className={cn("flex flex-col justify-center pt-20", "lg:pt-0")}>
+    <section className={cn("flex flex-col justify-center")}>
       <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full", "2xl:max-w-[1800px] 2xl:space-y-14 2xl:px-14")}>
         <div className="z-10 flex items-center justify-center">
           <div
@@ -51,7 +51,7 @@ const Blog = () => {
           "text-white text-center",
         )}>Nouvelles, Réflexions<br className="hidden lg:block" /> et Inspirations</h1>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Plongez dans mon blog pour découvrir des analyses, conseils et tendances mêlant développement, psychologie et neurosciences.</p>
-        <div className={cn("relative pt-14 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3 lg:grid-rows-1")}>
+        <div className={cn("relative pt-10 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3 lg:grid-rows-1")}>
           {articlesData.slice(0, visibleArticles).map((data, index) => (
             <CardBlog
               key={index}
@@ -65,7 +65,7 @@ const Blog = () => {
           ))}
         </div>
         {visibleArticles < articlesData.length && (
-          <div className={cn("pt-14")}>
+          <div className={cn("pt-10")}>
             <div onClick={loadMoreArticles} className={cn(
               "text-white cursor-pointer", 
               "w-[80%] h-12 mx-auto",
