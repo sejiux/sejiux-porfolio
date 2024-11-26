@@ -9,6 +9,8 @@ import Benefit from "@/components/Benefit";
 import CardCTA from "@/components/card/CardCTA";
 import WhyMe from "@/components/WhyMe";
 import CaseStudy from "@/components/CaseStudy";
+/* import FAQ from "@/components/FAQ";
+import Blog from "@/components/Blog"; */
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         <WhyMe />
         <Price />
         <About />
+        {/* <FAQ />
+        <Blog /> */}
         <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>
     </Suspense>

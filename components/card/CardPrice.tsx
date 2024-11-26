@@ -28,7 +28,7 @@ const CardPrice: FC<CardPriceProps> = ({
 }) => {
   return (
     <div className={cn("w-full rounded-3xl flex flex-col justify-start items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-t from-transparent via-transparent via-70% to-[#151518]", "lg:px-8 lg:py-10")}>
-      <div className={cn("space-y-4", "lg:space-y-6", title === "Maintenance" ? "text-left lg:text-center" : "text-left")}>
+      <div className={cn("space-y-2", "lg:space-y-3", title === "Maintenance" ? "text-left lg:text-center" : "text-left")}>
         <div className={cn("z-10 flex items-center", title === "Maintenance" ? "justify-start lg:justify-center" : "justify-start")}>
           <div
             className={cn(
@@ -63,7 +63,7 @@ const CardPrice: FC<CardPriceProps> = ({
           )}
           {modeSelected === 1 && <p className={cn("text-subtitle/80 font-normal pb-2")}>{infoPrice}</p>}
         </div>
-        <p className={cn("text-subtitle/80 font-normal pb-4")}>{content}</p>
+        <p className={cn("text-subtitle/80 font-normal pb-6")}>{content}</p>
         <Link href={link} prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
           "text-white w-full", 
           "h-12 mx-auto",
@@ -83,7 +83,7 @@ const CardPrice: FC<CardPriceProps> = ({
             <div className={cn("pt-4")}>
               <div className='w-full mx-auto border border-[#151518]/70' />
             </div>
-            <div className={cn("space-y-4 py-4")}>
+            <div className={cn("space-y-2 py-4")}>
               {options?.map((option, index) => (
                 <div key={index} className={cn('flex items-center mx-auto gap-4', "lg:mx-0")}>
                   <FaCheckCircle className='text-primary text-xl' />

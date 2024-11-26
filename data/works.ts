@@ -1,6 +1,6 @@
 import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine } from "react-icons/ri";
 import { AiOutlineAppstore, AiOutlineSketch } from "react-icons/ai";
 import { IoClose, IoShield } from "react-icons/io5";
@@ -320,9 +320,19 @@ export const stacksData = [
     link: "https://www.prisma.io/"
   },
   {
+    icon: SiGraphql,
+    name: "GraphQL",
+    link: "https://graphql.org/"
+  },
+  {
     icon: IoShield,
     name: "NextAuth",
     link: "https://next-auth.js.org/"
+  },
+  {
+    icon: SiSocketdotio,
+    name: "SocketIo",
+    link: "https://socket.io/"
   },
   {
     icon: SiResend,
