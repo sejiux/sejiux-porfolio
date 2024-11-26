@@ -11,7 +11,7 @@ const Price = () => {
   return (
     <section className={cn("relative flex flex-col justify-center")}>
       <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
-        <div className="z-10 flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <div
             className={cn(
               "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
@@ -45,8 +45,8 @@ const Price = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
         )}>Des Tarifs Clairs et Accessibles<br className="hidden lg:block" /> pour un Impact Mesurable</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
-        <div className={cn("space-y-1 pt-8")}>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-14 lg:w-[700px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
+        <div className={cn("space-y-1")}>
           <div className='mx-auto w-max rounded-full flex items-center bg-[#151518] p-2'>
             {[
               {

@@ -31,7 +31,7 @@ const About = () => {
           ))}
         </div>
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base lg:px-0 text-subtitleCard lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>
-        Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé Sejiux Studio pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
+        Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé Sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
           <Link href="https://contra.com/im_sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 
             className={cn(

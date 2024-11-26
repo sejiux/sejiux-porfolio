@@ -9,7 +9,7 @@ const WhyMe = () => {
   return (
     <section className={cn("relative flex flex-col justify-center")}>
       <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-0 xl:max-w-7xl")}>
-        <div className="z-10 flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <div
             className={cn(
               "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
@@ -45,7 +45,7 @@ const WhyMe = () => {
         )}>Au-Delà De Vos Attentes,<br className="hidden lg:block" /> Plus Loin Que Les Agences</h1>
         {/* absolute left-1/2 transform -translate-x-1/2 */}
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez pourquoi ma méthode surpasse les offres des agences conventionnelles.</p>
-        <div className={cn("relative py-14 w-full flex flex-col gap-8", "lg:gap-4 lg:grid lg:grid-cols-2 lg:justify-between")}>
+        <div className={cn("relative pt-14 w-full flex flex-col gap-8", "lg:gap-4 lg:grid lg:grid-cols-2 lg:justify-between")}>
           <div className='hidden lg:block absolute left-1/2 transform -translate-x-1/2 z-50 top-[65px] border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
           {WhyData.map((data, index) => (
             <CardWhy

@@ -1,14 +1,16 @@
+"use client";
 import { cn } from '@/lib/utils';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import Link from 'next/link';
-import CardProcessus from './card/CardProcessus';
-import { ProcessusData } from '@/data/works';
+import { FAQsData } from '@/data/works';
+import CardFAQ from './card/CardFAQ';
 
 const FAQ = () => {
+  const [isOpen, setIsOpen] = useState(FAQsData.map(() => false));
   return (
-    <section className={cn("px-6 flex flex-col-reverse justify-center gap-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-start lg:justify-between")}>
+    <section className={cn("px-6 pt-14 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "lg:px-0 lg:pt-0 lg:space-y-0 lg:grid lg:grid-cols-[1fr,3fr] lg:gap-10 lg:items-start lg:justify-between")}>
       <div className={cn("space-y-6", "lg:sticky lg:top-24", "xl:px-0")}>
         <div className={cn("space-y-4 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10 lg:space-y-8")}>
           <div className={cn("z-10 flex items-center justify-center")}>
@@ -45,7 +47,7 @@ const FAQ = () => {
             "2xl:text-[100px]",
             "pointer-events-none whitespace-pre-wrap",
           )}>Une question ? </h1>
-          <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
+          <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
           <div className={cn("pt-4")}>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 
@@ -65,13 +67,14 @@ const FAQ = () => {
         </div>
       </div>
       <div className={cn('flex flex-col gap-4 py-10', 'lg:py-0 lg:justify-end')}>
-        {ProcessusData.map((data, index) => (
-          <CardProcessus
+        {FAQsData.map((data, index) => (
+          <CardFAQ
             key={index}
+            index={index}
             title={data.title}
             content={data.content}
-            step={data.step}
-            icon={data.icon}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
           />
         ))}
       </div>

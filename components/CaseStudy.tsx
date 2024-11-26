@@ -9,9 +9,11 @@ import ProfileClientHelloPurly from "@/public/images/profile-hellopurly.jpg";
 import { CaseStudyData } from '@/data/works';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
+import { useRouter } from 'next/navigation';
 
 const CaseStudy = () => {
   const [bigImageIndex, setBigImageIndex] = useState(0);
+  const router = useRouter();
 
   const handleImageClick = (index: number) => {
     setBigImageIndex(index);
@@ -20,7 +22,7 @@ const CaseStudy = () => {
   return (
     <section className={cn("relative flex flex-col justify-center")}>
       <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-0 xl:max-w-7xl")}>
-        <div className="z-10 flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <div
             className={cn(
               "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
@@ -55,7 +57,7 @@ const CaseStudy = () => {
           "text-white text-center",
         )}>Un Résultat Concret et une <br className="hidden lg:block" />Histoire Qui Peut Être La Vôtre</h1>
         <p className={cn("text-base font-light w-full px-4 pb-14", "lg:text-base lg:px-0 lg:pb-4 lg:mx-auto text-subtitle/80 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez comment Abel, après avoir investi 1000 € dans une agence reconnue pour un résultat décevant, a vu sa boutique totalement transformée.</p>
-        <div className={cn("relative py-14 w-full flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:justify-between lg:items-center")}>
+        <div className={cn("relative pt-14 w-full flex flex-col gap-4", "lg:grid lg:grid-cols-2 lg:justify-between lg:items-center")}>
           <div className={cn("space-y-4 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10")}>
             <div className={cn("w-[80%]", "lg:w-[60%]")}>
               <Image src={LogoHelloPurly} alt="logo HelloPurly" width={1080} height={1080} />
@@ -79,12 +81,15 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div className='relative size-full'>
-            <div className={cn("overflow-hidden rounded-3xl size-full relative")}>
-              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 hover:bg-background *:hover:text-white")}>
+          <div onClick={() => router.push("https://hellopurly.fr")} className='relative size-full group cursor-pointer'>
+            <div className={cn("overflow-hidden rounded-3xl size-full relative h-full pb-[60%]",
+            )}>
+              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 group-hover:bg-background *:group-hover:text-white")}>
                 <FaArrowRight className="text-background text-2xl -rotate-45" />
               </Link>
-              <Image src={CaseStudyData[bigImageIndex].image.src} alt="Main Image of HelloPurly" width={1080} height={1080} className={cn("rounded-3xl size-full border-2 border-neutral-600/30")} />
+              <Image src={CaseStudyData[bigImageIndex].image.src} alt="Main Image of HelloPurly" width={1080} height={1080} className={cn("rounded-3xl size-full",
+                "absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+              )} />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-20% to-background/90" />
             </div>
             <div className={cn("absolute left-1/2 transform -translate-x-1/2 bottom-4 flex gap-2 items-center justify-center mx-auto")}>
@@ -106,7 +111,7 @@ const CaseStudy = () => {
                     onClick={() => handleImageClick(index)}
                   />
                   {bigImageIndex !== index && (
-                    <div className={cn("absolute inset-0 bg-background/60 border border-neutral-600/30 rounded-sm hover:bg-background/0", "lg:rounded-[10px]")} />
+                    <div className={cn("absolute inset-0 bg-background/60 border border-white/20 rounded-sm hover:bg-background/0", "lg:rounded-[10px]")} />
                   )}
                 </div>
               ))}
