@@ -389,19 +389,16 @@ export const linksData = [
     link: "/", label: "Accueil",
   },
   {
-    link: "#services", label: "Services",
+    link: "/#about", label: "À propos",
   },
   {
-    link: "#plans", label: "Plans",
+    link: "/#services", label: "Services",
   },
   {
-    link: "#about", label: "A propos",
+    link: "/#plans", label: "Tarifs",
   },
   {
-    link: "#blog", label: "Blog",
-  },
-  {
-    link: "#faq", label: "FAQ",
+    link: "/#blog", label: "Blog",
   },
 ];
 
@@ -457,11 +454,7 @@ export const legalsPagesData = (handle: string) => {
           content: `Aucun cookie n'est utilisé pour collecter des données personnelles. Cependant, des cookies techniques peuvent être générés pour le fonctionnement des services analytiques.`,
         },
         {
-          title: "7. Responsabilité",
-          content: `L'éditeur décline toute responsabilité en cas de dysfonctionnement ou d'indisponibilité temporaire du site et des services proposés.`,
-        },
-        {
-          title: "8. Droit applicable",
+          title: "7. Droit applicable",
           content: `Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux compétents seront ceux de Toulon.`,
         },
       ],
@@ -476,7 +469,7 @@ export const legalsPagesData = (handle: string) => {
         },
         {
           title: "2. Données collectées",
-          content: `Je collecte uniquement des données anonymisées via **Vercel Analytics** pour suivre l'activité du site et améliorer ses performances. Les paiements effectués via **Stripe Checkout** sont soumis à la politique de confidentialité de Stripe.`,
+          content: `Je collecte uniquement des données anonymisées via Vercel Analytics pour suivre l'activité du site et améliorer ses performances. Les paiements effectués via Stripe Checkout sont soumis à la politique de confidentialité de Stripe.`,
         },
         {
           title: "3. Finalité du traitement des données",
@@ -508,11 +501,11 @@ export const legalsPagesData = (handle: string) => {
         },
         {
           title: "2. Tarification",
-          content: `Les prix des produits sont indiqués en euros et peuvent être modifiés à tout moment. Les paiements sont traités via **Stripe Checkout**.`,
+          content: `Les prix des produits sont indiqués en euros et peuvent être modifiés à tout moment. Les paiements sont traités via Stripe Checkout.`,
         },
         {
           title: "3. Commande et paiement",
-          content: `La commande est validée une fois que vous avez été redirigé vers **Stripe Checkout** et que le paiement est effectué sur leur plateforme sécurisée.`,
+          content: `La commande est validée une fois que vous avez été redirigé vers Stripe Checkout et que le paiement est effectué sur leur plateforme sécurisée.`,
         },
         {
           title: "4. Droit de rétractation",
@@ -534,7 +527,7 @@ export const legalsPagesData = (handle: string) => {
         },
         {
           title: "2. Cookies tiers",
-          content: `Certains cookies peuvent être générés par **Vercel Analytics** afin d'analyser la performance du site et améliorer l'expérience utilisateur.`,
+          content: `Certains cookies peuvent être générés par Vercel Analytics afin d'analyser la performance du site et améliorer l'expérience utilisateur.`,
         },
         {
           title: "3. Désactivation des cookies",
@@ -551,7 +544,7 @@ export const legalsPagesData = (handle: string) => {
       title: "Page non trouvée",
       data: [
         {
-          title: "",
+          title: "Error 404",
           content: "La page demandée n'existe pas.",
         },
       ],

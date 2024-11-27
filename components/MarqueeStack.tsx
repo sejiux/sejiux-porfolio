@@ -21,16 +21,16 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   }, []); 
 
   return (
-    <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-32", "xl:h-24", "2xl:h-32")}>
+    <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-32", "xl:h-24")}>
       {/* <div>
-        <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm", "lg:inset-x-20", "2xl:inset-x-28")}/>
-        <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4", "lg:inset-x-20", "2xl:inset-x-28")} />
-        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
-        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]", "2xl:inset-x-[900px]")} />
+        <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm", "lg:inset-x-20")}/>
+        <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4", "lg:inset-x-20")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]")} />
+        <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]")} />
       </div> */}
     
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl", "2xl:max-w-[1200px]")}>
+        <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl")}>
           <Marquee pauseOnHover className={cn("[--duration:20s]", title && "[--duration:60s]")} reverse={reverse}>
             <div className={cn("flex items-center gap-6 px-2", "lg:gap-12 lg:px-4", 
               title && "gap-3 px-0 lg:gap-4 lg:px-2"
@@ -62,7 +62,7 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
           particleColor="#FFFFFF"
         /> */}
     
-        <div className={cn("absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,background)]", "2xl:[mask-image:radial-gradient(450px_400px_at_top,transparent_20%,background)]")} />
+        <div className={cn("absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,background)]")} />
       </div>
       {/* <div>
           <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm" />

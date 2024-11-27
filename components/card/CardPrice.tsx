@@ -44,7 +44,6 @@ const CardPrice: FC<CardPriceProps> = ({
                   "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                   "text-sm",
                   "md:text-sm",
-                  "2xl:text-lg"
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
@@ -70,7 +69,6 @@ const CardPrice: FC<CardPriceProps> = ({
           "md:h-10",
           "lg:mx-0",
           "xl:h-14 p-[1px]",
-          "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
           "transition-all ease-in ",
           "border border-neutral-600/30 bg-gradient-to-bl from-neutral-600/30 to-[#151518] backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

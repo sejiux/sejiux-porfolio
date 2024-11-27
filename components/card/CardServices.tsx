@@ -20,7 +20,7 @@ const CardServices: FC<CardServicesProps> = ({
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
           "transition-all ease-in ",
         )}>
-          <Icon className={cn("text-2xl text-white", "2xl:text-5xl")} />
+          <Icon className={cn("text-2xl text-white")} />
         </div>
       </div>
       <div className={cn("space-y-2", "lg:space-y-3")}>

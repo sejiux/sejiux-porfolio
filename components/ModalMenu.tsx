@@ -21,7 +21,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
     <>
       {isMenuOpen && (
         <div
-          className="absolute lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-30"
+          className="absolute lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-20"
           onClick={handleCloseMenu}
         >
           <div
@@ -67,7 +67,6 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
                           "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
                           "transition-all ease-in",
                           "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
-                          "2xl:text-2xl",
                           "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
                         )}
                       >

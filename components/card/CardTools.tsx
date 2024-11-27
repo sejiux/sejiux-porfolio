@@ -22,7 +22,7 @@ const CardTools: FC<CardToolsProps> = ({
           "transition-all ease-in ",
           "lg:size-15"
         )}>
-          <Icon className={cn("text-2xl text-white", "2xl:text-5xl")} />
+          <Icon className={cn("text-2xl text-white")} />
         </div>
         <h3 className={cn("text-xl font-semibold", "lg:text-[22px]")}>{title}</h3>
       </div>

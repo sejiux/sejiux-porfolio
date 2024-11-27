@@ -13,7 +13,6 @@ const LegalPage: FC<LegalPageProps> = ({handle}) => {
         "text-white text-left",
         "lg:text-6xl",
         "xl:text-5xl xl:leading-[1.4]",
-        "2xl:text-[100px]",
         "pointer-events-none whitespace-pre-wrap",
       )}>{legalsPagesData(handle).title}</h2>
       {legalsPagesData(handle).data.map((data, index) => (
@@ -25,7 +24,7 @@ const LegalPage: FC<LegalPageProps> = ({handle}) => {
             "xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",
           )}>{data.title}</h3>
-          <p className={cn("text-base font-light w-full", "lg:text-base lg:mx-auto text-subtitle lg:pb-2", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>{data.content}</p>
+          <p className={cn("text-base font-light w-full", "lg:text-base lg:mx-auto text-subtitle lg:pb-2", "xl:text-lg xl:leading-relaxed")}>{data.content}</p>
         </div>
       ))}
     </div>

@@ -35,7 +35,6 @@ const Benefit = () => {
                   "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                   "text-sm",
                   "md:text-sm",
-                  "2xl:text-lg"
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
@@ -51,10 +50,9 @@ const Benefit = () => {
           "text-white",
           "lg:px-0 lg:text-6xl lg:text-left",
           "xl:text-5xl xl:leading-[1.4]",
-          "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
         )}>Shopify Headless : Le Futur du Ecommerce</h1>
-        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Transformez l'expérience d'achat en ligne de votre marque avec des avantages qui propulsent votre boutique.</p>
+        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Transformez l'expérience d'achat en ligne de votre marque avec des avantages qui propulsent votre boutique.</p>
         <div className={cn("flex items-center flex-wrap gap-4")}>
           {[
             {title: "Une personnalisation sans limites"},

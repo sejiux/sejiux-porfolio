@@ -18,7 +18,6 @@ const CardCTA = () => {
               "w-full h-12 mx-auto",
               "md:w-40 md:h-10",
               "xl:w-60 xl:h-14 p-[1px]",
-              "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

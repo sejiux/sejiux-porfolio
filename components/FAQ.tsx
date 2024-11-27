@@ -28,7 +28,6 @@ const FAQ = () => {
                     "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                     "text-sm",
                     "md:text-sm",
-                    "2xl:text-lg"
                   )}>
                   <div className="px-2">
                     <p className={cn("text-sm", "lg:text-base")}>
@@ -44,7 +43,6 @@ const FAQ = () => {
             "text-white text-center",
             "lg:px-0 lg:text-6xl",
             "xl:text-5xl xl:leading-[1.4]",
-            "2xl:text-[100px]",
             "pointer-events-none whitespace-pre-wrap",
           )}>Une question ? </h1>
           <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
@@ -55,7 +53,6 @@ const FAQ = () => {
               "md:h-10",
               "lg:mx-0",
               "xl:h-14 p-[1px]",
-              "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

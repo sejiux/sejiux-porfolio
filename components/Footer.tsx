@@ -3,15 +3,22 @@ import { legalsLinksData, linksData, socialsData } from '@/data/works';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
+  const [isHashLink, setIsHashLink] = useState("");
   const classLink = "font-light text-base text-subtitle hover:underline hover:text-white";
   const pathname = usePathname();
 
+  useEffect(() => {
+    if(window.location.href.includes(window.location.hash)) {
+      setIsHashLink(`/${window.location.hash}`);
+    }
+  }, []);
+
   return (
-    <footer className={cn("relative flex flex-col justify-center px-6")}>
-      <div className={cn("relative size-full p-6 border-t border-neutral-600/30 bg-gradient-to-t from-transparent to-[#151518] backdrop-blur-xl rounded-3xl mx-auto", "lg:py-24")}>
+    <footer className={cn("relative flex flex-col justify-center px-6 mx-auto", "2xl:max-w-[70%]")}>
+      <div className={cn("relative size-full p-6 border-t border-neutral-600/30 bg-gradient-to-t from-transparent  via-transparent via-50% to-[#151518] backdrop-blur-xl rounded-3xl mx-auto", "lg:py-24")}>
         <div className={cn("flex flex-col space-y-14 py-6", "lg:flex-row lg:items-start lg:justify-between lg:space-y-0 lg:max-w-7xl lg:mx-auto")}>
           <div className={cn("space-y-4")}>
             <div className={cn("space-y-2")}>
@@ -32,7 +39,6 @@ const Footer = () => {
                     "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
                     "transition-all ease-in",
                     "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
-                    "2xl:text-2xl",
                     "hover:bg-gradient-to-b hover:from-secondary hover:to-primary"
                   )}
                 >
@@ -47,21 +53,13 @@ const Footer = () => {
               <ul className="leading-loose">
                 {linksData.map((data, i) => (
                   <li key={i}>
-                    {data.link.includes("contact") ? (
-                      <Link
-                        href="mailto:hellopurly7@gmail.com"
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className={cn(classLink, data.link === pathname && "font-bold text-white underline")}
-                      >Contact</Link>
-                    ) : (
-                      <Link 
-                        href={data.link} 
-                        className={cn(classLink, data.link === pathname && "font-bold text-white underline")}
-                      >
-                        {data.label}
-                      </Link>
-                    )}
+                    <Link 
+                      href={data.link} 
+                      onClick={() => setIsHashLink(data.link)}
+                      className={cn(classLink, !isHashLink && data.link === pathname || data.link === isHashLink && "font-bold text-white underline")}
+                    >
+                      {data.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -86,7 +84,6 @@ const Footer = () => {
                 "md:w-40 md:h-10",
                 "lg:mx-auto",
                 "xl:w-60 xl:h-14 p-[1px]",
-                "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
                 "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
                 "transition-all ease-in ",
                 "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

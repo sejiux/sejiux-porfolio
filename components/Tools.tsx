@@ -25,7 +25,6 @@ const Tools = () => {
                   "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                   "text-sm",
                   "md:text-sm",
-                  "2xl:text-lg"
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
@@ -43,7 +42,7 @@ const Tools = () => {
           "xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
         )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h1>
-        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed", "2xl:text-xl")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
+        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
             "text-white", 
@@ -51,7 +50,6 @@ const Tools = () => {
             "md:w-40 md:h-10",
             "lg:mx-0",
             "xl:w-60 xl:h-14 p-[1px]",
-            "*:2xl:text-2xl 2xl:w-64 2xl:h-20",
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

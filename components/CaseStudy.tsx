@@ -35,7 +35,6 @@ const CaseStudy = () => {
                   "inline-flex items-center justify-center px-4 py-0 transition ease-out hover:duration-300 hover:text-neutral-400 text-white/70 font-normal",
                   "text-sm",
                   "md:text-sm",
-                  "2xl:text-lg"
                 )}>
                 <div className="px-2">
                   <p className={cn("text-sm", "lg:text-base")}>
@@ -50,7 +49,6 @@ const CaseStudy = () => {
           "text-[28px] px-2 leading-tight font-semibold ",
           "lg:px-0 lg:text-6xl",
           "xl:text-5xl xl:leading-[1.4]",
-          "2xl:text-[100px]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
         )}>Un Résultat Concret et une <br className="hidden lg:block" />Histoire Qui Peut Être La Vôtre</h1>
