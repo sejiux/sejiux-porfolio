@@ -1,14 +1,15 @@
 import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql } from "react-icons/si";
-import { RiBearSmileLine, RiCodeSSlashLine } from "react-icons/ri";
+import { RiBearSmileLine, RiCodeSSlashLine, RiHomeSmile2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
 import { AiOutlineAppstore, AiOutlineSketch } from "react-icons/ai";
 import { IoClose, IoShield } from "react-icons/io5";
 import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
-import { MdOutlineChatBubbleOutline } from "react-icons/md";
+import { MdArticle, MdOutlineChatBubbleOutline } from "react-icons/md";
+import { PiMoneyWavyFill } from "react-icons/pi";
 import HomeHellopurly from "@/public/images/hellopurly-home.png";
 import ProductHellopurly from "@/public/images/hellopurly-product.png";
 import MobileHelloPurly from "@/public/images/hellopurly-mobile.png";
@@ -386,19 +387,29 @@ export const socialsData = [
 
 export const linksData = [
   {
-    link: "/", label: "Accueil",
+    link: "/", 
+    label: "Accueil",
+    icon: RiHomeSmile2Fill
   },
   {
-    link: "/#about", label: "À propos",
+    link: "/#about", 
+    label: "À propos",
+    icon: RiUser5Fill
   },
   {
-    link: "/#services", label: "Services",
+    link: "/#services", 
+    label: "Services",
+    icon: RiServiceFill
   },
   {
-    link: "/#plans", label: "Tarifs",
+    link: "/#plans", 
+    label: "Tarifs",
+    icon: PiMoneyWavyFill
   },
   {
-    link: "/#blog", label: "Blog",
+    link: "/#blog", 
+    label: "Blog",
+    icon: MdArticle
   },
 ];
 
@@ -425,8 +436,8 @@ export const legalsPagesData = (handle: string) => {
       data: [
         {
           title: "1. Informations légales",
-          content: `Créateur du site : Sélim Baouz (Sejiux)
-            Responsable de publication : Sélim Baouz (Sejiux)
+          content: `Créateur du site : Sélim Baouz
+            Responsable de publication : Sélim Baouz
             Adresse : 5 rue marcel sembat 83200 Toulon
             Email : im.sejiux@gmail.com
             Numéro SIRET : 83012126500037`,

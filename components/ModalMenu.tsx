@@ -21,7 +21,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
     <>
       {isMenuOpen && (
         <div
-          className="absolute lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-20"
+          className="fixed top-0 left-0 lg:hidden w-full h-[100dvh] text-center bg-background bg-opacity-65 backdrop-blur-md z-50"
           onClick={handleCloseMenu}
         >
           <div
