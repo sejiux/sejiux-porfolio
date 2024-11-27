@@ -420,6 +420,146 @@ export const legalsLinksData = [
   },
 ];
 
+export const legalsPagesData = (handle: string) => {
+  switch (handle) {
+  case "mentions-legales":
+    return {
+      title: "Mentions légales",
+      data: [
+        {
+          title: "1. Informations légales",
+          content: `Créateur du site : Sélim Baouz (Sejiux)
+            Responsable de publication : Sélim Baouz (Sejiux)
+            Adresse : 5 rue marcel sembat 83200 Toulon
+            Email : im.sejiux@gmail.com
+            Numéro SIRET : 83012126500037`,
+        },
+        {
+          title: "2. Hébergement",
+          content: `Hébergeur : Vercel Inc.
+            Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789, USA
+            Site Web : vercel.com`,
+        },
+        {
+          title: "3. Propriété intellectuelle",
+          content: `Tous les contenus présents sur ce site (textes, images, vidéos, logos, etc.) sont protégés par les lois relatives à la propriété intellectuelle. Toute reproduction, totale ou partielle, sans autorisation écrite est interdite.`,
+        },
+        {
+          title: "4. Paiements sécurisés avec Stripe",
+          content: `Les paiements effectués sur ce site sont redirigés vers **Stripe Checkout**. Stripe est responsable de la collecte et du traitement des données de paiement sur son propre domaine sécurisé. Pour plus d'informations, veuillez consulter [la politique de confidentialité de Stripe](https://stripe.com/fr/privacy).`,
+        },
+        {
+          title: "5. Collecte et traitement des données",
+          content: `Ce site utilise **Vercel Analytics** pour analyser l'usage du site et **Vercel Speed Insights** pour optimiser les performances. Ces outils collectent des données anonymisées pour améliorer votre expérience.`,
+        },
+        {
+          title: "6. Cookies",
+          content: `Aucun cookie n'est utilisé pour collecter des données personnelles. Cependant, des cookies techniques peuvent être générés pour le fonctionnement des services analytiques.`,
+        },
+        {
+          title: "7. Responsabilité",
+          content: `L'éditeur décline toute responsabilité en cas de dysfonctionnement ou d'indisponibilité temporaire du site et des services proposés.`,
+        },
+        {
+          title: "8. Droit applicable",
+          content: `Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux compétents seront ceux de Toulon.`,
+        },
+      ],
+    };
+  case "privacy-policy":
+    return {
+      title: "Politique de confidentialité",
+      data: [
+        {
+          title: "1. Introduction",
+          content: `Je respecte votre vie privée et je m'engage à protéger vos informations personnelles. Cette politique de confidentialité décrit comment je collecte, utilise et protège les données que vous me fournissez lorsque vous utilisez ce site.`,
+        },
+        {
+          title: "2. Données collectées",
+          content: `Je collecte uniquement des données anonymisées via **Vercel Analytics** pour suivre l'activité du site et améliorer ses performances. Les paiements effectués via **Stripe Checkout** sont soumis à la politique de confidentialité de Stripe.`,
+        },
+        {
+          title: "3. Finalité du traitement des données",
+          content: `Les données collectées sont utilisées pour :
+          - Analyser le trafic et améliorer le contenu du site.
+          - Assurer un processus de paiement sécurisé avec Stripe.`,
+        },
+        {
+          title: "4. Partage des données",
+          content: `Je ne partage pas vos données personnelles avec des tiers, à l'exception des services nécessaires au fonctionnement du site, tels que Stripe et Vercel.`,
+        },
+        {
+          title: "5. Vos droits",
+          content: `Conformément au RGPD, vous avez le droit d'accéder, de corriger ou de demander la suppression des données vous concernant. Pour exercer ces droits, vous pouvez me contacter à l'adresse suivante : im.sejiux@gmail.com.`,
+        },
+        {
+          title: "6. Sécurité",
+          content: `Je mets en œuvre des mesures de sécurité pour protéger vos données contre tout accès non autorisé.`,
+        },
+      ],
+    };
+  case "terms-and-conditions":
+    return {
+      title: "Conditions générales de vente",
+      data: [
+        {
+          title: "1. Objet",
+          content: `Les présentes conditions générales régissent la vente des services et produits proposés sur ce site.`,
+        },
+        {
+          title: "2. Tarification",
+          content: `Les prix des produits sont indiqués en euros et peuvent être modifiés à tout moment. Les paiements sont traités via **Stripe Checkout**.`,
+        },
+        {
+          title: "3. Commande et paiement",
+          content: `La commande est validée une fois que vous avez été redirigé vers **Stripe Checkout** et que le paiement est effectué sur leur plateforme sécurisée.`,
+        },
+        {
+          title: "4. Droit de rétractation",
+          content: `Conformément à la législation en vigueur, vous disposez d'un délai de 14 jours pour exercer votre droit de rétractation.`,
+        },
+        {
+          title: "5. Litiges",
+          content: `En cas de litige, le tribunal compétent sera celui de Toulon.`,
+        },
+      ],
+    };
+  case "cookie-policy":
+    return {
+      title: "Politique de cookies",
+      data: [
+        {
+          title: "1. Utilisation des cookies",
+          content: `Je n'utilise pas de cookies pour collecter des données personnelles. Toutefois, des cookies techniques peuvent être utilisés pour améliorer la navigation et la performance du site.`,
+        },
+        {
+          title: "2. Cookies tiers",
+          content: `Certains cookies peuvent être générés par **Vercel Analytics** afin d'analyser la performance du site et améliorer l'expérience utilisateur.`,
+        },
+        {
+          title: "3. Désactivation des cookies",
+          content: `Vous pouvez configurer votre navigateur pour bloquer les cookies. Cependant, cela pourrait affecter certaines fonctionnalités du site et rendre certaines sections moins accessibles.`,
+        },
+        {
+          title: "4. Consentement",
+          content: `En naviguant sur ce site, vous consentez à l'utilisation des cookies techniques nécessaires pour le bon fonctionnement du site.`,
+        },
+      ],
+    };
+  default:
+    return {
+      title: "Page non trouvée",
+      data: [
+        {
+          title: "",
+          content: "La page demandée n'existe pas.",
+        },
+      ],
+    };
+  }
+};
+
+
 export const stacksData = [
   {
     icon: FaHtml5,
