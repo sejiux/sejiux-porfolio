@@ -389,7 +389,34 @@ export const linksData = [
     link: "/", label: "Accueil",
   },
   {
-    link: "mailto:im.sejiux@gmail.com", label: "Contact",
+    link: "#services", label: "Services",
+  },
+  {
+    link: "#plans", label: "Plans",
+  },
+  {
+    link: "#about", label: "A propos",
+  },
+  {
+    link: "#blog", label: "Blog",
+  },
+  {
+    link: "#faq", label: "FAQ",
+  },
+];
+
+export const legalsLinksData = [
+  {
+    link: "/legals/mentions-legales", label: "Mentions légales",
+  },
+  {
+    link: "/legals/privacy-policy", label: "Politique de confidentialité",
+  },
+  {
+    link: "/legals/terms-and-conditions", label: "Conditions générales de vente",
+  },
+  {
+    link: "/legals/cookie-policy", label: "Politique de cookies",
   },
 ];
 

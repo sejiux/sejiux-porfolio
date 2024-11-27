@@ -28,7 +28,6 @@ export default function Home() {
         <Blog />
         <FAQ />
         <Footer />
-        <p className="py-20 text-lg flex justify-center">Site en cours de construction...</p>
       </div>
     </Suspense>
   );

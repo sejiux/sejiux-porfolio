@@ -31,7 +31,7 @@ const CardBlog: FC<CardBlogProps> = ({
         <div className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 group-hover:bg-background *:group-hover:text-white")}>
           <FaArrowRight className="text-background text-2xl -rotate-45" />
         </div>
-        <div className={cn("p-6 flex flex-col justify-between items-start space-y-2 gap-4 flex-grow", "lg:space-y-3 lg:px-6 lg:py-5")}>
+        <div className={cn("p-6 flex flex-col justify-between items-start gap-4 flex-grow", "lg:space-y-2 lg:px-6 lg:py-5")}>
           <div className={cn("flex gap-2 items-center", "lg:gap-3")}>
             <h6 className={cn("text-subtitle/50")}>{category}</h6>
             <div className={cn("size-2 rounded-full bg-subtitle/20")} /> 

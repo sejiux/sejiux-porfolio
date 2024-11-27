@@ -8,7 +8,7 @@ import HorizonSection from './HorizonSection';
 
 const Services = () => {
   return (
-    <section className={cn("flex flex-col justify-center")}>
+    <section id="services" className={cn("flex flex-col justify-center")}>
       <div className={cn('relative pb-24 hidden', "lg:pb-28 lg:block")}>
         <HorizonSection />
       </div>

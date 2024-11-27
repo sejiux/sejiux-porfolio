@@ -8,7 +8,7 @@ import ContraSvg from './ContraSvg';
 
 const About = () => {
   return (
-    <section className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
+    <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
       <Image src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("rounded-3xl border-2 border-neutral-600/30")} />
       <div className={cn("space-y-6", "xl:px-14 xl:space-y-8", "2xl:max-w-[1800px]")}>
         <div className={cn("space-y-4", "lg:space-y-6")}>
