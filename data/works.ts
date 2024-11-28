@@ -1,6 +1,6 @@
 import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql, SiStrapi } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine, RiHomeSmile2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
 import { AiOutlineAppstore, AiOutlineSketch } from "react-icons/ai";
 import { IoClose, IoShield } from "react-icons/io5";
@@ -604,6 +604,11 @@ export const stacksData = [
     icon: SiPrisma,
     name: "Prisma",
     link: "https://www.prisma.io/"
+  },
+  {
+    icon: SiStrapi,
+    name: "Strapi",
+    link: "https://strapi.io/"
   },
   {
     icon: SiGraphql,

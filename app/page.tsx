@@ -1,7 +1,6 @@
 import HeaderPage from "@/components/Header";
 import About from "@/components/About";
 import Price from "@/components/Price";
-import Processus from "@/components/Processus";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
 import { Suspense } from "react";
@@ -9,8 +8,9 @@ import Benefit from "@/components/Benefit";
 import WhyMe from "@/components/WhyMe";
 import CaseStudy from "@/components/CaseStudy";
 import FAQ from "@/components/FAQ";
-import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
+/* import Processus from "@/components/Processus";
+import Blog from "@/components/Blog"; */
 
 export default function Home() {
   return (
@@ -20,12 +20,12 @@ export default function Home() {
         <Services />
         <Tools />
         <Benefit />
-        <Processus />
+        {/* <Processus /> */}
         <CaseStudy />
         <WhyMe />
         <Price />
         <About />
-        <Blog />
+        {/* <Blog /> */}
         <FAQ />
         <Footer />
       </div>
