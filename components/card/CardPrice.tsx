@@ -66,9 +66,8 @@ const CardPrice: FC<CardPriceProps> = ({
         <Link href={link} prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
           "text-white w-full", 
           "h-12 mx-auto",
-          "md:h-10",
-          "lg:mx-0",
-          "xl:h-14 p-[1px]",
+          "md:h-14",
+          "xl:mx-0 xl:h-14 p-[1px]",
           "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
           "transition-all ease-in ",
           "border border-neutral-600/30 bg-gradient-to-bl from-neutral-600/30 to-[#151518] backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

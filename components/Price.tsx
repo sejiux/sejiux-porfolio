@@ -10,7 +10,7 @@ const Price = () => {
   const [modeSelected, setModeSelected] = useState(0);
   return (
     <section id="plans" className={cn("relative flex flex-col justify-center")}>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
+      <div className={cn("px-6 text-center space-y-6", "md:mx-auto md:max-w-lg", "lg:max-w-2xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
         <div className="flex items-center justify-center">
           <div
             className={cn(
@@ -36,14 +36,14 @@ const Price = () => {
             </Button>
           </div>
         </div>
-        <h1 className={cn(
+        <h2 className={cn(
           "text-[28px] px-2 leading-tight font-semibold ",
-          "lg:px-0 lg:text-6xl",
-          "xl:text-5xl xl:leading-[1.4]",
+          "lg:px-0 lg:text-[38px]",
+          "xl:px-0 xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Des Tarifs Clairs et Accessibles<br className="hidden lg:block" /> pour un Impact Mesurable</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-14 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
+        )}>Des Tarifs Clairs et Accessibles<br className="hidden lg:block" /> pour un Impact Mesurable</h2>
+        <p className={cn("text-subtitle/80 text-base font-light w-full px-4 pb-10", "lg:text-base lg:mx-auto lg:w-[500px]", "xl:px-0 xl:pb-4 xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Choisissez le plan qui convient le mieux à vos besoins.</p>
         <div className={cn("pt-10", "lg:pt-0")}>
           <div className='mx-auto w-max rounded-full flex items-center bg-[#151518] p-2'>
             {[
@@ -61,7 +61,7 @@ const Price = () => {
               </div>
             ))}
           </div>
-          <div className={cn("relative pt-14 w-full max-w-4xl flex flex-col gap-4", "lg:grid lg:grid-cols-2")}>
+          <div className={cn("relative pt-14 w-full max-w-4xl flex flex-col gap-4", "xl:grid xl:grid-cols-2")}>
             {PricesFixeData(modeSelected).map((data, index) => (
               <CardPrice
                 key={index}

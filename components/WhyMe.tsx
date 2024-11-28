@@ -8,7 +8,7 @@ import CardWhy from './card/CardWhy';
 const WhyMe = () => {
   return (
     <section className={cn("relative flex flex-col justify-center")}>
-      <div className={cn("w-full px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-0 xl:max-w-7xl")}>
+      <div className={cn("w-full px-6 text-center space-y-6", "md:mx-auto md:max-w-lg", "lg:max-w-2xl lg:mx-auto", "xl:px-0 xl:max-w-7xl")}>
         <div className="flex items-center justify-center">
           <div
             className={cn(
@@ -34,17 +34,17 @@ const WhyMe = () => {
             </Button>
           </div>
         </div>
-        <h1 className={cn(
+        <h2 className={cn(
           "text-[28px] px-2 leading-tight font-semibold ",
-          "lg:px-0 lg:text-6xl",
-          "xl:text-5xl xl:leading-[1.4]",
+          "lg:text-4xl",
+          "xl:px-0 xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Au-Delà De Vos Attentes,<br className="hidden lg:block" /> Plus Loin Que Les Agences</h1>
+        )}>Au-Delà De Vos Attentes,<br className="hidden lg:block" /> Plus Loin Que Les Agences</h2>
         {/* absolute left-1/2 transform -translate-x-1/2 */}
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Découvrez pourquoi ma méthode surpasse les offres des agences conventionnelles.</p>
-        <div className={cn("relative pt-14 w-full flex flex-col gap-8", "lg:gap-4 lg:grid lg:grid-cols-2 lg:justify-between")}>
-          <div className='hidden lg:block absolute left-1/2 transform -translate-x-1/2 z-50 top-[65px] border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
+        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-auto xl:text-center xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Découvrez pourquoi ma méthode surpasse les offres des agences conventionnelles.</p>
+        <div className={cn("relative pt-14 w-full flex flex-col gap-10", "lg:gap-14", "xl:gap-4 xl:grid xl:grid-cols-2 xl:justify-between")}>
+          <div className='hidden xl:block absolute left-1/2 transform -translate-x-1/2 z-50 top-[65px] border-b p-4 w-auto bg-gradient-to-t from-transparent to-secondary rounded-[10px] mx-auto'>VS</div>
           {WhyData.map((data, index) => (
             <CardWhy
               key={index}

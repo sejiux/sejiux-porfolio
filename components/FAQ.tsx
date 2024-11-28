@@ -10,9 +10,9 @@ import CardFAQ from './card/CardFAQ';
 const FAQ = () => {
   const [isOpen, setIsOpen] = useState(FAQsData.map(() => false));
   return (
-    <section id="faq" className={cn("px-6 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-[1fr,3fr] lg:gap-10 lg:items-start lg:justify-between")}>
-      <div className={cn("space-y-6", "lg:sticky lg:top-24", "xl:px-0")}>
-        <div className={cn("space-y-6 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "lg:p-10 lg:space-y-8")}>
+    <section id="faq" className={cn("px-6 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-[1fr,3fr] xl:gap-10 xl:items-start xl:justify-between")}>
+      <div className={cn("space-y-6", "xl:px-0 xl:sticky xl:top-24")}>
+        <div className={cn("space-y-6 text-left p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30 rounded-3xl", "xl:p-10 xl:space-y-8")}>
           <div className={cn("z-10 flex items-center justify-center")}>
             <div
               className={cn(
@@ -38,14 +38,16 @@ const FAQ = () => {
               </Button>
             </div>
           </div>
-          <h1 className={cn(
+          <h2 className={cn(
             "text-[28px] px-2 leading-tight font-semibold",
             "text-white text-center",
-            "lg:px-0 lg:text-6xl",
+            "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",
-          )}>Une question ? </h1>
-          <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
+          )}>
+            Une question ? 
+          </h2>
+          <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base text-subtitle/80 lg:w-[500px]", "xl:pb-2 xl:px-0 xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
           <div className={cn("pt-4")}>
             <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
               "text-white", 

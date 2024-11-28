@@ -8,9 +8,9 @@ import { stacksData } from '@/data/works';
 
 const Tools = () => {
   return (
-    <section className={cn("flex flex-col justify-center max-w-7xl mx-auto", "lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
+    <section className={cn("flex flex-col justify-center max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-4xl", "xl:max-w-7xl xl:grid xl:grid-cols-2 xl:items-center xl:justify-between xl:gap-8")}>
       <div className={cn("px-6 space-y-6", "lg:px-0")}>
-        <div className={cn("z-10 flex items-center justify-center", "lg:justify-start")}>
+        <div className={cn("z-10 flex items-center justify-center", "xl:justify-start")}>
           <div
             className={cn(
               "group rounded-full text-base text-white transition-all ease-in hover:cursor-pointer bg-transparent hover:bg-neutral-800 h-12",
@@ -35,20 +35,21 @@ const Tools = () => {
             </Button>
           </div>
         </div>
-        <h1 className={cn(
+        <h2 className={cn(
           "text-[28px] px-2 leading-tight font-semibold",
           "text-white text-center",
-          "lg:px-0 lg:text-6xl lg:text-left",
-          "xl:text-5xl xl:leading-[1.4]",
+          "lg:px-0 lg:text-4xl",
+          "xl:text-left xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
-        )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h1>
-        <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
+        )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h2>
+        <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
-            "md:w-40 md:h-10",
-            "lg:mx-0",
+            "md:w-[60%] md:h-14",
+            "lg:w-60",
+            "xl:mx-0",
             "xl:w-60 xl:h-14 p-[1px]",
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
@@ -59,7 +60,7 @@ const Tools = () => {
           </Link>
         </div>
       </div>
-      <div className={cn('flex flex-col gap-4 pt-16', 'lg:py-0 lg:justify-end')}>
+      <div className={cn('flex flex-col gap-4 pt-16', 'xl:py-0 xl:justify-end')}>
         <div className={cn("lg:-space-y-3 relative overflow-hidden")}>
           <MarqueeStack title />
           <MarqueeStack reverse title />

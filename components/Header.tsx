@@ -16,12 +16,12 @@ const HeaderPage = () => {
   const pathname = usePathname();
 
   return (
-    <header className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "lg:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
+    <header className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
       <GridPattern gradient />
       <div className="h-10">
         <NavBar isMenuOpen={isOpenModal} setIsMenuOpen={setIsOpenModal} />
       </div>
-      <div className={cn("px-6 text-center space-y-6", "lg:max-w-4xl lg:mx-auto", "xl:px-10 xl:max-w-full")}>
+      <div className={cn("px-6 text-center space-y-6", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:px-10 xl:max-w-full")}>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(
@@ -52,18 +52,19 @@ const HeaderPage = () => {
         </div>
         <h1 className={cn(
           "text-[28px] px-2 leading-tight font-semibold",
-          "lg:px-0 lg:text-6xl",
+          "lg:px-0 lg:text-[38px]",
           "xl:text-6xl xl:leading-[1.3]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
         )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
-            "md:w-40 md:h-10",
-            "xl:w-60 xl:h-14 p-[1px]",
+            "md:w-[60%] md:h-14",
+            "lg:w-60",
+            "p-[1px]",
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",

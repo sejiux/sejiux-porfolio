@@ -8,17 +8,17 @@ import ContraSvg from './ContraSvg';
 
 const About = () => {
   return (
-    <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "lg:px-0 lg:space-y-0 lg:grid lg:grid-cols-2 lg:items-center lg:justify-between")}>
+    <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-2 xl:items-center xl:justify-between")}>
       <Image src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("rounded-3xl border-2 border-neutral-600/30")} />
       <div className={cn("space-y-6", "xl:px-14 xl:space-y-8")}>
         <div className={cn("space-y-4", "lg:space-y-6")}>
-          <h1 className={cn(
+          <h2 className={cn(
             "text-xl leading-normal font-medium",
             "text-white/80",
-            "lg:px-0 lg:text-4xl",
-            "xl:text-3xl xl:leading-[1.4]",
+            "lg:text-4xl",
+            "xl:px-0 xl:text-3xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",
-          )}>Derrière Sejiux :</h1>
+          )}>Derrière Sejiux :</h2>
           <p className={cn("font-black text-5xl", "lg:text-6xl")}>Sélim 👋</p>
         </div>
         <div className={cn("flex items-center flex-wrap gap-3")}>
@@ -29,14 +29,14 @@ const About = () => {
             <div key={index} className={cn("text-sm bg-gradient-to-b from-background to-[#151518] border border-neutral-600/30 px-4 py-2 rounded-full", "lg:text-base")}>{data.title}</div>
           ))}
         </div>
-        <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base lg:px-0 text-subtitleCard lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>
+        <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
         Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé Sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
           <Link href="https://contra.com/im_sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",
-              "md:w-40 md:h-10",
+              "md:h-14",
               "lg:mx-0",
               "xl:w-60 xl:h-14 p-[1px]",
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
@@ -51,7 +51,7 @@ const About = () => {
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",
-              "md:w-40 md:h-10",
+              "md:h-14",
               "lg:mx-0",
               "xl:w-60 xl:h-14 p-[1px]",
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 

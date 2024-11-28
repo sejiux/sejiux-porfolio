@@ -21,7 +21,7 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   }, []); 
 
   return (
-    <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-32", "xl:h-24")}>
+    <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-24")}>
       {/* <div>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm", "lg:inset-x-20")}/>
         <div className={cn("absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-px w-3/4", "lg:inset-x-20")} />

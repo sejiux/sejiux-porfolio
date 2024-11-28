@@ -26,7 +26,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
 
   return (
     <nav className={cn("w-full flex justify-center items-center px-10 pt-6 fixed z-[55]", "lg:pt-8")}>
-      <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] py-3 px-4", "lg:w-auto lg:hidden")}>
+      <div className={cn("w-full flex items-center justify-between rounded-[10px] gap-4 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] py-3 px-4", "md:w-auto md:hidden")}>
         <Link href="/" className='flex gap-4 items-center'>
           <Image src={Logo} alt="Logo of SejiuX" width={1080} height={1080} className='w-8 h-7'/>
         </Link>
@@ -38,7 +38,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
           {isMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt3 />}
         </button>
       </div>
-      <div className={cn("hidden w-full items-center justify-between rounded-[10px] gap-2 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] p-2", "lg:w-auto lg:flex")}>
+      <div className={cn("hidden w-full items-center justify-between rounded-[10px] gap-2 border border-neutral-600/50 backdrop-blur-md bg-gradient-to-b from-background/50 to-[#151518] p-2", "md:w-auto md:flex")}>
         {linksData.map((data, index) => (
           <Link 
             key={index} 

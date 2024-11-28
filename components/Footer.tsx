@@ -18,16 +18,16 @@ const Footer = () => {
 
   return (
     <footer className={cn("relative flex flex-col justify-center px-6 mx-auto", "2xl:max-w-[70%]")}>
-      <div className={cn("relative size-full p-6 border-t border-neutral-600/30 bg-gradient-to-t from-transparent  via-transparent via-50% to-[#151518] backdrop-blur-xl rounded-3xl mx-auto", "lg:py-24")}>
-        <div className={cn("flex flex-col space-y-14 py-6", "lg:flex-row lg:items-start lg:justify-between lg:space-y-0 lg:max-w-7xl lg:mx-auto")}>
+      <div className={cn("relative size-full p-6 border-t border-neutral-600/30 bg-gradient-to-t from-transparent  via-transparent via-50% to-[#151518] backdrop-blur-xl rounded-3xl mx-auto", "xl:py-24")}>
+        <div className={cn("flex flex-col space-y-14 py-6", "md:justify-center md:text-center", "lg:items-center", "xl:flex-row xl:items-start xl:justify-between xl:space-y-0 xl:max-w-7xl xl:mx-auto")}>
           <div className={cn("space-y-4")}>
             <div className={cn("space-y-2")}>
               <h6 className={cn("font-black text-2xl")}>Sejiux</h6>
-              <p className={cn("font-light text-base text-subtitle max-w-xs leading-relaxed", "lg:max-w-sm")}>
+              <p className={cn("font-light text-base text-subtitle max-w-xs leading-relaxed", "md:max-w-max md:mx-auto", "xl:max-w-sm")}>
               Expert Shopify Headless
               </p>
             </div>
-            <div className="flex justify-evenly items-end gap-2">
+            <div className={cn("flex justify-evenly items-end gap-2", "md:justify-center md:gap-3")}>
               {socialsData.map((data, index) => (
                 <Link
                   key={index}
@@ -77,11 +77,11 @@ const Footer = () => {
           </div>
           <div className={cn("space-y-2", "lg:space-y-0")}>
             <h6 className={cn("uppercase text-lg font-medium")}>Vous avez un projet ?</h6>
-            <div className={cn("pt-6")}>
+            <div className={cn("pt-6", "md:flex md:justify-center")}>
               <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
                 "text-white", 
                 "w-[80%] h-12",
-                "md:w-40 md:h-10",
+                "md:w-60 md:h-14",
                 "lg:mx-auto",
                 "xl:w-60 xl:h-14 p-[1px]",
                 "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
