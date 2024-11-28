@@ -8,8 +8,8 @@ import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
-import { MdArticle, MdOutlineChatBubbleOutline } from "react-icons/md";
-import { PiMoneyWavyFill } from "react-icons/pi";
+import { MdOutlineChatBubbleOutline } from "react-icons/md";
+import { PiMoneyWavyFill, PiQuestionFill } from "react-icons/pi";
 import HomeHellopurly from "@/public/images/hellopurly-home.png";
 import ProductHellopurly from "@/public/images/hellopurly-product.png";
 import MobileHelloPurly from "@/public/images/hellopurly-mobile.png";
@@ -407,9 +407,9 @@ export const linksData = [
     icon: PiMoneyWavyFill
   },
   {
-    link: "/#blog", 
-    label: "Blog",
-    icon: MdArticle
+    link: "/#faq", 
+    label: "FAQ",
+    icon: PiQuestionFill
   },
 ];
 
