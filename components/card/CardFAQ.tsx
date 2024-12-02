@@ -45,7 +45,7 @@ const CardFAQ: FC<CardFAQProps> = ({
                     initial={{ y: 10 }}
                     animate={{ y: 0 }}
                     exit={{ y: 10 }}
-                    transition={{ duration: 0.3, delay: 0.1 }}
+                    transition={{ duration: 0.1 }}
                   >
                     <div className={cn("w-full border-[0.02px] border-neutral-600/30")} />
                   </motion.div>
@@ -55,7 +55,7 @@ const CardFAQ: FC<CardFAQProps> = ({
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.3, delay: 0.2 }}
+                      transition={{ duration: 0.3 }}
                     >
                       {content}
                     </motion.p>
