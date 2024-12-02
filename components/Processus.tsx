@@ -35,13 +35,13 @@ const Processus = () => {
             </Button>
           </div>
         </div>
-        <h1 className={cn(
+        <h2 className={cn(
           "text-[28px] px-2 leading-tight font-semibold",
           "text-white text-center",
           "lg:px-0 lg:text-6xl lg:text-left",
           "xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
-        )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h1>
+        )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h2>
         <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(

@@ -41,13 +41,13 @@ const Blog = () => {
             </Button>
           </div>
         </div>
-        <h1 className={cn(
+        <h2 className={cn(
           "text-[28px] px-2 leading-tight font-semibold ",
           "lg:px-0 lg:text-6xl",
           "xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Nouvelles, Réflexions et<br className="hidden lg:block" /> Inspirations sur Medium</h1>
+        )}>Nouvelles, Réflexions et<br className="hidden lg:block" /> Inspirations sur Medium</h2>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[700px]", "xl:text-lg xl:leading-relaxed")}>Plongez dans mon blog pour découvrir des analyses, conseils et tendances mêlant développement, psychologie et neurosciences.</p>
         <div className={cn("relative pt-10 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-3 lg:grid-rows-1")}>
           {articlesData.slice(0, visibleArticles).map((data, index) => (

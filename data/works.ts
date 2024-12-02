@@ -251,7 +251,7 @@ export const WhyData = [
     ], 
   },
   {
-    title: "Sejiux",
+    title: "sejiux",
     lists: [
       {
         icon: FaPaintBrush,

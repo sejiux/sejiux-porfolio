@@ -23,8 +23,42 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "sejiux",
-  description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable, adaptée à vos besoins. Faites passer votre commerce électronique au niveau supérieur !",
+  title: {
+    default: "sejiux | Boutiques Headless Mémorables",
+    template: "%s | sejiux"
+  },
+  description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable, adaptée à vos besoins.",
+  keywords: ["shopify headless", "shopify", "headless", "boutique headless", "boutique shopify headless", "dropshipping", "boutique dropshipping", "e-commerce", "design sur mesure", "design ux/ui", "designer web", "développeur shopify headless", "développeur shopify", "développeur fullstack", "shopify seo"],
+  authors: [{ name: "sejiux" }],
+  creator: "sejiux",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://sejiux.com",
+    siteName: "sejiux",
+    images: [
+      {
+        url: "https://sejiux.com/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "sejiux - Boutiques Headless Mémorables"
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sejiux",
+    creator: "@sejiux",
+    title: "sejiux | Boutiques Headless Mémorables",
+    description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
+    images: ["https://sejiux.com/images/og-image.jpg"],
+  },
+  verification: {
+    google: "VeUQ003CQJEmqI8Jhat7AsydV1Lf4NOuzEaViRaR5BQ",
+  },
+  alternates: {
+    canonical: "https://sejiux.com",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +69,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={cn(montserrat.variable, "font-montserrat relative text-white")}>
         <SpeedInsights />
         <Analytics />

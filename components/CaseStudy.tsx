@@ -67,7 +67,7 @@ const CaseStudy = () => {
               ))}
             </div>
             <p className={cn("py-4 text-[15px] font-light w-full text-subtitle",  "lg:w-[500px] lg:leading-relaxed")}>
-              "Après une expérience décevante avec une agence qui m'a créé une boutique shopify avec un thème custom (le design était vraiment moche), j'ai décidé de faire appel à Sejiux pour rattraper leur travail. Dès le départ, il a été super professionnel et à l'écoute. Il a su me rassurer et m'a tenu informé chaque jour de l'avancement du projet. Sa communication était excellente, et il a toujours pris le temps de répondre à mes questions. Grâce à lui, ma boutique a enfin le design que je voulais. Je recommande vivement Sejiux!"
+              "Après une expérience décevante avec une agence qui m'a créé une boutique shopify avec un thème custom (le design était vraiment moche), j'ai décidé de faire appel à sejiux pour rattraper leur travail. Dès le départ, il a été super professionnel et à l'écoute. Il a su me rassurer et m'a tenu informé chaque jour de l'avancement du projet. Sa communication était excellente, et il a toujours pris le temps de répondre à mes questions. Grâce à lui, ma boutique a enfin le design que je voulais. Je recommande vivement Sejiux!"
             </p>
             <div className={cn("flex items-center gap-2", "lg:gap-4")}>
               <Image src={ProfileClientHelloPurly} alt="Profile Client HelloPurly" width={1080} height={1080} className={cn('rounded-full bg-cover size-12')} />
