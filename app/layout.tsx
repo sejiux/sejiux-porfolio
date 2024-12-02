@@ -24,7 +24,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "sejiux | Boutiques Headless Mémorables",
+    default: "sejiux | Expert Shopify Headless",
     template: "%s | sejiux"
   },
   description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable, adaptée à vos besoins.",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: "https://sejiux.com/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "sejiux - Boutiques Headless Mémorables"
+        alt: "sejiux - Expert Shopify Headless"
       }
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@sejiux",
     creator: "@sejiux",
-    title: "sejiux | Boutiques Headless Mémorables",
+    title: "sejiux | Expert Shopify Headless",
     description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
     images: ["https://sejiux.com/images/og-image.jpg"],
   },

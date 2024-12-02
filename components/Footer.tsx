@@ -11,8 +11,36 @@ const Footer = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    if(window.location.href.includes(window.location.hash)) {
-      setIsHashLink(`/${window.location.hash}`);
+    if (typeof window !== 'undefined') {
+      if(window.location.href.includes(window.location.hash)) {
+        setIsHashLink(`/${window.location.hash}`);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const sectionsAndHeader = document.querySelectorAll("section[id], header[id]");
+    
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              if (id) {
+                setIsHashLink(`/#${id}`);
+              }
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+  
+      sectionsAndHeader.forEach((element) => observer.observe(element));
+  
+      return () => {
+        sectionsAndHeader.forEach((element) => observer.unobserve(element));
+      };
     }
   }, []);
 
@@ -22,7 +50,7 @@ const Footer = () => {
         <div className={cn("flex flex-col space-y-14 py-6", "md:justify-center md:text-center", "lg:items-center", "xl:flex-row xl:items-start xl:justify-between xl:space-y-0 xl:max-w-7xl xl:mx-auto")}>
           <div className={cn("space-y-4")}>
             <div className={cn("space-y-2")}>
-              <h6 className={cn("font-black text-2xl")}>Sejiux</h6>
+              <h6 className={cn("font-black text-2xl")}>sejiux</h6>
               <p className={cn("font-light text-base text-subtitle max-w-xs leading-relaxed", "md:max-w-max md:mx-auto", "xl:max-w-sm")}>
               Expert Shopify Headless
               </p>
@@ -56,7 +84,7 @@ const Footer = () => {
                     <Link 
                       href={data.link} 
                       onClick={() => setIsHashLink(data.link)}
-                      className={cn(classLink, !isHashLink && data.link === pathname || data.link === isHashLink && "font-bold text-white underline")}
+                      className={cn(classLink, data.link === isHashLink && "font-bold text-white underline")}
                     >
                       {data.label}
                     </Link>
@@ -97,7 +125,7 @@ const Footer = () => {
       </div>
       <div className={cn("flex justify-between p-6")}>
         <p className='text-sm text-subtitle/80'>Tous droits réservés</p>
-        <p className='text-sm text-subtitle/80'>@Sejiux - 2024</p>
+        <p className='text-sm text-subtitle/80'>@sejiux - 2024</p>
       </div>
     </footer>
   );

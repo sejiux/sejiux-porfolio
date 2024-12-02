@@ -11,7 +11,6 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import LetterPullup from "./ui/letter-pullup";
 import {ModalMenu} from "./ModalMenu";
-import { usePathname } from 'next/navigation';
 import { BorderBeam } from "./ui/border-beam";
 
 interface WorksPageProps {
@@ -26,7 +25,6 @@ interface WorksPageProps {
 
 const WorksPage = ({ works }: WorksPageProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
   const carouselRef = useRef<HTMLDivElement>(null);
   const outerBoxRef = useRef<HTMLDivElement>(null);
   const carouelRef = useRef<HTMLDivElement>(null);
@@ -192,7 +190,7 @@ const WorksPage = ({ works }: WorksPageProps) => {
         </div>
         <RadialGradient className="-z-50" />
       </section>
-      <ModalMenu pathname={pathname} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <ModalMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
   );
 };

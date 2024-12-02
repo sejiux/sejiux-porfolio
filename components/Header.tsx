@@ -9,11 +9,9 @@ import { SiShopify } from "react-icons/si";
 import NavBar from "./NavBar";
 import { useState } from "react";
 import { ModalMenu } from "./ModalMenu";
-import { usePathname } from "next/navigation";
 
 const HeaderPage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const pathname = usePathname();
 
   return (
     <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
@@ -82,7 +80,7 @@ const HeaderPage = () => {
         <ModalMenu
           isMenuOpen={isOpenModal}
           setIsMenuOpen={setIsOpenModal}
-          pathname={pathname} />
+        />
       )}
     </header>
   );

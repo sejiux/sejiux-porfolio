@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { linksData, socialsData } from "@/data/works";
@@ -10,12 +10,46 @@ import { cn } from "@/lib/utils";
 interface ModalMenuProps {
   isMenuOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
-  pathname: string;
 }
 
-export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProps) {
+export function ModalMenu({ isMenuOpen, setIsMenuOpen }: ModalMenuProps) {
   const handleCloseMenu = () => setIsMenuOpen(false);
   const handleStopPropagation = (e: React.MouseEvent) => e.stopPropagation();
+  const [isHashLink, setIsHashLink] = useState<string | undefined>("");
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if(window.location.href.includes(window.location.hash)) {
+        setIsHashLink(`/${window.location.hash}`);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const sectionsAndHeader = document.querySelectorAll("section[id], header[id]");
+    
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              if (id) {
+                setIsHashLink(`/#${id}`);
+              }
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+  
+      sectionsAndHeader.forEach((element) => observer.observe(element));
+  
+      return () => {
+        sectionsAndHeader.forEach((element) => observer.unobserve(element));
+      };
+    }
+  }, []);
 
   return (
     <>
@@ -39,7 +73,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen, pathname }: ModalMenuProp
                     key={index}
                     href={data.link}
                     className={`text-4xl font-bold font-montserrat p-2 ${
-                      pathname === data.link
+                      isHashLink === data.link
                         ? "text-white"
                         : "text-neutral-400/50"
                     }`}
