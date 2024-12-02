@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 export default function HorizonSection() {
   return (
-    <section id="horizon-section" className="-z-10 w-full top-0 left-0 right-0 bottom-auto absolute flex flex-col justify-center mx-auto">
+    <section className="-z-10 w-full top-0 left-0 right-0 bottom-auto absolute flex flex-col justify-center mx-auto">
       <div className={cn("z-10 relative pb-[35%]", "lg:pb-[50%]")}>
         <div className="absolute w-full h-full rounded-[50%] bg-gradient-services" />
         <div className="absolute top-auto left-0 right-0 -bottom-[20%] h-[70%] bg-background mx-auto" />

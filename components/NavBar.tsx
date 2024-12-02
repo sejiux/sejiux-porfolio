@@ -16,33 +16,37 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
   const [isHashLink, setIsHashLink] = useState<string | undefined>("");
 
   useEffect(() => {
-    if(window.location.href.includes(window.location.hash)) {
-      setIsHashLink(`/${window.location.hash}`);
+    if (typeof window !== 'undefined') {
+      if(window.location.href.includes(window.location.hash)) {
+        setIsHashLink(`/${window.location.hash}`);
+      }
     }
   }, []);
 
   useEffect(() => {
-    const sectionsAndHeader = document.querySelectorAll("section[id], header[id]");
+    if (typeof window !== 'undefined') {
+      const sectionsAndHeader = document.querySelectorAll("section[id], header[id]");
     
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("id");
-            if (id) {
-              setIsHashLink(`/#${id}`);
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              if (id) {
+                setIsHashLink(`/#${id}`);
+              }
             }
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+          });
+        },
+        { threshold: 0.5 }
+      );
   
-    sectionsAndHeader.forEach((element) => observer.observe(element));
+      sectionsAndHeader.forEach((element) => observer.observe(element));
   
-    return () => {
-      sectionsAndHeader.forEach((element) => observer.unobserve(element));
-    };
+      return () => {
+        sectionsAndHeader.forEach((element) => observer.unobserve(element));
+      };
+    }
   }, []);
 
 
