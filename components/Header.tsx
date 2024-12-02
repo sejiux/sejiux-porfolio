@@ -16,7 +16,7 @@ const HeaderPage = () => {
   const pathname = usePathname();
 
   return (
-    <header className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
+    <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
       <GridPattern gradient />
       <div className="h-10">
         <NavBar isMenuOpen={isOpenModal} setIsMenuOpen={setIsOpenModal} />

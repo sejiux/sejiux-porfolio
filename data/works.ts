@@ -387,14 +387,9 @@ export const socialsData = [
 
 export const linksData = [
   {
-    link: "/", 
+    link: "/#home", 
     label: "Accueil",
     icon: RiHomeSmile2Fill
-  },
-  {
-    link: "/#about", 
-    label: "À propos",
-    icon: RiUser5Fill
   },
   {
     link: "/#services", 
@@ -405,6 +400,11 @@ export const linksData = [
     link: "/#plans", 
     label: "Tarifs",
     icon: PiMoneyWavyFill
+  },
+  {
+    link: "/#about", 
+    label: "À propos",
+    icon: RiUser5Fill
   },
   {
     link: "/#faq", 

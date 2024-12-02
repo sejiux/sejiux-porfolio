@@ -7,20 +7,42 @@ import Image from 'next/image';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Logo from "@/public/images/sejiux.png";
 import { linksData } from '@/data/works';
-import { usePathname } from 'next/navigation';
 
 interface NavBarProps {
   isMenuOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>
 }
 const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
-  const [isHashLink, setIsHashLink] = useState("");
-  const pathname = usePathname();
+  const [isHashLink, setIsHashLink] = useState<string | undefined>("");
 
   useEffect(() => {
     if(window.location.href.includes(window.location.hash)) {
       setIsHashLink(`/${window.location.hash}`);
     }
+  }, []);
+
+  useEffect(() => {
+    const sectionsAndHeader = document.querySelectorAll("section[id], header[id]");
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            if (id) {
+              setIsHashLink(`/#${id}`);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+  
+    sectionsAndHeader.forEach((element) => observer.observe(element));
+  
+    return () => {
+      sectionsAndHeader.forEach((element) => observer.unobserve(element));
+    };
   }, []);
 
 
@@ -44,7 +66,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
             key={index} 
             href={data.link} 
             onClick={() => setIsHashLink(data.link)}
-            className={cn("flex gap-2 items-center text-subtitle/80 rounded-[10px] p-4", "hover:text-white", !isHashLink && data.link === pathname || data.link === isHashLink && "bg-secondary shadow-custom-secondary backdrop-blur-xl hover:bg-primary hover:shadow-custom-primary text-white font-medium")}>
+            className={cn("flex gap-2 items-center text-subtitle/80 rounded-[10px] p-4", "hover:text-white", data.link === isHashLink && "bg-secondary shadow-custom-secondary backdrop-blur-xl hover:bg-primary hover:shadow-custom-primary text-white font-medium")}>
             <data.icon className='text-2xl' />
             <h3>{data.label}</h3>
           </Link>
