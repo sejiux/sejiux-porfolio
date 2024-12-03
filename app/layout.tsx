@@ -31,11 +31,15 @@ export const metadata: Metadata = {
   keywords: ["shopify headless", "shopify", "headless", "boutique headless", "boutique shopify headless", "dropshipping", "boutique dropshipping", "e-commerce", "design sur mesure", "design ux/ui", "designer web", "développeur shopify headless", "développeur shopify", "développeur fullstack", "shopify seo"],
   authors: [{ name: "sejiux" }],
   creator: "sejiux",
+  publisher: "sejiux",
+  robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: "https://sejiux.com",
     siteName: "sejiux",
+    title: "sejiux | Expert Shopify Headless",
+    description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
     images: [
       {
         url: "https://sejiux.com/images/og-image.png",

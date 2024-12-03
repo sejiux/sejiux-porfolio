@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://sejiux.com/legals/mentions-legales',
+      url: 'https://sejiux.com/legals/terms-of-use',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,

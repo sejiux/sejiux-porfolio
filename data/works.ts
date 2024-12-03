@@ -415,7 +415,7 @@ export const linksData = [
 
 export const legalsLinksData = [
   {
-    link: "/legals/mentions-legales", label: "Mentions légales",
+    link: "/legals/terms-of-use", label: "Mentions légales",
   },
   {
     link: "/legals/privacy-policy", label: "Politique de confidentialité",
@@ -430,7 +430,7 @@ export const legalsLinksData = [
 
 export const legalsPagesData = (handle: string) => {
   switch (handle) {
-  case "mentions-legales":
+  case "terms-of-use":
     return {
       title: "Mentions légales",
       data: [
