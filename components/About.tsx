@@ -45,7 +45,7 @@ const About = () => {
               "hover:bg-primary hover:shadow-custom-primary",
             )}>
             <ContraSvg />
-                Embauchez-moi
+            Travaillons Ensemble
           </Link>
           <Link href="https://x.com/@sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 
             className={cn(
