@@ -271,7 +271,7 @@ export const WhyData = [
       },
       {
         icon: FaMoneyBillAlt,
-        content: "Coût initial plus élevé mais taux de conversion multipliée",
+        content: "Coût plus élevé mais taux de conversion multipliée",
       },
     ], 
   },
