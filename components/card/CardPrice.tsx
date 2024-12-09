@@ -8,6 +8,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 interface CardPriceProps {
   title: string;
   price: string;
+  truePrice?: string;
   content: string;
   link: string;
   options?: {
@@ -20,6 +21,7 @@ interface CardPriceProps {
 const CardPrice: FC<CardPriceProps> = ({
   title,
   price,
+  truePrice,
   content,
   link,
   options,
@@ -58,7 +60,10 @@ const CardPrice: FC<CardPriceProps> = ({
           {modeSelected === 1 || title === "Maintenance" ? (
             <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>/mois €</span></h3>
           ) : (
-            <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'> €</span></h3>
+            <div className='flex gap-4 items-end'>
+              <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>€</span></h3>
+              <h3 className={cn("text-2xl font-bold line-through text-white/50 mb-3")}>{truePrice}€</h3>
+            </div>
           )}
           {modeSelected === 1 && <p className={cn("text-subtitle/80 font-normal pb-2")}>{infoPrice}</p>}
         </div>

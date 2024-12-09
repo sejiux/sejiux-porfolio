@@ -67,6 +67,7 @@ const Price = () => {
                 key={index}
                 title={data.title}
                 price={data.price}
+                truePrice={data.truePrice}
                 content={data.content}
                 link={data.link}
                 options={data.options}

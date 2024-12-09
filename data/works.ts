@@ -295,7 +295,8 @@ export const CaseStudyData = [
 export const PricesFixeData = (modeSelected?: number) => [
   {
     title: "Mono-Produit", 
-    price: modeSelected ? "495" : "4950",
+    price: modeSelected ? "495" : "4 950",
+    truePrice: "10 000",
     infoPrice: "Pendant 10 mois sans frais", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
     link: modeSelected ? "https://buy.stripe.com/9AQ29a1Hydx88ec8wB" : "https://buy.stripe.com/7sIg002LC78K520fZ2",
@@ -331,7 +332,8 @@ export const PricesFixeData = (modeSelected?: number) => [
   },
   {
     title: "Multi-Produit", 
-    price:  modeSelected ? "795" : "7950",
+    price:  modeSelected ? "795" : "7 950",
+    truePrice: "50 000",
     infoPrice: "Pendant 10 mois sans frais",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
     link: modeSelected ? "https://buy.stripe.com/5kA3de0Du0Km664cMT" : "https://buy.stripe.com/8wM5lmgCsfFg1PO5kq",
