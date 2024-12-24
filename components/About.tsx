@@ -4,7 +4,6 @@ import Link from 'next/link';
 import AboutMePicture from "@/public/images/sejiux_about.webp";
 import Image from 'next/image';
 import { FaXTwitter } from 'react-icons/fa6';
-import ContraSvg from './ContraSvg';
 
 const About = () => {
   return (
