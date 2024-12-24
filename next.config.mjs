@@ -4,7 +4,6 @@ const nextConfig = {
     // Activer le React Compiler
     reactCompiler: true,
   },
-  swcMinify: false,
 };
 
 export default nextConfig;

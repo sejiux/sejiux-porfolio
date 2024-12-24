@@ -3,10 +3,12 @@ import { cn } from '@/lib/utils';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import Link from 'next/link';
-import MarqueeStack from './MarqueeStack';
 import { stacksData } from '@/data/works';
+import dynamic from 'next/dynamic';
 
 const Tools = () => {
+  const MarqueeStack = dynamic(() => import('./MarqueeStack'));
+
   return (
     <section className={cn("flex flex-col justify-center max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-4xl", "xl:max-w-7xl xl:grid xl:grid-cols-2 xl:items-center xl:justify-between xl:gap-8")}>
       <div className={cn("px-6 space-y-6", "lg:px-0")}>

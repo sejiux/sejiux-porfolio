@@ -26,7 +26,7 @@ const CardBlog: FC<CardBlogProps> = ({
     <Link href={link} target="_blank" rel="preload" className={cn("w-full group cursor-pointer rounded-3xl text-left border border-neutral-600/30 bg-gradient-to-bl from-transparent via-transparent via-50% to-[#151518]")}>
       <div className='relative h-full flex flex-col'>
         <div className='relative w-full h-0 pb-[60%] overflow-hidden rounded-t-3xl'>
-          <Image src={image ?? ""} alt="Image du blog" width={1080} height={1080} className='absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110'/>
+          <Image src={image ?? ""} alt="Image du blog" width={500} height={500} className='absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110'/>
         </div>
         <div className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 group-hover:bg-background *:group-hover:text-white")}>
           <FaArrowRight className="text-background text-2xl -rotate-45" />

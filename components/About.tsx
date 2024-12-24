@@ -7,7 +7,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 const About = () => {
   return (
     <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-2 xl:items-center xl:justify-between")}>
-      <Image priority src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30")} />
+      <Image loading="lazy" src={AboutMePicture} alt="About me" width={675} height={675} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30")} />
       <div className={cn("space-y-6", "xl:px-14 xl:space-y-8")}>
         <div className={cn("space-y-4", "lg:space-y-6")}>
           <h2 className={cn(

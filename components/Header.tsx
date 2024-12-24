@@ -1,17 +1,25 @@
 "use client";
+
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import { Button } from "@/components/ui/moving-border";
 import { cn } from "@/lib/utils";
-import MarqueeStack from "./MarqueeStack";
 import Link from "next/link";
 import GridPattern from "./ui/grid-pattern";
 import { SiShopify } from "react-icons/si";
 import NavBar from "./NavBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ModalMenu } from "./ModalMenu";
+import dynamic from 'next/dynamic';
 
 const HeaderPage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  const MarqueeStack = dynamic(() => import('./MarqueeStack'));
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
@@ -72,10 +80,12 @@ const HeaderPage = () => {
           </Link>
         </div>
       </div>
-      <div className="-space-y-5 mb-4">
-        <MarqueeStack />
-        <MarqueeStack reverse />
-      </div>
+      {isMounted && (
+        <div className="-space-y-5 mb-4">
+          <MarqueeStack />
+          <MarqueeStack reverse />
+        </div>
+      )}
       {isOpenModal && (
         <ModalMenu
           isMenuOpen={isOpenModal}

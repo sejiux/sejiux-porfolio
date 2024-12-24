@@ -1,22 +1,18 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { JsonLd } from 'react-schemaorg';
-import dynamic from 'next/dynamic';
-import HeaderPage from "@/components/Header";
-/* import Processus from "@/components/Processus";
-import Blog from "@/components/Blog"; */
-
-export const runtime = 'edge';
+import dynamic from "next/dynamic";
 
 export default function Home() {
-  const Services = dynamic(() => import("@/components/Services"));
-  const Tools = dynamic(() => import("@/components/Tools"));
-  const Benefit = dynamic(() => import("@/components/Benefit"));
-  const Processus = dynamic(() => import("@/components/Processus"));
-  const About = dynamic(() => import("@/components/About"));
-  const WhyMe = dynamic(() => import("@/components/WhyMe"));
-  const FAQ = dynamic(() => import("@/components/FAQ"));
-  const Blog = dynamic(() => import("@/components/Blog"));
-  const Footer = dynamic(() => import("@/components/Footer"));
+  const HeaderPage = dynamic(() => import("@/components/Header"));
+  const Services = lazy(() => import("@/components/Services"));
+  const Tools = lazy(() => import("@/components/Tools"));
+  const Benefit = lazy(() => import("@/components/Benefit"));
+  const Processus = lazy(() => import("@/components/Processus"));
+  const About = lazy(() => import("@/components/About"));
+  const WhyMe = lazy(() => import("@/components/WhyMe"));
+  const FAQ = lazy(() => import("@/components/FAQ"));
+  const Blog = lazy(() => import("@/components/Blog"));
+  const Footer = lazy(() => import("@/components/Footer"));
   <>
     <JsonLd
       item={{
@@ -39,21 +35,35 @@ export default function Home() {
       }}
     /></>;
   return (
-    <Suspense>
-      <div className="space-y-24 lg:space-y-44">
+    <div className="space-y-24 lg:space-y-44">
+      <Suspense>
         <HeaderPage />
+      </Suspense>
+      <Suspense>
         <Services />
+      </Suspense>
+      <Suspense>
         <Tools />
+      </Suspense>
+      <Suspense>
         <Benefit />
-        <Processus />
-        {/* <CaseStudy /> */}
+      </Suspense>
+      <Processus />
+      <Suspense>
         <About />
+      </Suspense>
+      <Suspense>
         <WhyMe />
-        {/* <Price /> */}
+      </Suspense>
+      <Suspense>
         <FAQ />
+      </Suspense>
+      <Suspense>
         <Blog />
+      </Suspense>
+      <Suspense>
         <Footer />
-      </div>
-    </Suspense>
+      </Suspense>
+    </div>
   );
 }
