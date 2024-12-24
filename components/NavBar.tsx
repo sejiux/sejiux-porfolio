@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Logo from "@/public/images/sejiux.png";
+import Logo from "@/public/images/sejiux.webp";
 import { linksData } from '@/data/works';
 
 interface NavBarProps {

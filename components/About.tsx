@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
 import Link from 'next/link';
-import AboutMePicture from "@/public/images/sejiux_about.jpg";
+import AboutMePicture from "@/public/images/sejiux_about.webp";
 import Image from 'next/image';
 import { FaXTwitter } from 'react-icons/fa6';
 import ContraSvg from './ContraSvg';
@@ -32,7 +32,7 @@ const About = () => {
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
         Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
-          <Link href="https://contra.com/im_sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 
+          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" 
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",
@@ -44,7 +44,6 @@ const About = () => {
               "bg-gradient-to-b from-primary to-secondary flex items-center justify-center text-base antialiased rounded-[10px]",
               "hover:bg-primary hover:shadow-custom-primary",
             )}>
-            <ContraSvg />
             Travaillons Ensemble
           </Link>
           <Link href="https://x.com/@sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 

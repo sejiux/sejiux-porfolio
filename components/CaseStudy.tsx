@@ -5,7 +5,7 @@ import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import Image from 'next/image';
 import LogoHelloPurly from "@/public/images/hellopurly-logo.webp";
-import ProfileClientHelloPurly from "@/public/images/profile-hellopurly.jpg";
+import ProfileClientHelloPurly from "@/public/images/profile-hellopurly.webp";
 import { CaseStudyData } from '@/data/works';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';

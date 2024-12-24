@@ -22,7 +22,7 @@ export default function Home() {
         "@type": "Organization",
         name: "sejiux",
         url: "https://sejiux.com",
-        logo: "https://sejiux.com/images/sejiux.png",
+        logo: "https://sejiux.com/images/sejiux.webp",
         description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance.",
         sameAs: [
           "https://twitter.com/sejiux",

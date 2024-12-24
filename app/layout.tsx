@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
     images: [
       {
-        url: "https://sejiux.com/images/og-image.png",
+        url: "https://sejiux.com/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "sejiux - Expert Shopify Headless"
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     creator: "@sejiux",
     title: "sejiux | Expert Shopify Headless",
     description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
-    images: ["https://sejiux.com/images/og-image.jpg"],
+    images: ["https://sejiux.com/images/og-image.webp"],
   },
   verification: {
     google: "VeUQ003CQJEmqI8Jhat7AsydV1Lf4NOuzEaViRaR5BQ",

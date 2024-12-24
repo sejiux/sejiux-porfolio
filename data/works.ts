@@ -8,20 +8,20 @@ import { FiZap } from "react-icons/fi";
 import { TfiBarChart } from "react-icons/tfi";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { GiKey } from "react-icons/gi";
-import { MdOutlineChatBubbleOutline } from "react-icons/md";
-import { PiMoneyWavyFill, PiQuestionFill } from "react-icons/pi";
-import HomeHellopurly from "@/public/images/hellopurly-home.png";
-import ProductHellopurly from "@/public/images/hellopurly-product.png";
-import MobileHelloPurly from "@/public/images/hellopurly-mobile.png";
-import BlogReview from "@/public/images/blog-review.png";
-import BlogError from "@/public/images/blog-snipcart-error.png";
-import BlogDesign from "@/public/images/blog-snipcart-design.png";
-import BlogStrapi from "@/public/images/blog-strapi.png";
-import BlogSnipcart from "@/public/images/blog-snipcart.png";
-import BlogHeadless from "@/public/images/blog-headless.png";
-import BlogIp from "@/public/images/blog-ip.png";
-import BlogListening from "@/public/images/blog-active-listening.png";
-import BlogMindset from "@/public/images/blog-mindset.png";
+import { MdArticle, MdOutlineChatBubbleOutline } from "react-icons/md";
+import { PiQuestionFill } from "react-icons/pi";
+import HomeHellopurly from "@/public/images/hellopurly-home.webp";
+import ProductHellopurly from "@/public/images/hellopurly-product.webp";
+import MobileHelloPurly from "@/public/images/hellopurly-mobile.webp";
+import BlogReview from "@/public/images/blog-review.webp";
+import BlogError from "@/public/images/blog-snipcart-error.webp";
+import BlogDesign from "@/public/images/blog-snipcart-design.webp";
+import BlogStrapi from "@/public/images/blog-strapi.webp";
+import BlogSnipcart from "@/public/images/blog-snipcart.webp";
+import BlogHeadless from "@/public/images/blog-headless.webp";
+import BlogIp from "@/public/images/blog-ip.webp";
+import BlogListening from "@/public/images/blog-active-listening.webp";
+import BlogMindset from "@/public/images/blog-mindset.webp";
 
 export const ServicesData = [
   {
@@ -411,7 +411,7 @@ export const linksData = [
   {
     link: "/#blog", 
     label: "Blog",
-    icon: PiMoneyWavyFill
+    icon: MdArticle
   },
 ];
 
