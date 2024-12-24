@@ -399,11 +399,6 @@ export const linksData = [
     icon: RiServiceFill
   },
   {
-    link: "/#plans", 
-    label: "Tarifs",
-    icon: PiMoneyWavyFill
-  },
-  {
     link: "/#about", 
     label: "À propos",
     icon: RiUser5Fill
@@ -412,6 +407,11 @@ export const linksData = [
     link: "/#faq", 
     label: "FAQ",
     icon: PiQuestionFill
+  },
+  {
+    link: "/#blog", 
+    label: "Blog",
+    icon: PiMoneyWavyFill
   },
 ];
 

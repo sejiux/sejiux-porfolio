@@ -1,15 +1,15 @@
 import HeaderPage from "@/components/Header";
 import About from "@/components/About";
-import Price from "@/components/Price";
 import Services from "@/components/Services";
 import Tools from "@/components/Tools";
 import { Suspense } from "react";
 import Benefit from "@/components/Benefit";
 import WhyMe from "@/components/WhyMe";
-import CaseStudy from "@/components/CaseStudy";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { JsonLd } from 'react-schemaorg';
+import Processus from "@/components/Processus";
+import Blog from "@/components/Blog";
 
 /* import Processus from "@/components/Processus";
 import Blog from "@/components/Blog"; */
@@ -43,13 +43,13 @@ export default function Home() {
         <Services />
         <Tools />
         <Benefit />
-        {/* <Processus /> */}
-        <CaseStudy />
-        <WhyMe />
-        <Price />
+        <Processus />
+        {/* <CaseStudy /> */}
         <About />
-        {/* <Blog /> */}
+        <WhyMe />
+        {/* <Price /> */}
         <FAQ />
+        <Blog />
         <Footer />
       </div>
     </Suspense>
