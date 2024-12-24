@@ -3,7 +3,8 @@ const nextConfig = {
   experimental: {
     // Activer le React Compiler
     reactCompiler: true,
-  }
+  },
+  swcMinify: false,
 };
 
 export default nextConfig;

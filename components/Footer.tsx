@@ -61,7 +61,7 @@ const Footer = () => {
                   key={index}
                   href={data.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="preload"
                   className={cn(
                     "p-[2px]",
                     "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 
@@ -106,7 +106,7 @@ const Footer = () => {
           <div className={cn("space-y-2", "lg:space-y-0")}>
             <h6 className={cn("uppercase text-lg font-medium")}>Vous avez un projet ?</h6>
             <div className={cn("pt-6", "md:flex md:justify-center")}>
-              <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
+              <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
                 "text-white", 
                 "w-[80%] h-12",
                 "md:w-60 md:h-14",

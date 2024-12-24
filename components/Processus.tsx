@@ -44,7 +44,7 @@ const Processus = () => {
         )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h2>
         <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
+          <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
             "md:w-40 md:h-10",

@@ -13,7 +13,7 @@ const CardCTA = () => {
             <h3 className={cn('mx-auto text-center text-[24px] font-semibold leading-normal', "lg:leading-[1.4]", "xl:leading-[1.4] lg:text-5xl lg:text-center")}>
             Des Boutiques Conçues sur mesure, surpassant le Traditionnel
             </h3>
-            <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
+            <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
               "text-white", 
               "w-full h-12 mx-auto",
               "md:w-40 md:h-10",

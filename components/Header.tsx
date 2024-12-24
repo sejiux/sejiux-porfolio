@@ -57,7 +57,7 @@ const HeaderPage = () => {
         )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
+          <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",

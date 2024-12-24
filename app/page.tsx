@@ -1,20 +1,22 @@
-import HeaderPage from "@/components/Header";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Tools from "@/components/Tools";
 import { Suspense } from "react";
-import Benefit from "@/components/Benefit";
-import WhyMe from "@/components/WhyMe";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
 import { JsonLd } from 'react-schemaorg';
-import Processus from "@/components/Processus";
-import Blog from "@/components/Blog";
-
+import dynamic from 'next/dynamic';
+import HeaderPage from "@/components/Header";
 /* import Processus from "@/components/Processus";
 import Blog from "@/components/Blog"; */
 
+export const runtime = 'edge';
+
 export default function Home() {
+  const Services = dynamic(() => import("@/components/Services"));
+  const Tools = dynamic(() => import("@/components/Tools"));
+  const Benefit = dynamic(() => import("@/components/Benefit"));
+  const Processus = dynamic(() => import("@/components/Processus"));
+  const About = dynamic(() => import("@/components/About"));
+  const WhyMe = dynamic(() => import("@/components/WhyMe"));
+  const FAQ = dynamic(() => import("@/components/FAQ"));
+  const Blog = dynamic(() => import("@/components/Blog"));
+  const Footer = dynamic(() => import("@/components/Footer"));
   <>
     <JsonLd
       item={{

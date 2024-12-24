@@ -73,6 +73,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen }: ModalMenuProps) {
                     key={index}
                     href={data.link}
                     onClick={handleCloseMenu}
+                    rel="preload"
                     className={`text-4xl font-bold font-montserrat p-2 ${
                       isHashLink === data.link
                         ? "text-white"
@@ -97,7 +98,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen }: ModalMenuProps) {
                         href={data.link}
                         onClick={handleCloseMenu}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="preload"
                         className={cn(
                           "p-[2px]",
                           "*:transition ease-out *:hover:duration-300 *:hover:text-white border rounded-lg", 

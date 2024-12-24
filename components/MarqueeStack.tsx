@@ -37,7 +37,7 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
             )}>
               {
                 shiftedData.map((data, index) => (
-                  <Link key={index} href={data.link} target="_blank" rel="noopener noreferrer" className={cn(
+                  <Link key={index} href={data.link} target="_blank" rel="preload" className={cn(
                     "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
                     "hover:bg-gradient-to-b hover:from-secondary hover:to-primary",
                     title && "flex gap-3 items-center px-6"

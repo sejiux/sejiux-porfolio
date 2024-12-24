@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import React from 'react';
 import Link from 'next/link';
 import AboutMePicture from "@/public/images/sejiux_about.webp";
 import Image from 'next/image';
@@ -8,7 +7,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 const About = () => {
   return (
     <section id="about" className={cn("px-6 flex flex-col justify-center space-y-14 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-2 xl:items-center xl:justify-between")}>
-      <Image src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("rounded-3xl border-2 border-neutral-600/30")} />
+      <Image priority src={AboutMePicture} alt="About me" width={1080} height={1080} className={cn("aspect-ratio rounded-3xl border-2 border-neutral-600/30")} />
       <div className={cn("space-y-6", "xl:px-14 xl:space-y-8")}>
         <div className={cn("space-y-4", "lg:space-y-6")}>
           <h2 className={cn(
@@ -31,7 +30,7 @@ const About = () => {
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
         Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
-          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} target="_blank" rel="noopener noreferrer" 
+          <Link href="mailto:im.sejiux@gmail.com" rel="preload" target="_blank"
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",
@@ -45,7 +44,7 @@ const About = () => {
             )}>
             Travaillons Ensemble
           </Link>
-          <Link href="https://x.com/@sejiux" prefetch={true} target="_blank" rel="noopener noreferrer" 
+          <Link href="https://x.com/@sejiux" target="_blank" rel="preload"
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",

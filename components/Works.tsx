@@ -129,7 +129,7 @@ const WorksPage = ({ works }: WorksPageProps) => {
                   backgroundImage: `url(${work.pictures.src})`,
                   transform: `rotateY(${index * rotationStep}deg) translateZ(${radius}px)`,
                 }}
-                target="_blank" rel="noopener noreferrer"
+                target="_blank" rel="preload"
               >
                 <Image
                   alt="image of works"

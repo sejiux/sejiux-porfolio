@@ -44,7 +44,7 @@ const Tools = () => {
         )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h2>
         <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
+          <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
             "text-white", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",

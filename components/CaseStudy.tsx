@@ -80,7 +80,7 @@ const CaseStudy = () => {
           <div className='relative size-full'>
             <div className={cn("overflow-hidden rounded-3xl size-full relative",
             )}>
-              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="noopener noreferrer" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 hover:bg-background *:hover:text-white")}>
+              <Link href="https://hellopurly.fr" prefetch={true} target="_blank" rel="preload" className={cn("absolute top-5 right-5 bg-white rounded-full p-4 cursor-pointer z-10 hover:bg-background *:hover:text-white")}>
                 <FaArrowRight className="text-background text-2xl -rotate-45" />
               </Link>
               <Image src={CaseStudyData[bigImageIndex].image.src} alt="Main Image of HelloPurly" width={1080} height={1080} className={cn("rounded-3xl size-full",

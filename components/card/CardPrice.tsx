@@ -68,7 +68,7 @@ const CardPrice: FC<CardPriceProps> = ({
           {modeSelected === 1 && <p className={cn("text-subtitle/80 font-normal pb-2")}>{infoPrice}</p>}
         </div>
         <p className={cn("text-subtitle/80 font-normal pb-6")}>{content}</p>
-        <Link href={link} prefetch={true} target="_blank" rel="noopener noreferrer" className={cn(
+        <Link href={link} target="_blank" rel="preload" className={cn(
           "text-white w-full", 
           "h-12 mx-auto",
           "md:h-14",

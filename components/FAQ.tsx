@@ -49,7 +49,7 @@ const FAQ = () => {
           </h2>
           <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base text-subtitle/80 lg:w-[500px]", "xl:pb-2 xl:px-0 xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
           <div className={cn("pt-4")}>
-            <Link href="mailto:im.sejiux@gmail.com" prefetch={true} className={cn(
+            <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
               "text-white", 
               "w-full h-12 mx-auto",
               "md:h-10",
