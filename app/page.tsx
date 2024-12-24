@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { JsonLd } from 'react-schemaorg';
 import dynamic from "next/dynamic";
 
+export const runtime = 'edge';
+
 export default function Home() {
   const HeaderPage = dynamic(() => import("@/components/Header"));
   const Services = lazy(() => import("@/components/Services"));
@@ -30,7 +32,6 @@ export default function Home() {
           "https://pinterest.com/sejiux",
           "https://facebook.com/im.sejiux",
           "https://www.facebook.com/sejiuxstudio/",
-          "https://contra.com/im_sejiux",
         ]
       }}
     /></>;

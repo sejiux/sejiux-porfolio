@@ -7,22 +7,15 @@ import Link from "next/link";
 import GridPattern from "./ui/grid-pattern";
 import { SiShopify } from "react-icons/si";
 import NavBar from "./NavBar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ModalMenu } from "./ModalMenu";
-import dynamic from 'next/dynamic';
+import MarqueeStack from "@/components/MarqueeStack";
 
 const HeaderPage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-
-  const MarqueeStack = dynamic(() => import('./MarqueeStack'));
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return (
-    <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:min-h-[100svh]", "2xl:min-h-full 2xl:gap-36")}>
+    <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:justify-center", "2xl:min-h-full 2xl:gap-36")}>
       <GridPattern gradient />
       <div className="h-10">
         <NavBar isMenuOpen={isOpenModal} setIsMenuOpen={setIsOpenModal} />
@@ -80,12 +73,10 @@ const HeaderPage = () => {
           </Link>
         </div>
       </div>
-      {isMounted && (
-        <div className="-space-y-5 mb-4">
-          <MarqueeStack />
-          <MarqueeStack reverse />
-        </div>
-      )}
+      <div className="-space-y-5 mb-4">
+        <MarqueeStack />
+        <MarqueeStack reverse />
+      </div>
       {isOpenModal && (
         <ModalMenu
           isMenuOpen={isOpenModal}

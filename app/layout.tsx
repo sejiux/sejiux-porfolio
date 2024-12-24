@@ -76,7 +76,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={cn(montserrat.variable, "font-montserrat relative text-white")}>
+      <body className={cn(montserrat.variable, "font-montserrat relative text-white")} suppressHydrationWarning>
         <SpeedInsights />
         <Analytics />
         {children}
