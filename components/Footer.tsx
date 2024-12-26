@@ -82,6 +82,7 @@ const Footer = () => {
                 {linksData.map((data, i) => (
                   <li key={i}>
                     <Link 
+                      aria-label={data.label}
                       href={data.link} 
                       onClick={() => setIsHashLink(data.link)}
                       className={cn(classLink, data.link === isHashLink && "font-bold text-white underline")}
@@ -97,7 +98,7 @@ const Footer = () => {
               <ul className="leading-loose">
                 {legalsLinksData.map((data, i) => (
                   <li key={i}>
-                    <Link href={data.link} className={cn(classLink, data.link === pathname && "text-white font-bold")}>{data.label}</Link>
+                    <Link href={data.link} aria-label={data.label} className={cn(classLink, data.link === pathname && "text-white font-bold")}>{data.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -107,7 +108,7 @@ const Footer = () => {
             <h6 className={cn("uppercase text-lg font-medium")}>Vous avez un projet ?</h6>
             <div className={cn("pt-6", "md:flex md:justify-center")}>
               <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
-                "text-white", 
+                "text-white font-medium", 
                 "w-[80%] h-12",
                 "md:w-60 md:h-14",
                 "lg:mx-auto",
@@ -115,7 +116,7 @@ const Footer = () => {
                 "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
                 "transition-all ease-in ",
                 "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-                "hover:bg-primary hover:shadow-custom-primary",
+                "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
               )}>
                 Contactez-moi
               </Link>

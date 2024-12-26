@@ -371,19 +371,19 @@ export const PricesFixeData = (modeSelected?: number) => [
 
 export const socialsData = [
   {
-    link: "https://github.com/sejiux", icon: FaGithub,
+    link: "https://github.com/sejiux", icon: FaGithub, label: "Github",
   },
   {
-    link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord,
+    link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord, label: "Discord",
   },
   {
-    link: "https://medium.com/@sejiux", icon: FaMedium,
+    link: "https://medium.com/@sejiux", icon: FaMedium, label: "Medium",
   },
   {
-    link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest
+    link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest, label: "Pinterest",
   },
   {
-    link: "https://x.com/sejiux", icon: FaTwitter,
+    link: "https://x.com/sejiux", icon: FaTwitter, label: "Twitter",
   }
 ];
 

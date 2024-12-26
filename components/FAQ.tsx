@@ -39,7 +39,7 @@ const FAQ = () => {
             </div>
           </div>
           <h2 className={cn(
-            "text-[28px] px-2 leading-tight font-semibold",
+            "text-[28px] px-2 leading-tight font-bold",
             "text-white text-center",
             "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
@@ -50,7 +50,7 @@ const FAQ = () => {
           <p className={cn("text-base text-center font-light w-full px-4", "lg:text-base text-subtitle/80 lg:w-[500px]", "xl:pb-2 xl:px-0 xl:text-lg xl:leading-relaxed")}>Si votre question n'est pas abordée ici, n'hésitez pas à me contacter.</p>
           <div className={cn("pt-4")}>
             <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
-              "text-white", 
+              "text-white font-medium", 
               "w-full h-12 mx-auto",
               "md:h-10",
               "lg:mx-0",
@@ -58,7 +58,7 @@ const FAQ = () => {
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary",
+              "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
             )}>
                 Poser une question
             </Link>

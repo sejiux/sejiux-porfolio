@@ -33,9 +33,9 @@ const CardBlog: FC<CardBlogProps> = ({
         </div>
         <div className={cn("p-6 flex flex-col justify-between items-start gap-4 flex-grow", "lg:space-y-2 lg:px-6 lg:py-5")}>
           <div className={cn("flex gap-2 items-center", "lg:gap-3")}>
-            <h6 className={cn("text-subtitle/50")}>{category}</h6>
+            <h2 className={cn("text-subtitle/50")}>{category}</h2>
             <div className={cn("size-2 rounded-full bg-subtitle/20")} /> 
-            <h6 className={cn("text-subtitle/50")}>{date}</h6>
+            <h3 className={cn("text-subtitle/50")}>{date}</h3>
           </div>
           <p className={cn("text-[#E4E4E6] text-xl font-medium pb-4 w-[90%]", "lg:text-[22px]")}>{title}</p>
           <p className={cn("text-subtitle/50")}>{readingTime}</p>

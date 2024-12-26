@@ -45,7 +45,7 @@ const Processus = () => {
         <p className={cn("text-base text-center font-light w-full px-4", "lg:text-left lg:text-base lg:px-0 text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
-            "text-white", 
+            "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-40 md:h-10",
             "lg:mx-0",
@@ -53,7 +53,7 @@ const Processus = () => {
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-            "hover:bg-primary hover:shadow-custom-primary",
+            "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
           )}>
                 Travaillons Ensemble
           </Link>

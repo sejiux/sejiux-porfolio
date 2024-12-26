@@ -71,6 +71,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen }: ModalMenuProps) {
                 {linksData.map((data, index) => (
                   <Link
                     key={index}
+                    aria-label={data.label}
                     href={data.link}
                     onClick={handleCloseMenu}
                     rel="preload"
@@ -95,6 +96,7 @@ export function ModalMenu({ isMenuOpen, setIsMenuOpen }: ModalMenuProps) {
                     {socialsData.map((data, index) => (
                       <Link
                         key={index}
+                        aria-label={data.label}
                         href={data.link}
                         onClick={handleCloseMenu}
                         target="_blank"

@@ -74,10 +74,11 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
         {linksData.map((data, index) => (
           <Link 
             key={index} 
+            aria-label={data.label}
             href={data.link} 
             rel="preload"
             onClick={() => setIsHashLink(data.link)}
-            className={cn("flex gap-2 items-center text-subtitle/80 rounded-[10px] p-4", "hover:text-white", data.link === isHashLink && "bg-secondary shadow-custom-secondary backdrop-blur-xl hover:bg-primary hover:shadow-custom-primary text-white font-medium")}>
+            className={cn("flex gap-2 items-center text-white/70 font-medium rounded-[10px] p-4", "hover:text-white", data.link === isHashLink && "bg-secondary shadow-custom-secondary backdrop-blur-xl hover:bg-primary hover:shadow-custom-primary text-white font-medium")}>
             <data.icon className='text-2xl' />
             <h3>{data.label}</h3>
           </Link>

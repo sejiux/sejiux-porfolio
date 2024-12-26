@@ -32,7 +32,7 @@ const About = () => {
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
           <Link href="mailto:im.sejiux@gmail.com" rel="preload" target="_blank"
             className={cn(
-              "text-white flex gap-2 items-center", 
+              "text-white flex gap-2 items-center font-medium", 
               "w-full h-12 mx-auto",
               "md:h-14",
               "lg:mx-0",
@@ -40,7 +40,7 @@ const About = () => {
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-gradient-to-b from-primary to-secondary flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary",
+              "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
             )}>
             Travaillons Ensemble
           </Link>

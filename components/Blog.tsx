@@ -53,6 +53,7 @@ const Blog = () => {
           {articlesData.slice(0, visibleArticles).map((data, index) => (
             <CardBlog
               key={index}
+              aria-label={data.title}
               title={data.title}
               readingTime={data.ReadingTime}
               category={data.category}
@@ -65,14 +66,14 @@ const Blog = () => {
         {visibleArticles < articlesData.length && (
           <div className={cn("pt-10")}>
             <div onClick={loadMoreArticles} className={cn(
-              "text-white cursor-pointer", 
+              "text-white cursor-pointer font-medium", 
               "w-[80%] h-12 mx-auto",
               "md:w-40 md:h-10",
               "xl:w-60 xl:h-14 p-[1px]",
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary",
+              "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
             )}>
                 Voir plus
             </div>

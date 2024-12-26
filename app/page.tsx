@@ -3,18 +3,18 @@ import { JsonLd } from 'react-schemaorg';
 import dynamic from "next/dynamic";
 
 export const runtime = 'edge';
+const Header = dynamic(() => import("@/components/Header"));
+const Services = lazy(() => import("@/components/Services"));
+const Tools = lazy(() => import("@/components/Tools"));
+const Benefit = lazy(() => import("@/components/Benefit"));
+const Processus = lazy(() => import("@/components/Processus"));
+const About = lazy(() => import("@/components/About"));
+const WhyMe = lazy(() => import("@/components/WhyMe"));
+const FAQ = lazy(() => import("@/components/FAQ"));
+const Blog = lazy(() => import("@/components/Blog"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
-  const HeaderPage = dynamic(() => import("@/components/Header"));
-  const Services = lazy(() => import("@/components/Services"));
-  const Tools = lazy(() => import("@/components/Tools"));
-  const Benefit = lazy(() => import("@/components/Benefit"));
-  const Processus = lazy(() => import("@/components/Processus"));
-  const About = lazy(() => import("@/components/About"));
-  const WhyMe = lazy(() => import("@/components/WhyMe"));
-  const FAQ = lazy(() => import("@/components/FAQ"));
-  const Blog = lazy(() => import("@/components/Blog"));
-  const Footer = lazy(() => import("@/components/Footer"));
   <>
     <JsonLd
       item={{
@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className="space-y-24 lg:space-y-44">
       <Suspense>
-        <HeaderPage />
+        <Header />
       </Suspense>
       <Suspense>
         <Services />

@@ -3,7 +3,7 @@ import Marquee from "@/components/ui/marquee";
 import { stacksData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 
 interface MarqueeStackProps {
   reverse?: boolean;
@@ -13,7 +13,6 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   reverse,
   title
 }) => {
-  const [shiftedData, setShiftedData] = useState(stacksData);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -21,10 +20,20 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   }, []);
 
   
-  useEffect(() => {
-    const shuffled = [...stacksData].sort(() => Math.random() - 0.5);
-    setShiftedData(shuffled);
-  }, []); 
+  const shuffledData = useMemo(() => {
+    return [...stacksData].sort(() => Math.random() - 0.5);
+  }, []);
+
+  const renderIcon = (data: typeof stacksData[0], index: number) => (
+    <Link key={index} aria-label={data.name} href={data.link} target="_blank" rel="preload" className={cn(
+      "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
+      "hover:bg-gradient-to-b hover:from-secondary hover:to-primary",
+      title && "flex gap-3 items-center px-6"
+    )}>
+      <data.icon className={cn("text-xl text-white/70", "lg:text-[28px]", title && "lg:text-2xl")} />
+      {title && <p className="font-medium py-2 text-lg">{data.name}</p>}
+    </Link>
+  );
   
   if (!isMounted) return null;
   return (
@@ -42,18 +51,7 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
               <div className={cn("flex items-center gap-6 px-2", "lg:gap-12 lg:px-4", 
                 title && "gap-3 px-0 lg:gap-4 lg:px-2"
               )}>
-                {
-                  shiftedData.map((data, index) => (
-                    <Link key={index} href={data.link} target="_blank" rel="preload" className={cn(
-                      "border-[0.1px] border-neutral-600/50 bg-gradient-to-b from-background to-[#151518] rounded-[10px] p-3",
-                      "hover:bg-gradient-to-b hover:from-secondary hover:to-primary",
-                      title && "flex gap-3 items-center px-6"
-                    )}>
-                      <data.icon key={index} className={cn("text-xl text-white/70", "lg:text-[28px]", title && "lg:text-2xl")} />
-                      {title && <p className="font-medium py-2 text-lg">{data.name}</p>}
-                    </Link>
-                  ))
-                }
+                {shuffledData.map(renderIcon)}
               </div>
             </Marquee>
             <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-background")} />

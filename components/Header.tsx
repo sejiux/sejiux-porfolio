@@ -59,7 +59,7 @@ const HeaderPage = () => {
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
-            "text-white", 
+            "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
             "lg:w-60",
@@ -67,7 +67,7 @@ const HeaderPage = () => {
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-            "hover:bg-primary hover:shadow-custom-primary",
+            "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
           )}>
                 Travaillons Ensemble
           </Link>

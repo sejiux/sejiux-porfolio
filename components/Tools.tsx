@@ -45,7 +45,7 @@ const Tools = () => {
         <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
           <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
-            "text-white", 
+            "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
             "lg:w-60",
@@ -54,7 +54,7 @@ const Tools = () => {
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-            "hover:bg-primary hover:shadow-custom-primary",
+            "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
           )}>
                 Travaillons Ensemble
           </Link>
