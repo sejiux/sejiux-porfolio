@@ -46,7 +46,7 @@ const Benefit = () => {
           </div>
         </div>
         <h2 className={cn(
-          "text-[28px] px-2 text-center leading-normal font-semibold ",
+          "text-2xl sm:text-[28px] px-2 text-center leading-normal font-semibold ",
           "text-white",
           "lg:px-0 lg:text-4xl",
           "xl:text-5xl xl:leading-[1.4] xl:text-left",

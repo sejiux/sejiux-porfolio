@@ -40,7 +40,7 @@ const About = () => {
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-gradient-to-b from-primary to-secondary flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
+              "hover:bg-primary hover:shadow-custom-primary",
             )}>
             Travaillons Ensemble
           </Link>

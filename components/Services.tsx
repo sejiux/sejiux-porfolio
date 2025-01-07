@@ -75,7 +75,7 @@ const Services = () => {
             </div>
           </div>
           <h2 className={cn(
-            "text-[28px] px-2 leading-tight font-semibold ",
+            "text-2xl sm:text-[28px] px-2 leading-tight font-semibold",
             "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",
@@ -83,7 +83,7 @@ const Services = () => {
           )}>
           L’Avènement d’une Nouvelle<br className="hidden lg:block" /> Ère pour votre Ecommerce
           </h2>
-          <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
+          <p className={cn("text-base font-light w-full px-4", "lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Découvrez comment mes services redéfinissent votre boutique en vous offrant des solutions uniques et une valeur ajoutée pour votre marque.</p>
           <div className={cn("relative pt-10 w-full max-w-7xl flex flex-col gap-4", "lg:grid lg:grid-cols-2", "xl:grid-cols-3")}>
             {/* <div className='absolute blur-xl -z-10 w-full mx-auto flex justify-center'>
             <div className='bg-gradient size-[1000px] border rounded-full'/>

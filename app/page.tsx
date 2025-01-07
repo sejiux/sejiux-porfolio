@@ -1,13 +1,15 @@
-import { lazy, Suspense } from "react";
+"use client";
+import { lazy } from "react";
 import { JsonLd } from 'react-schemaorg';
 import dynamic from "next/dynamic";
 
-export const runtime = 'edge';
+/* export const runtime = 'edge'; */
 const Header = dynamic(() => import("@/components/Header"));
 const Services = lazy(() => import("@/components/Services"));
 const Tools = lazy(() => import("@/components/Tools"));
 const Benefit = lazy(() => import("@/components/Benefit"));
 const Processus = lazy(() => import("@/components/Processus"));
+const Price = lazy(() => import("@/components/Price"));
 const About = lazy(() => import("@/components/About"));
 const WhyMe = lazy(() => import("@/components/WhyMe"));
 const FAQ = lazy(() => import("@/components/FAQ"));
@@ -36,35 +38,18 @@ export default function Home() {
       }}
     /></>;
   return (
-    <div className="space-y-24 lg:space-y-44">
-      <Suspense>
-        <Header />
-      </Suspense>
-      <Suspense>
-        <Services />
-      </Suspense>
-      <Suspense>
-        <Tools />
-      </Suspense>
-      <Suspense>
-        <Benefit />
-      </Suspense>
+    <div className="space-y-24 lg:space-y-44 overscroll-x-hidden">
+      <Header />
+      <Services />
+      <Tools />
+      <Benefit />
       <Processus />
-      <Suspense>
-        <About />
-      </Suspense>
-      <Suspense>
-        <WhyMe />
-      </Suspense>
-      <Suspense>
-        <FAQ />
-      </Suspense>
-      <Suspense>
-        <Blog />
-      </Suspense>
-      <Suspense>
-        <Footer />
-      </Suspense>
+      <Price />
+      <About />
+      <WhyMe />
+      <FAQ />
+      <Blog />
+      <Footer />
     </div>
   );
 }

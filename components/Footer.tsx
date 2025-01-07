@@ -116,7 +116,7 @@ const Footer = () => {
                 "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
                 "transition-all ease-in ",
                 "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-                "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
+                "hover:bg-primary hover:shadow-custom-primary",
               )}>
                 Contactez-moi
               </Link>

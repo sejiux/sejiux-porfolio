@@ -1,6 +1,6 @@
 "use client";
 import { cn } from '@/lib/utils';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import Link from 'next/link';
@@ -9,6 +9,16 @@ import CardFAQ from './card/CardFAQ';
 
 const FAQ = () => {
   const [isOpen, setIsOpen] = useState(FAQsData.map(() => false));
+  const [isMounted, setIsMounted] = useState(false);
+  
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if(!isMounted) {
+    return;
+  }
+  
   return (
     <section id="faq" className={cn("px-6 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-[1fr,3fr] xl:gap-10 xl:items-start xl:justify-between")}>
       <div className={cn("space-y-6", "xl:px-0 xl:sticky xl:top-24")}>
@@ -39,7 +49,7 @@ const FAQ = () => {
             </div>
           </div>
           <h2 className={cn(
-            "text-[28px] px-2 leading-tight font-bold",
+            "text-2xl sm:text-[28px] px-2 leading-tight font-bold",
             "text-white text-center",
             "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
@@ -58,7 +68,7 @@ const FAQ = () => {
               "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
               "transition-all ease-in ",
               "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-              "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
+              "hover:bg-primary hover:shadow-custom-primary",
             )}>
                 Poser une question
             </Link>

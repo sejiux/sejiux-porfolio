@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -79,7 +79,9 @@ export default function RootLayout({
       <body className={cn(montserrat.variable, "font-montserrat relative text-white")} suppressHydrationWarning>
         <SpeedInsights />
         <Analytics />
-        {children}
+        <Suspense>
+          {children}
+        </Suspense>
       </body>
     </html>
   );

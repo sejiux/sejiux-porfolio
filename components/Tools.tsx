@@ -36,7 +36,7 @@ const Tools = () => {
           </div>
         </div>
         <h2 className={cn(
-          "text-[28px] px-2 leading-tight font-semibold",
+          "text-2xl sm:text-[28px] px-2 leading-tight font-semibold",
           "text-white text-center",
           "lg:px-0 lg:text-4xl",
           "xl:text-left xl:text-5xl xl:leading-[1.4]",
@@ -54,7 +54,7 @@ const Tools = () => {
             "*:transition ease-out *:hover:duration-300 *:hover:text-white", 
             "transition-all ease-in ",
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
-            "hover:bg-primary hover:shadow-custom-primary hover:font-bold",
+            "hover:bg-primary hover:shadow-custom-primary",
           )}>
                 Travaillons Ensemble
           </Link>

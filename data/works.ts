@@ -1,4 +1,4 @@
-import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
+import { FaCode, FaJira, FaLock, FaMoneyBillWave, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql, SiStrapi } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine, RiHomeSmile2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";
@@ -299,7 +299,7 @@ export const PricesFixeData = (modeSelected?: number) => [
     truePrice: "10 000",
     infoPrice: "Pendant 10 mois sans frais", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
-    link: modeSelected ? "https://buy.stripe.com/9AQ29a1Hydx88ec8wB" : "https://buy.stripe.com/7sIg002LC78K520fZ2",
+    link: "mailto:im.sejiux@gmail.com",
     options: [
       {
         title: "Copywriting Persuasif"
@@ -336,7 +336,7 @@ export const PricesFixeData = (modeSelected?: number) => [
     truePrice: "50 000",
     infoPrice: "Pendant 10 mois sans frais",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
-    link: modeSelected ? "https://buy.stripe.com/5kA3de0Du0Km664cMT" : "https://buy.stripe.com/8wM5lmgCsfFg1PO5kq",
+    link: "mailto:im.sejiux@gmail.com",
     options: [
       {
         title: "Pack Complet Monoproduit"

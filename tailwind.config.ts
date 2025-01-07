@@ -92,7 +92,7 @@ const config: Config = {
       },
     },
     screens: {
-      xs: "370px",
+      xs: "350px",
       sm: "420px",
       md: "760px",
       lg: "1020px",
