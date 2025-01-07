@@ -1,6 +1,6 @@
 "use client";
 import { cn } from '@/lib/utils';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import { articlesData } from '@/data/works';
@@ -8,15 +8,6 @@ import CardBlog from './card/CardBlog';
 
 const Blog = () => {
   const [visibleArticles, setVisibleArticles] = useState(3);
-  const [isMounted, setIsMounted] = useState(false);
-    
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-  
-  if(!isMounted) {
-    return;
-  }
 
   const loadMoreArticles = () => {
     setVisibleArticles((prevVisibleArticles) => prevVisibleArticles + 3); // Charge 3 articles supplémentaires

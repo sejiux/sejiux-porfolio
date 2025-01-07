@@ -2,6 +2,7 @@
 import { lazy } from "react";
 import { JsonLd } from 'react-schemaorg';
 import dynamic from "next/dynamic";
+import { useIsHydrated } from "@/hook/useIsHydrated";
 
 /* export const runtime = 'edge'; */
 const Header = dynamic(() => import("@/components/Header"));
@@ -17,6 +18,7 @@ const Blog = lazy(() => import("@/components/Blog"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
+  const isHydrated = useIsHydrated();
   <>
     <JsonLd
       item={{
@@ -37,8 +39,13 @@ export default function Home() {
         ]
       }}
     /></>;
+
+  if (!isHydrated) {
+    return null;
+  }
+  
   return (
-    <div className="space-y-24 lg:space-y-44 overscroll-x-hidden">
+    <div className="space-y-24 lg:space-y-44">
       <Header />
       <Services />
       <Tools />

@@ -1,6 +1,6 @@
 "use client";
 import { cn } from '@/lib/utils';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import Link from 'next/link';
@@ -9,15 +9,6 @@ import CardFAQ from './card/CardFAQ';
 
 const FAQ = () => {
   const [isOpen, setIsOpen] = useState(FAQsData.map(() => false));
-  const [isMounted, setIsMounted] = useState(false);
-  
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if(!isMounted) {
-    return;
-  }
   
   return (
     <section id="faq" className={cn("px-6 flex flex-col justify-center gap-4 max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-2xl", "xl:max-w-7xl xl:px-0 xl:space-y-0 xl:grid xl:grid-cols-[1fr,3fr] xl:gap-10 xl:items-start xl:justify-between")}>
@@ -49,8 +40,7 @@ const FAQ = () => {
             </div>
           </div>
           <h2 className={cn(
-            "text-2xl sm:text-[28px] px-2 leading-tight font-bold",
-            "text-white text-center",
+            "text-2xl sm:text-[28px] px-2 text-white text-center leading-tight font-bold",
             "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",

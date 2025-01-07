@@ -28,7 +28,7 @@ const CardFAQ: FC<CardFAQProps> = ({
     <div className='flex gap-4 items-start w-full'>
       <div onClick={() => handleFaqClick(index)} className={cn("cursor-pointer w-full backdrop-blur-sm rounded-3xl flex flex-col text-left justify-start items-start gap-2 p-6 bg-gradient-to-bl from-transparent via-transparent via-70% to-[#151518] border border-neutral-600/30", "lg:py-8 lg:px-10")}>
         <div className={cn("w-full flex justify-between items-center gap-10", "lg:gap-4")}>
-          <h3 className={cn("text-sm xs:text-base lg:text-[20px]")}>{title}</h3>
+          <h3 className={cn("text-base lg:text-[20px]")}>{title}</h3>
           <IoIosArrowDropdownCircle className={cn("text-4xl rounded-full min-w-min border-2 border-primary fill-primary duration-300", isOpen[index] ? "rotate-180" : "rotate-0")} />
         </div>
         <AnimatePresence>

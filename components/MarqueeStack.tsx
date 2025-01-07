@@ -3,7 +3,7 @@ import Marquee from "@/components/ui/marquee";
 import { stacksData } from "@/data/works";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useMemo } from "react";
 
 interface MarqueeStackProps {
   reverse?: boolean;
@@ -13,11 +13,6 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   reverse,
   title
 }) => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   
   const shuffledData = useMemo(() => {
@@ -35,7 +30,6 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
     </Link>
   );
   
-  if (!isMounted) return null;
   return (
     <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-24")}>
       {/* <div>
@@ -44,21 +38,20 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
         <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-[5px] w-1/4 blur-sm", "lg:inset-x-64", "xl:inset-x-[700px]")} />
         <div className={cn("absolute inset-x-[160px] top-0 bg-gradient-to-r from-transparent via-primary to-transparent h-px w-1/4", "lg:inset-x-64", "xl:inset-x-[700px]")} />
       </div> */}
-      {isMounted && (
-        <div className="flex flex-col justify-center items-center w-full h-full">
-          <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl")}>
-            <Marquee pauseOnHover className={cn("[--duration:28s]", title && "[--duration:60s]")} reverse={reverse}>
-              <div className={cn("flex items-center gap-6 px-2", "lg:gap-12 lg:px-4", 
-                title && "gap-3 px-0 lg:gap-4 lg:px-2"
-              )}>
-                {shuffledData.map(renderIcon)}
-              </div>
-            </Marquee>
-            <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-background")} />
-            <div className={cn("pointer-events-none absolute inset-y-0 right-0 w-2/4 bg-gradient-to-l from-background")} />
-          </div>
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className={cn("absolute z-50 flex h-full w-full flex-col items-center justify-center overflow-hidden md:shadow-xl", "lg:max-w-2xl", "xl:max-w-7xl")}>
+          <Marquee pauseOnHover className={cn("[--duration:28s]", title && "[--duration:60s]")} reverse={reverse}>
+            <div className={cn("flex items-center gap-6 px-2", "lg:gap-12 lg:px-4", 
+              title && "gap-3 px-0 lg:gap-4 lg:px-2"
+            )}>
+              {shuffledData.map(renderIcon)}
+            </div>
+          </Marquee>
+          <div className={cn("pointer-events-none absolute inset-y-0 left-0 w-2/4 bg-gradient-to-r from-background")} />
+          <div className={cn("pointer-events-none absolute inset-y-0 right-0 w-2/4 bg-gradient-to-l from-background")} />
+        </div>
                 
-          {/* <SparklesCore
+        {/* <SparklesCore
           background="transparent"
           minSize={0.4}
           maxSize={1}
@@ -67,9 +60,8 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
           particleColor="#FFFFFF"
         /> */}
     
-          <div className={cn("absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,background)]")} />
-        </div>
-      )}
+        <div className={cn("absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,background)]")} />
+      </div>
     
       {/* <div>
           <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-green-800 to-transparent h-[2px] w-3/4 blur-sm" />

@@ -9,8 +9,7 @@ const LegalPage: FC<LegalPageProps> = ({handle}) => {
   return (
     <div className={cn("px-6 text-left space-y-6", "lg:max-w-4xl lg:mx-auto")}>
       <h2 className={cn(
-        "text-2xl sm:text-[28px] pb-14 leading-tight font-semibold ",
-        "text-white text-left",
+        "text-2xl sm:text-[28px] text-white text-left pb-14 leading-tight font-semibold ",
         "lg:text-6xl",
         "xl:text-5xl xl:leading-[1.4]",
         "pointer-events-none whitespace-pre-wrap",
@@ -18,8 +17,7 @@ const LegalPage: FC<LegalPageProps> = ({handle}) => {
       {legalsPagesData(handle).data.map((data, index) => (
         <div key={index} className="space-y-6">
           <h3 className={cn(
-            "text-xl leading-tight font-semibold",
-            "text-white text-left",
+            "text-xl text-white text-left leading-tight font-semibold",
             "lg:text-3xl lg:mx-auto",
             "xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",

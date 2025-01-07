@@ -1,4 +1,4 @@
-import { FaCode, FaJira, FaLock, FaMoneyBillWave, FaRocket, FaShopify } from "react-icons/fa6";
+import { FaCode, FaJira, FaLock, FaRocket, FaShopify } from "react-icons/fa6";
 import { FaGithub, FaDiscord, FaMedium, FaTwitter, FaHtml5, FaCss3, FaReact, FaFigma, FaPinterest, FaTachometerAlt, FaPaintBrush, FaHeadphonesAlt, FaSearch, FaMoneyBillAlt } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiZod, SiPrisma, SiBlender, SiGreensock, SiGit, SiFramer, SiReactquery, SiResend, SiReacthookform, SiTailwindcss, SiShadcnui, SiShopify, SiVercel, SiGithub, SiSocketdotio, SiGraphql, SiStrapi } from "react-icons/si";
 import { RiBearSmileLine, RiCodeSSlashLine, RiHomeSmile2Fill, RiServiceFill, RiUser5Fill } from "react-icons/ri";

@@ -1,6 +1,6 @@
 "use client";
 import { cn } from '@/lib/utils';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/moving-border';
 import AnimatedShinyText from './ui/animated-shiny-text';
 import { PricesFixeData } from '@/data/works';
@@ -8,13 +8,6 @@ import CardPrice from './card/CardPrice';
 
 const Price = () => {
   const [modeSelected, setModeSelected] = useState(0);
-  const [isMounted, setIsMounted] = useState(false);
-  
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null;
     
   return (
     <section className={cn("relative flex flex-col justify-center max-w-7xl mx-auto items-center")}>
