@@ -1,8 +1,6 @@
-"use client";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import { JsonLd } from 'react-schemaorg';
 import dynamic from "next/dynamic";
-import { useIsHydrated } from "@/hook/useIsHydrated";
 
 /* export const runtime = 'edge'; */
 const Header = dynamic(() => import("@/components/Header"));
@@ -18,7 +16,6 @@ const Blog = lazy(() => import("@/components/Blog"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
-  const isHydrated = useIsHydrated();
   <>
     <JsonLd
       item={{
@@ -39,24 +36,42 @@ export default function Home() {
         ]
       }}
     /></>;
-
-  if (!isHydrated) {
-    return null;
-  }
   
   return (
     <div className="space-y-24 lg:space-y-44">
-      <Header />
-      <Services />
-      <Tools />
-      <Benefit />
-      <Processus />
-      <Price />
-      <About />
-      <WhyMe />
-      <FAQ />
-      <Blog />
-      <Footer />
+      <Suspense>
+        <Header />
+      </Suspense>
+      <Suspense>
+        <Services />
+      </Suspense>
+      <Suspense>
+        <Tools />
+      </Suspense>
+      <Suspense>
+        <Benefit />
+      </Suspense>
+      <Suspense>
+        <Processus />
+      </Suspense>
+      <Suspense>
+        <Price />
+      </Suspense>
+      <Suspense>
+        <About />
+      </Suspense>
+      <Suspense>
+        <WhyMe />
+      </Suspense>
+      <Suspense>
+        <FAQ />
+      </Suspense>
+      <Suspense>
+        <Blog />
+      </Suspense>
+      <Suspense>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

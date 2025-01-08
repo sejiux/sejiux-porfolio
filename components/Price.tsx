@@ -84,9 +84,6 @@ const Price = () => {
                 link="mailto:im.sejiux@gmail.com"
                 options={[
                   {
-                    title: "Accès à un portail dédié pour le suivi des tickets",
-                  },
-                  {
                     title: "Support client disponible 5j/7",
                   },
                   {
@@ -102,22 +99,25 @@ const Price = () => {
                     title: "Optimisation continue des performances",
                   },
                   {
-                    title: "Correction des bugs incluse",
+                    title: "Correction des bugs",
                   },
                   {
-                    title: "Mises à jour de sécurité incluses",
+                    title: "Mises à jour de sécurité",
                   },
                   {
-                    title: "Transfert d'hébergement inclus",
+                    title: "Transfert d'hébergement",
                   },
                   {
-                    title: "Migration des données incluse",
+                    title: "Migration des données",
                   },
                   {
-                    title: "Changement de nom de domaine inclus",
+                    title: "Changement de nom de domaine",
                   },
                   {
-                    title: "Gestion des DNS incluse",
+                    title: "Gestion des DNS",
+                  },
+                  {
+                    title: "Accès à un portail dédié pour le suivi des tickets",
                   }
                 ]}
               />

@@ -317,13 +317,13 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Protection contre la duplication"
       },
       {
-        title: "Migration des données incluse"
+        title: "Migration des données"
       },
       {
-        title: "Domaine et Hébergement inclus"
+        title: "Domaine, SSL, DNS et Hébergement"
       },
       {
-        title: "1 Mois de Support Inclus"
+        title: "1 Mois de Support"
       },
       {
         title: "Blog avec le CMS Strapi"
@@ -366,7 +366,7 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Filtres et Recherche Produits"
       },
       {
-        title: "2 Mois de Support Inclus"
+        title: "2 Mois de Support"
       },
       {
         title: "2 mois de modifications offerts"

@@ -1,6 +1,7 @@
 "use client";
 import Marquee from "@/components/ui/marquee";
 import { stacksData } from "@/data/works";
+import { useIsHydrated } from "@/hook/useIsHydrated";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { FC, useMemo } from "react";
@@ -13,7 +14,7 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
   reverse,
   title
 }) => {
-
+  const isHydrated = useIsHydrated();
   
   const shuffledData = useMemo(() => {
     return [...stacksData].sort(() => Math.random() - 0.5);
@@ -29,6 +30,10 @@ const MarqueeStack: FC<MarqueeStackProps> = ({
       {title && <p className="font-medium py-2 text-lg">{data.name}</p>}
     </Link>
   );
+
+  if (!isHydrated) {
+    return null;
+  }
   
   return (
     <div className={cn("relative mx-auto w-full h-[80px] z-10", "lg:h-24")}>

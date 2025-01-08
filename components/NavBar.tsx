@@ -58,7 +58,7 @@ const NavBar = ({isMenuOpen, setIsMenuOpen}: NavBarProps) => {
             className='w-8 h-7'
           />
         </Link>
-        <p className='font-black text-white/90 text-2xl'>sejiux</p>
+        <p className='font-black text-white/90 text-2xl'>Sejiux</p>
         <button
           className={cn("text-2xl", "lg:hidden")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
