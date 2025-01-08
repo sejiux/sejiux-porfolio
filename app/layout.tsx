@@ -24,28 +24,28 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "sejiux | Boutique Shopify Headless",
-    template: "%s | sejiux"
+    default: "Sejiux | Expert Shopify Headless",
+    template: "%s | Sejiux"
   },
   description: "Offrez une expérience headless mémorable à vos clients grâce à une boutique en ligne rapide, performante et sur mesure avec Next.js et Shopify.",
   keywords: ["shopify headless", "shopify", "headless", "boutique headless", "boutique shopify headless", "dropshipping", "boutique dropshipping", "e-commerce", "design sur mesure", "design ux/ui", "designer web", "développeur shopify headless", "développeur shopify", "développeur fullstack", "shopify seo"],
-  authors: [{ name: "sejiux" }],
-  creator: "sejiux",
-  publisher: "sejiux",
+  authors: [{ name: "Sejiux" }],
+  creator: "Sejiux",
+  publisher: "Sejiux",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: "https://sejiux.com",
-    siteName: "sejiux",
-    title: "sejiux | Expert Shopify Headless",
+    siteName: "Sejiux",
+    title: "Sejiux | Expert Shopify Headless",
     description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
     images: [
       {
         url: "https://sejiux.com/images/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "sejiux - Expert Shopify Headless"
+        alt: "Sejiux - Expert Shopify Headless"
       }
     ],
   },
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@sejiux",
     creator: "@sejiux",
-    title: "sejiux | Expert Shopify Headless",
+    title: "Sejiux | Expert Shopify Headless",
     description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance, pour offrir à votre marque une expérience utilisateur fluide et mémorable.",
     images: ["https://sejiux.com/images/og-image.webp"],
   },

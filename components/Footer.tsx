@@ -47,7 +47,7 @@ const Footer = () => {
         <div className={cn("flex flex-col space-y-14 py-6", "md:justify-center md:text-center", "lg:items-center", "xl:flex-row xl:items-start xl:justify-between xl:space-y-0 xl:max-w-7xl xl:mx-auto")}>
           <div className={cn("space-y-4")}>
             <div className={cn("space-y-2")}>
-              <Image src={"/images/sejiux.webp"} width={100} height={100} alt="Logo Sejiux" className='mx-auto' />
+              <Image src={"/images/sejiux.webp"} width={100} height={100} alt="Logo Sejiux" className='md:mx-auto' />
               <h6 className={cn("font-black text-2xl")}>Sejiux</h6>
               <p className={cn("font-light text-base text-subtitle max-w-xs leading-relaxed", "md:max-w-max md:mx-auto", "xl:max-w-sm")}>
               Expert Shopify Headless
