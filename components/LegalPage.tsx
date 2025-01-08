@@ -9,7 +9,7 @@ const LegalPage: FC<LegalPageProps> = ({handle}) => {
   return (
     <div className={cn("px-6 text-left space-y-6", "lg:max-w-4xl lg:mx-auto")}>
       <h2 className={cn(
-        "text-2xl sm:text-[28px] text-white text-left pb-14 leading-tight font-semibold ",
+        "text-[28px] text-white text-left pb-14 leading-tight font-semibold ",
         "lg:text-6xl",
         "xl:text-5xl xl:leading-[1.4]",
         "pointer-events-none whitespace-pre-wrap",

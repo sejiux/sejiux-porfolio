@@ -40,7 +40,7 @@ const FAQ = () => {
             </div>
           </div>
           <h2 className={cn(
-            "text-2xl sm:text-[28px] px-2 text-white text-center leading-tight font-bold",
+            "text-[28px] px-2 text-white text-center leading-tight font-bold",
             "lg:px-0 lg:text-4xl",
             "xl:text-5xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",

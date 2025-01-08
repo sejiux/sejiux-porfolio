@@ -36,7 +36,7 @@ const Processus = () => {
           </div>
         </div>
         <h2 className={cn(
-          "text-2xl sm:text-[28px] px-2 text-center leading-tight font-semibold ",
+          "text-[28px] px-2 text-center leading-tight font-semibold ",
           "lg:text-4xl",
           "xl:text-5xl xl:text-left xl:px-0 xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",

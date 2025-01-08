@@ -42,7 +42,7 @@ const Blog = () => {
           </div>
         </div>
         <h2 className={cn(
-          "text-2xl sm:text-[28px] px-2 leading-tight font-semibold ",
+          "text-[28px] px-2 leading-tight font-semibold ",
           "lg:px-0 lg:text-6xl",
           "xl:text-5xl xl:leading-[1.4]",
           "pointer-events-none whitespace-pre-wrap",
