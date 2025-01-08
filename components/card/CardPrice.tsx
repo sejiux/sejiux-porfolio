@@ -83,21 +83,17 @@ const CardPrice: FC<CardPriceProps> = ({
         )}>
                 Commençons maintenant
         </Link>
-        {title !== "Maintenance" && (
-          <>
-            <div className={cn("pt-4")}>
-              <div className='w-full mx-auto border border-[#151518]/70' />
+        <div className={cn("pt-4")}>
+          <div className='w-full mx-auto border border-[#151518]/70' />
+        </div>
+        <div className={cn("space-y-2 py-4")}>
+          {options?.map((option, index) => (
+            <div key={index} className={cn('flex items-center mx-auto gap-4', "lg:mx-0")}>
+              <FaCheckCircle className='text-primary text-xl' />
+              <div className={cn("text-base text-subtitlePrice font-medium")}>{option.title}</div>
             </div>
-            <div className={cn("space-y-2 py-4")}>
-              {options?.map((option, index) => (
-                <div key={index} className={cn('flex items-center mx-auto gap-4', "lg:mx-0")}>
-                  <FaCheckCircle className='text-primary text-xl' />
-                  <div className={cn("text-base text-subtitlePrice font-medium")}>{option.title}</div>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
+          ))}
+        </div>
       </div>
     </div>
   );

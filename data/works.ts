@@ -317,16 +317,22 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Protection contre la duplication"
       },
       {
+        title: "Migration des données incluse"
+      },
+      {
+        title: "Nom de domaine et Hébergement inclus"
+      },
+      {
         title: "1 Mois de Support Inclus"
       },
       {
-        title: "Optimisation SEO"
+        title: "Blog avec le CMS Strapi"
+      },
+      {
+        title: "Optimisation SEO de Base"
       },
       {
         title: "Délivré en 1 Mois"
-      },
-      {
-        title: "Blog avec le CMS Strapi"
       },
     ],
   },
@@ -345,6 +351,9 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Intégration des Collections"
       },
       {
+        title: "Intégration de vos outils externes"
+      },
+      {
         title: "Gestion de Catalogue Avancée"
       },
       {
@@ -358,6 +367,9 @@ export const PricesFixeData = (modeSelected?: number) => [
       },
       {
         title: "2 Mois de Support Inclus"
+      },
+      {
+        title: "2 mois de modifications offerts"
       },
       {
         title: "Optimisation SEO Avancée"

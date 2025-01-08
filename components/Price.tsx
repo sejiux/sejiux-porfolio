@@ -80,8 +80,46 @@ const Price = () => {
               <CardPrice
                 title="Maintenance"
                 price="250"
-                content="Bénéficiez d'un support technique et de mises à jour régulières pour une expérience utilisateur optimale."
+                content="Bénéficiez d'un support technique pour une expérience utilisateur optimale."
                 link="mailto:im.sejiux@gmail.com"
+                options={[
+                  {
+                    title: "Accès à un portail dédié pour le suivi des tickets",
+                  },
+                  {
+                    title: "Support client disponible 5j/7",
+                  },
+                  {
+                    title: "Support disponible le week-end (en supplément)",
+                  },
+                  {
+                    title: "Support par e-mail et chat en ligne",
+                  },
+                  {
+                    title: "Réponse sous 24 heures (hors week-end)",
+                  },
+                  {
+                    title: "Optimisation continue des performances",
+                  },
+                  {
+                    title: "Correction des bugs incluse",
+                  },
+                  {
+                    title: "Mises à jour de sécurité incluses",
+                  },
+                  {
+                    title: "Transfert d'hébergement inclus",
+                  },
+                  {
+                    title: "Migration des données incluse",
+                  },
+                  {
+                    title: "Changement de nom de domaine inclus",
+                  },
+                  {
+                    title: "Gestion des DNS incluse",
+                  }
+                ]}
               />
             </div>
           </div>
