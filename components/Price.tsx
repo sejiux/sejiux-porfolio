@@ -87,13 +87,10 @@ const Price = () => {
                     title: "Support client disponible 5j/7",
                   },
                   {
-                    title: "Support par e-mail et chat en ligne",
-                  },
-                  {
                     title: "Réponse sous 24 heures",
                   },
                   {
-                    title: "Optimisation continue des performances",
+                    title: "Optimisation des performances",
                   },
                   {
                     title: "Correction des bugs",
@@ -112,6 +109,9 @@ const Price = () => {
                   },
                   {
                     title: "Gestion des DNS",
+                  },
+                  {
+                    title: "Suivi et optimisation SEO",
                   },
                 ]}
               />
