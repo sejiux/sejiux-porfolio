@@ -87,13 +87,10 @@ const Price = () => {
                     title: "Support client disponible 5j/7",
                   },
                   {
-                    title: "Support disponible le week-end (en supplément)",
-                  },
-                  {
                     title: "Support par e-mail et chat en ligne",
                   },
                   {
-                    title: "Réponse sous 24 heures (hors week-end)",
+                    title: "Réponse sous 24 heures",
                   },
                   {
                     title: "Optimisation continue des performances",
@@ -116,9 +113,6 @@ const Price = () => {
                   {
                     title: "Gestion des DNS",
                   },
-                  {
-                    title: "Accès à un portail dédié pour le suivi des tickets",
-                  }
                 ]}
               />
             </div>
