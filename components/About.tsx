@@ -16,7 +16,7 @@ const About = () => {
             "lg:text-4xl",
             "xl:px-0 xl:text-3xl xl:leading-[1.4]",
             "pointer-events-none whitespace-pre-wrap",
-          )}>Derrière sejiux :</h2>
+          )}>Derrière Sejiux :</h2>
           <p className={cn("font-black text-5xl", "lg:text-6xl")}>Sélim 👋</p>
         </div>
         <div className={cn("flex items-center flex-wrap gap-3")}>
