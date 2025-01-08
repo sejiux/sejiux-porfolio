@@ -320,7 +320,7 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Migration des données incluse"
       },
       {
-        title: "Nom de domaine et Hébergement inclus"
+        title: "Domaine et Hébergement inclus"
       },
       {
         title: "1 Mois de Support Inclus"
