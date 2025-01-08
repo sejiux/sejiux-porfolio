@@ -58,7 +58,7 @@ const CardPrice: FC<CardPriceProps> = ({
         </div>
         <div className='py-6'>
           {modeSelected === 1 || title === "Maintenance" ? (
-            <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>/mois €</span></h3>
+            <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>{title === "Maintenance" ? "/an" : "/mois"} €</span></h3>
           ) : (
             <div className='flex gap-4 items-end'>
               <h3 className={cn("text-5xl sm:text-[58px] font-bold")}>{price}<span className='text-[26px]'>€</span></h3>
