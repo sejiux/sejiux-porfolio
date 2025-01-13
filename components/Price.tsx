@@ -73,7 +73,6 @@ const Price = () => {
                 link={data.link}
                 options={data.options}
                 modeSelected={modeSelected}
-                infoPrice={data.infoPrice}
               />
             ))}
             <div className="col-span-2 max-w-xl w-full mx-auto">

@@ -26,7 +26,6 @@ const CardPrice: FC<CardPriceProps> = ({
   link,
   options,
   modeSelected,
-  infoPrice
 }) => {
   return (
     <div className={cn("w-full rounded-3xl flex flex-col justify-start items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-t from-transparent via-transparent via-70% to-[#151518]", "lg:px-8 lg:py-10")}>
@@ -58,9 +57,9 @@ const CardPrice: FC<CardPriceProps> = ({
         </div>
         <div className='py-6'>
           {price === "250" ? (
-            <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>/an €</span></h3>
+            <h3 className={cn("text-5xl sm:text-[58px] font-bold")}>{price}<span className='text-[26px]'>/an €</span></h3>
           ) :  modeSelected === 1  ? (
-            <h3 className={cn("text-[58px] font-bold")}>{price}<span className='text-[26px]'>/mois €</span></h3>
+            <h3 className={cn("text-5xl sm:text-[58px] font-bold")}>{price}<span className='text-[26px]'>/mois €</span></h3>
           ) :
             (
               <div className='flex gap-4 items-end'>
@@ -68,7 +67,6 @@ const CardPrice: FC<CardPriceProps> = ({
                 <h3 className={cn("text-xl sm:text-2xl font-bold line-through text-white/50")}>{truePrice}€</h3>
               </div>
             )}
-          {modeSelected === 1 && <p className={cn("text-subtitle/80 font-normal pb-2")}>{infoPrice}</p>}
         </div>
         <p className={cn("text-subtitle/80 font-normal pb-6")}>{content}</p>
         <Link href={link} target="_blank" rel="preload" className={cn(

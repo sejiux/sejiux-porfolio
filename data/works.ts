@@ -295,9 +295,9 @@ export const CaseStudyData = [
 export const PricesFixeData = (modeSelected?: number) => [
   {
     title: "Mono-Produit", 
-    price: modeSelected ? "495" : "4 950",
-    truePrice: "10 000",
-    infoPrice: "Pendant 10 mois sans frais", 
+    price: modeSelected ? "150" : "15 000",
+    truePrice: "30 000",
+    infoPrice: "", 
     content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
     link: "mailto:im.sejiux@gmail.com",
     options: [
@@ -332,15 +332,15 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Optimisation SEO"
       },
       {
-        title: "Délivré en 1 Mois"
+        title: "Délivré en 1 à 2 Mois"
       },
     ],
   },
   {
     title: "Multi-Produit", 
-    price:  modeSelected ? "795" : "7 950",
+    price:  modeSelected ? "300" : "30 000",
     truePrice: "50 000",
-    infoPrice: "Pendant 10 mois sans frais",
+    infoPrice: "",
     content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
     link: "mailto:im.sejiux@gmail.com",
     options: [
@@ -375,7 +375,7 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "2 Mois de Modifications Offerts"
       },
       {
-        title: "Délivré en 2 Mois"
+        title: "Délivré en 2 à 3 Mois"
       },
     ], 
   },
