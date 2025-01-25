@@ -44,7 +44,7 @@ const About = () => {
             )}>
             Travaillons Ensemble
           </Link>
-          <Link href="https://x.com/@sejiux" target="_blank" rel="preload"
+          <Link href="https://x.com/@selimbaouz" target="_blank" rel="preload"
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",

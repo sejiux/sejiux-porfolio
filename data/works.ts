@@ -110,7 +110,7 @@ export const articlesData = [
     category: "Psychologie",
     date: "6 Feb, 2024", 
     ReadingTime: "Temps de lecture: 4 min", 
-    link: "https://medium.com/@sejiux/active-listening-a-path-to-true-presence-63da2811fb64", 
+    link: "https://medium.com/@selimbaouz/active-listening-a-path-to-true-presence-63da2811fb64", 
   },
   {
     image: BlogMindset,
@@ -118,7 +118,7 @@ export const articlesData = [
     category: "Neurosciences",
     date: "6 Feb, 2024", 
     ReadingTime: "Temps de lecture: 2 min", 
-    link: "https://medium.com/@sejiux/the-impact-of-the-environment-on-our-mental-conditioning-b9fbb7a960c5", 
+    link: "https://medium.com/@selimbaouz/the-impact-of-the-environment-on-our-mental-conditioning-b9fbb7a960c5", 
   },
   {
     image: BlogReview,
@@ -383,19 +383,19 @@ export const PricesFixeData = (modeSelected?: number) => [
 
 export const socialsData = [
   {
-    link: "https://github.com/sejiux", icon: FaGithub, label: "Github",
+    link: "https://github.com/selimbaouz", icon: FaGithub, label: "Github",
   },
   {
     link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord, label: "Discord",
   },
   {
-    link: "https://medium.com/@sejiux", icon: FaMedium, label: "Medium",
+    link: "https://medium.com/@selimbaouz", icon: FaMedium, label: "Medium",
   },
   {
     link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest, label: "Pinterest",
   },
   {
-    link: "https://x.com/sejiux", icon: FaTwitter, label: "Twitter",
+    link: "https://x.com/selimbaouz", icon: FaTwitter, label: "Twitter",
   }
 ];
 
