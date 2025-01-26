@@ -46,7 +46,7 @@ const Footer = () => {
       <div className={cn("relative size-full p-6 border-t border-neutral-600/30 bg-gradient-to-t from-transparent  via-transparent via-50% to-[#151518] backdrop-blur-xl rounded-3xl mx-auto", "xl:py-24")}>
         <div className={cn("flex flex-col space-y-14 py-6", "md:justify-center md:text-center", "lg:items-center", "xl:flex-row xl:items-start xl:justify-between xl:space-y-0 xl:max-w-7xl xl:mx-auto")}>
           <div className={cn("space-y-4")}>
-            <Image src={"/images/sejiux.webp"} width={100} height={100} alt="Logo Sejiux" className='md:mx-auto pb-2' />
+            <Image src={"/images/sejiux.webp"} width={500} height={500} alt="Logo Sejiux" className='md:mx-auto pb-2' style={{width: "80px"}} />
             <div className={cn("space-y-2 pb-2")}>
               <h6 className={cn("font-black text-2xl")}>Sejiux</h6>
               <p className={cn("font-light text-base text-subtitle max-w-xs leading-relaxed", "md:max-w-max md:mx-auto", "xl:max-w-sm")}>
