@@ -105,7 +105,7 @@ const Footer = () => {
           <div className={cn("space-y-2", "lg:space-y-0")}>
             <h6 className={cn("uppercase text-lg font-medium")}>Vous avez un projet ?</h6>
             <div className={cn("pt-6", "md:flex md:justify-center")}>
-              <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
+              <Link href="https://cal.com/sejiux/appel-de-decouverte" target="_blank" rel="preload" className={cn(
                 "text-white font-medium", 
                 "w-[80%] h-12",
                 "md:w-60 md:h-14",
@@ -116,7 +116,7 @@ const Footer = () => {
                 "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
                 "hover:bg-primary hover:shadow-custom-primary",
               )}>
-                Contactez-moi
+                Réserver votre appel
               </Link>
             </div>
           </div>

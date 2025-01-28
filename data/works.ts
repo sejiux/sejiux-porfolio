@@ -251,7 +251,7 @@ export const WhyData = [
     ], 
   },
   {
-    title: "sejiux",
+    title: "Sejiux",
     lists: [
       {
         icon: FaPaintBrush,
@@ -292,14 +292,11 @@ export const CaseStudyData = [
   },
 ];
 
-export const PricesFixeData = (modeSelected?: number) => [
+export const PricesFixeData = [
   {
-    title: "Mono-Produit", 
-    price: modeSelected ? "150" : "15 000",
-    truePrice: "30 000",
-    infoPrice: "", 
-    content: "Une boutique monoproduit impactante, conçue pour convertir vos visiteurs en clients.",
-    link: "mailto:im.sejiux@gmail.com",
+    title: "Mono-produit", 
+    content: "Une boutique impactante, conçue pour convertir vos visiteurs en clients.",
+    link: "https://cal.com/sejiux/appel-de-decouverte",
     options: [
       {
         title: "Copywriting Persuasif"
@@ -311,7 +308,7 @@ export const PricesFixeData = (modeSelected?: number) => [
         title: "Développement Responsive"
       },
       {
-        title: modeSelected ? "Licence d'utilisation" : "Propriétés totale"
+        title: "Propriétés totale"
       },
       {
         title: "Protection contre la duplication"
@@ -338,11 +335,8 @@ export const PricesFixeData = (modeSelected?: number) => [
   },
   {
     title: "Multi-Produit", 
-    price:  modeSelected ? "300" : "30 000",
-    truePrice: "50 000",
-    infoPrice: "",
-    content: "Une boutique multiproduit qui met en valeur chaque produit avec clarté et efficacité.",
-    link: "mailto:im.sejiux@gmail.com",
+    content: "Une boutique unique, qui met en valeur chaque produit avec clarté et efficacité.",
+    link: "https://cal.com/sejiux/appel-de-decouverte",
     options: [
       {
         title: "Pack Complet Monoproduit"
@@ -383,7 +377,7 @@ export const PricesFixeData = (modeSelected?: number) => [
 
 export const socialsData = [
   {
-    link: "https://github.com/selimbaouz", icon: FaGithub, label: "Github",
+    link: "https://github.com/sejiux", icon: FaGithub, label: "Github",
   },
   {
     link: "https://discordapp.com/users/849428669180542976", icon: FaDiscord, label: "Discord",
@@ -395,7 +389,7 @@ export const socialsData = [
     link: "https://www.pinterest.fr/sejiux/", icon: FaPinterest, label: "Pinterest",
   },
   {
-    link: "https://x.com/selimbaouz", icon: FaTwitter, label: "Twitter",
+    link: "https://x.com/sejiux", icon: FaTwitter, label: "Twitter",
   }
 ];
 

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/moving-border';
@@ -5,8 +6,15 @@ import AnimatedShinyText from './ui/animated-shiny-text';
 import Link from 'next/link';
 import { stacksData } from '@/data/works';
 import MarqueeStack from './MarqueeStack';
+import { useIsHydrated } from '@/hook/useIsHydrated';
 
 const Tools = () => {
+  const isHydrated = useIsHydrated();
+
+  if(!isHydrated) {
+    return;
+  }
+  
   return (
     <section className={cn("flex flex-col justify-center max-w-7xl mx-auto", "md:mx-auto md:max-w-lg", "lg:max-w-4xl", "xl:max-w-7xl xl:grid xl:grid-cols-2 xl:items-center xl:justify-between xl:gap-8")}>
       <div className={cn("px-6 space-y-6", "lg:px-0")}>
@@ -44,7 +52,7 @@ const Tools = () => {
         )}><span className='text-primary'>{stacksData.length}</span> Outils au Service <br className="hidden lg:block" />de l'Excellence</h2>
         <p className={cn("text-base text-center text-subtitle/80 font-light w-full px-4", "lg:text-base lg:w-[500px] lg:mx-auto", "xl:mx-0 xl:text-left xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>Je combine des technologies de pointe et des outils reconnus pour concevoir des boutiques performantes et sur-mesure.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
+          <Link href="https://cal.com/sejiux/appel-de-decouverte" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
@@ -56,7 +64,7 @@ const Tools = () => {
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
             "hover:bg-primary hover:shadow-custom-primary",
           )}>
-                Travaillons Ensemble
+            Réserver votre appel
           </Link>
         </div>
       </div>

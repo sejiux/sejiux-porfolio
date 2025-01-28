@@ -30,7 +30,7 @@ const About = () => {
         <p className={cn("text-base font-light w-full", "lg:text-left lg:text-base text-subtitleCard lg:w-[500px]", "xl:px-0 xl:pb-2 xl:text-lg xl:leading-relaxed")}>
         Je suis Selim, un ancien danseur BreakDance ayant participé à World of Dance, devenu développeur fullstack et désigner web. J’ai créé sejiux pour allier créativité et technique, en offrant des résultats de premier ordre, une collaboration fluide et des solutions adaptées aux marques. Ensemble, transformons votre commerce en ligne en une machine à convertir.</p>
         <div className={cn("pt-4 flex flex-col items-center gap-4", "lg:flex-row")}>
-          <Link href="mailto:im.sejiux@gmail.com" rel="preload" target="_blank"
+          <Link href="https://cal.com/sejiux/appel-de-decouverte" rel="preload" target="_blank"
             className={cn(
               "text-white flex gap-2 items-center font-medium", 
               "w-full h-12 mx-auto",
@@ -42,9 +42,9 @@ const About = () => {
               "bg-gradient-to-b from-primary to-secondary flex items-center justify-center text-base antialiased rounded-[10px]",
               "hover:bg-primary hover:shadow-custom-primary",
             )}>
-            Travaillons Ensemble
+            Réserver votre appel
           </Link>
-          <Link href="https://x.com/@selimbaouz" target="_blank" rel="preload"
+          <Link href="https://x.com/@sejiux" target="_blank" rel="preload"
             className={cn(
               "text-white flex gap-2 items-center", 
               "w-full h-12 mx-auto",

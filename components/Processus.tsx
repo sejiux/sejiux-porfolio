@@ -44,7 +44,7 @@ const Processus = () => {
         )}>Votre Succès, une Méthode en <span className='text-primary'>6</span> Étapes</h2>
         <p className={cn("text-base text-center font-light w-full px-4", "xl:text-left xl:px-0 text-subtitle/80 xl:pb-2 xl:w-[500px] xl:text-lg xl:leading-relaxed")}>Un accompagnement et des étapes clés pour créer une boutique à votre image, prête à séduire vos clients.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" rel="preload" className={cn(
+          <Link href="https://cal.com/sejiux/appel-de-decouverte" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
@@ -55,7 +55,7 @@ const Processus = () => {
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
             "hover:bg-primary hover:shadow-custom-primary",
           )}>
-                Travaillons Ensemble
+            Réserver votre appel
           </Link>
         </div>
       </div>

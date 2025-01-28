@@ -26,8 +26,8 @@ export default function Home() {
         logo: "https://sejiux.com/images/sejiux.webp",
         description: "Je crée des boutiques en ligne headless sur mesure, combinant design unique et performance.",
         sameAs: [
-          "https://twitter.com/selimbaouz",
-          "https://github.com/selimbaouz",
+          "https://twitter.com/sejiux",
+          "https://github.com/sejiux",
           "https://linkedin.com/company/sejiux",
           "https://medium.com/@selimbaouz",
           "https://pinterest.com/sejiux",

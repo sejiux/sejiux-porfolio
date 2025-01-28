@@ -55,10 +55,11 @@ const HeaderPage = () => {
           "xl:text-6xl xl:leading-[1.3]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
-        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Dites adieu aux boutiques telles que vous les connaissez et bonjour à celles que vous avez toujours voulues.</p>
+        )}>Une Expérience qui Transforme<br className="hidden lg:block" /> chaque visiteur en Client</h1>
+        
+        <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Je crée des boutiques avec un taux de conversion si élevé que vos visiteurs se sentiront bêtes de refuser votre offre.</p>
         <div className={cn("pt-4")}>
-          <Link href="mailto:im.sejiux@gmail.com" target="_blank" rel="preload" className={cn(
+          <Link href="https://cal.com/sejiux/appel-de-decouverte" target="_blank" rel="preload" className={cn(
             "text-white font-medium", 
             "w-[80%] h-12 mx-auto",
             "md:w-[60%] md:h-14",
@@ -69,7 +70,7 @@ const HeaderPage = () => {
             "bg-secondary shadow-custom-secondary backdrop-blur-xl flex items-center justify-center text-base antialiased rounded-[10px]",
             "hover:bg-primary hover:shadow-custom-primary",
           )}>
-                Travaillons Ensemble
+                Réserver votre appel
           </Link>
         </div>
       </div>
