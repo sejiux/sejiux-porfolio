@@ -10,9 +10,15 @@ import NavBar from "./NavBar";
 import { useState } from "react";
 import { ModalMenu } from "./ModalMenu";
 import MarqueeStack from "@/components/MarqueeStack";
+import { useIsHydrated } from "@/hook/useIsHydrated";
 
 const HeaderPage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const isHydrated = useIsHydrated();
+
+  if(!isHydrated){
+    return;
+  }
 
   return (
     <header id="home" className={cn("overflow-hidden min-h-[100svh] flex relative flex-col justify-between", "md:min-h-full md:gap-36", "xl:justify-center", "2xl:min-h-full 2xl:gap-36")}>
@@ -55,7 +61,7 @@ const HeaderPage = () => {
           "xl:text-6xl xl:leading-[1.3]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Une Expérience qui Transforme<br className="hidden lg:block" /> chaque visiteur en Client</h1>
+        )}>Une Boutique qui Transforme<br className="hidden lg:block" /> chaque visiteur en Client</h1>
         
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Je crée des boutiques avec un taux de conversion si élevé que vos visiteurs se sentiront bêtes de refuser votre offre.</p>
         <div className={cn("pt-4")}>

@@ -22,7 +22,7 @@ const CardPrice: FC<CardPriceProps> = ({
   return (
     <div className={cn("w-full rounded-3xl flex flex-col justify-start items-center gap-2 p-6 border border-neutral-600/30 bg-gradient-to-t from-transparent via-transparent via-70% to-[#151518]", "lg:px-8 lg:py-10")}>
       <div className={cn("space-y-6", title === "Maintenance" ? "text-left lg:text-center" : "text-left")}>
-        <h3 className={cn("pt-3 font-bold", "xs:text-2xl", "sm:text-2xl", "lg:text-2xl")}>{title}</h3>
+        <h3 className={cn("pt-3 font-bold text-3xl")}>{title}</h3>
         <p className={cn("text-subtitle/80 font-normal pb-3")}>{content}</p>
         <Link href={link} target="_blank" rel="preload" className={cn(
           "text-white w-full", 
