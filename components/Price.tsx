@@ -41,57 +41,55 @@ const Price = () => {
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
         )}>Des Solutions Sur-Mesure<br className="hidden lg:block" /> pour un Impact Mesurable</h2>
-        <p className={cn("text-subtitle/80 text-base font-light w-full px-4 pb-10", "lg:text-base lg:mx-auto lg:w-[500px]", "xl:px-0 xl:pb-4 xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Choisissez l'offre qui convient le mieux à vos besoins.</p>
-        <div className={cn("pt-10", "lg:pt-0")}>
-          <div className={cn("relative pt-14 w-full max-w-4xl flex flex-col gap-4", "xl:grid xl:grid-cols-2")}>
-            {PricesFixeData.map((data, index) => (
-              <CardPrice
-                key={index}
-                title={data.title}
-                content={data.content}
-                link={data.link}
-                options={data.options}
-              />
-            ))}
-            <div className="col-span-2 max-w-xl w-full mx-auto">
-              <CardPrice
-                title="Maintenance"
-                content="Bénéficiez d'un support technique pour une expérience utilisateur optimale."
-                link="https://cal.com/sejiux/appel-de-decouverte"
-                options={[
-                  {
-                    title: "Support client disponible 5j/7",
-                  },
-                  {
-                    title: "Réponse sous 24 heures",
-                  },
-                  {
-                    title: "Optimisation des performances",
-                  },
-                  {
-                    title: "Correction des bugs",
-                  },
-                  {
-                    title: "Mises à jour de sécurité",
-                  },
-                  {
-                    title: "Transfert d'hébergement",
-                  },
-                  {
-                    title: "Migration des données",
-                  },
-                  {
-                    title: "Changement de nom de domaine",
-                  },
-                  {
-                    title: "Gestion des DNS",
-                  },
-                  {
-                    title: "Suivi et optimisation SEO",
-                  },
-                ]}
-              />
-            </div>
+        <p className={cn("text-subtitle/80 text-base font-light w-full px-4 pb-4", "lg:text-base lg:mx-auto lg:w-[500px]", "xl:px-0 xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Choisissez l'offre qui convient le mieux à vos besoins.</p>
+        <div className={cn("relative pt-14 w-full max-w-4xl flex flex-col gap-4", "xl:grid xl:grid-cols-2")}>
+          {PricesFixeData.map((data, index) => (
+            <CardPrice
+              key={index}
+              title={data.title}
+              content={data.content}
+              link={data.link}
+              options={data.options}
+            />
+          ))}
+          <div className="col-span-2 max-w-xl w-full mx-auto">
+            <CardPrice
+              title="Maintenance"
+              content="Bénéficiez d'un support technique pour une expérience utilisateur optimale."
+              link="https://cal.com/sejiux/appel-de-decouverte"
+              options={[
+                {
+                  title: "Support client disponible 5j/7",
+                },
+                {
+                  title: "Réponse sous 24 heures",
+                },
+                {
+                  title: "Optimisation des performances",
+                },
+                {
+                  title: "Correction des bugs",
+                },
+                {
+                  title: "Mises à jour de sécurité",
+                },
+                {
+                  title: "Transfert d'hébergement",
+                },
+                {
+                  title: "Migration des données",
+                },
+                {
+                  title: "Changement de nom de domaine",
+                },
+                {
+                  title: "Gestion des DNS",
+                },
+                {
+                  title: "Suivi et optimisation SEO",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
