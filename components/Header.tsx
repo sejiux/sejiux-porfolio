@@ -55,7 +55,7 @@ const HeaderPage = () => {
           "xl:text-6xl xl:leading-[1.3]",
           "pointer-events-none whitespace-pre-wrap",
           "text-white text-center",
-        )}>Une Boutique qui Transforme<br className="hidden lg:block" /> chaque visiteur en Client</h1>
+        )}>Une Expérience Headless<br className="hidden lg:block" /> Mémorable pour votre Marque</h1>
         
         <p className={cn("text-base font-light w-full px-4", "lg:text-base lg:px-0 lg:mx-auto text-subtitle/80 lg:pb-2 lg:w-[500px]", "xl:text-lg xl:leading-relaxed xl:w-[700px]")}>Je crée des boutiques avec un taux de conversion si élevé que vos visiteurs se sentiront bêtes de refuser votre offre.</p>
         <div className={cn("pt-4")}>
